@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>http://localhost:1313/es/</link><description>Recent content on</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Puesto #3</title><link>http://localhost:1313/es/experience/job-3/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0100</pubDate><guid>http://localhost:1313/es/experience/job-3/</guid><description>&lt;h2 id="3rd-job-gerente-general"&gt;3rd job: Gerente General&lt;/h2&gt;
-&lt;p&gt;Con una traducción al español, se puede llegar a cualquier parte.&lt;/p&gt;</description></item><item><title>Trabajo #2</title><link>http://localhost:1313/es/experience/job-2/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0100</pubDate><guid>http://localhost:1313/es/experience/job-2/</guid><description>&lt;h2 id="arreglando-el-mundo-un-byte-a-la-vez"&gt;Arreglando el mundo, un byte a la vez&lt;/h2&gt;
-&lt;p&gt;Continuando la misión.&lt;/p&gt;</description></item><item><title>Trabajo #1</title><link>http://localhost:1313/es/experience/job-1/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0100</pubDate><guid>http://localhost:1313/es/experience/job-1/</guid><description>&lt;h2 id="arreglando-el-mundo-un-byte-a-la-vez"&gt;Arreglando el mundo, un byte a la vez&lt;/h2&gt;
-&lt;p&gt;El comienzo de una gran carrera.&lt;/p&gt;</description></item><item><title>Footer</title><link>http://localhost:1313/es/footer/footer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/es/footer/footer/</guid><description>&lt;section id="contacto" class="section section--contact pt-0"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://zhong-yuxi.github.io/es/</link><description>Recent content on</description><generator>Hugo</generator><language>es</language><lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://zhong-yuxi.github.io/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Puesto #3</title><link>https://zhong-yuxi.github.io/es/experience/job-3/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0100</pubDate><guid>https://zhong-yuxi.github.io/es/experience/job-3/</guid><description>&lt;h2 id="3rd-job-gerente-general"&gt;3rd job: Gerente General&lt;/h2&gt;
+&lt;p&gt;Con una traducción al español, se puede llegar a cualquier parte.&lt;/p&gt;</description></item><item><title>Trabajo #2</title><link>https://zhong-yuxi.github.io/es/experience/job-2/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0100</pubDate><guid>https://zhong-yuxi.github.io/es/experience/job-2/</guid><description>&lt;h2 id="arreglando-el-mundo-un-byte-a-la-vez"&gt;Arreglando el mundo, un byte a la vez&lt;/h2&gt;
+&lt;p&gt;Continuando la misión.&lt;/p&gt;</description></item><item><title>Trabajo #1</title><link>https://zhong-yuxi.github.io/es/experience/job-1/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0100</pubDate><guid>https://zhong-yuxi.github.io/es/experience/job-1/</guid><description>&lt;h2 id="arreglando-el-mundo-un-byte-a-la-vez"&gt;Arreglando el mundo, un byte a la vez&lt;/h2&gt;
+&lt;p&gt;El comienzo de una gran carrera.&lt;/p&gt;</description></item><item><title>Footer</title><link>https://zhong-yuxi.github.io/es/footer/footer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zhong-yuxi.github.io/es/footer/footer/</guid><description>&lt;section id="contacto" class="section section--contact pt-0"&gt;
  &lt;div class="container"&gt;
  &lt;div class="contact w-100"&gt;
  &lt;h2&gt;Contáctame&lt;/h2&gt;
@@ -76,7 +76,7 @@
  &lt;div class="rad-subscription-group"&gt;
  &lt;form
  id="rad-subscription"
- action="http://localhost:1313/"
+ action="https://zhong-yuxi.github.io/"
  method="POST"
  &gt;
  &lt;input
@@ -107,7 +107,7 @@
  
  &lt;/p&gt;
  &lt;/div&gt;
- &lt;script src='http://localhost:1313/js/subscription.js'&gt;&lt;/script&gt;
+ &lt;script src='https://zhong-yuxi.github.io/js/subscription.js'&gt;&lt;/script&gt;
  &lt;/div&gt;
  &lt;small id="emailHelp" class="form-text text-muted"&gt;
  
@@ -150,7 +150,7 @@
  
  
  &lt;div class="text-section__content"&gt;
- &lt;p&gt;Puedes añadir contenido adicional después de los bloques de &lt;code&gt;section&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Inicio</title><link>http://localhost:1313/es/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/es/home/home/</guid><description>&lt;section id="seccion-destacada" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
+ &lt;p&gt;Puedes añadir contenido adicional después de los bloques de &lt;code&gt;section&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Inicio</title><link>https://zhong-yuxi.github.io/es/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zhong-yuxi.github.io/es/home/home/</guid><description>&lt;section id="seccion-destacada" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
  &lt;div id="main-content"&gt;
  
 
@@ -252,7 +252,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="dribbble"
@@ -262,7 +262,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="behance"
@@ -272,7 +272,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="youtube"
@@ -302,7 +302,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="codepen"
@@ -511,7 +511,7 @@
 
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/es/experience/job-3/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/es/experience/job-3/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -533,7 +533,7 @@
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/es/experience/job-2/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/es/experience/job-2/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -555,7 +555,7 @@
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/es/experience/job-1/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/es/experience/job-1/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -616,7 +616,7 @@
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/img/general/user-smile-fill.svg'
+ href='https://zhong-yuxi.github.io/img/general/user-smile-fill.svg'
  class="btn btn-frameless w-100"
  target="_blank"
  rel="noopener noreferrer"
@@ -630,7 +630,7 @@
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/es/experience'
+ href='https://zhong-yuxi.github.io/es/experience'
  class="btn btn-frameless w-100"
  rel="noopener noreferrer"
  &gt;
@@ -646,4 +646,4 @@
  &lt;/div&gt;
 &lt;/section&gt;
 &lt;h2 id="experiencia-lista"&gt;Experiencia (lista)&lt;/h2&gt;
-&lt;p&gt;Puedes ver una versión alternativa, usando &lt;code&gt;experience-list&lt;/code&gt; en &lt;a href="http://localhost:1313/cv"&gt;/cv&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Puedes ver una versión alternativa, usando &lt;code&gt;experience-list&lt;/code&gt; en &lt;a href="https://zhong-yuxi.github.io/cv"&gt;/cv&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

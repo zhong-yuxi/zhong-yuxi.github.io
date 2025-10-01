@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homes on</title><link>http://localhost:1313/home/</link><description>Recent content in Homes on</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>http://localhost:1313/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homes on</title><link>https://zhong-yuxi.github.io/home/</link><description>Recent content in Homes on</description><generator>Hugo</generator><language>en</language><atom:link href="https://zhong-yuxi.github.io/home/index.xml" rel="self" type="application/rss+xml"/><item><title>Home</title><link>https://zhong-yuxi.github.io/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zhong-yuxi.github.io/home/home/</guid><description>&lt;section id="showcase" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
  &lt;div id="main-content"&gt;
  
 
@@ -98,7 +98,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="dribbble"
@@ -108,7 +108,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="behance"
@@ -118,7 +118,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="youtube"
@@ -148,7 +148,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="codepen"
@@ -291,7 +291,7 @@
  This content is using the &lt;code&gt;about-section&lt;/code&gt; shortcode. &lt;br/&gt;You can write &lt;code&gt;HTML&lt;/code&gt;, as long as you &lt;em&gt;wrap it&lt;/em&gt; accordingly. 
  &lt;/div&gt;
  
- &lt;a href="http://localhost:1313/skills" target="_blank" class="btn btn-primary"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/skills" target="_blank" class="btn btn-primary"&gt;
  &lt;i class="icon-user"&gt;&lt;/i&gt;
  Check my skills
  &lt;/a&gt;
@@ -368,7 +368,7 @@
 
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/experience/job-3/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/experience/job-3/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -393,7 +393,7 @@ In my role, I also serve as a member of the executive board, helping shape the c
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/experience/job-3.es-copy/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/experience/job-3.es-copy/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -415,7 +415,7 @@ In my role, I also serve as a member of the executive board, helping shape the c
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/experience/job-2/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/experience/job-2/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -439,7 +439,7 @@ My most significant achievement was the successful implementation of a machine l
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/experience/job-1/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/experience/job-1/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -503,7 +503,7 @@ Through these experiences, I built a strong foundation in software development a
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/skills'
+ href='https://zhong-yuxi.github.io/skills'
  class="btn btn-frameless w-100"
  target="_blank"
  rel="noopener noreferrer"
@@ -517,7 +517,7 @@ Through these experiences, I built a strong foundation in software development a
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/experience'
+ href='https://zhong-yuxi.github.io/experience'
  class="btn btn-frameless w-100"
  rel="noopener noreferrer"
  &gt;

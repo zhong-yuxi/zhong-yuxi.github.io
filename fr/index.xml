@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>http://localhost:1313/fr/</link><description>Recent content on</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Poste #3</title><link>http://localhost:1313/fr/experience/job-3/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0100</pubDate><guid>http://localhost:1313/fr/experience/job-3/</guid><description>&lt;h2 id="réparer-le-monde-un-octet-à-la-fois"&gt;Réparer le monde, un octet à la fois&lt;/h2&gt;
-&lt;p&gt;Prise de contrôle hostile - qui est le patron maintenant !&lt;/p&gt;</description></item><item><title>Poste #2</title><link>http://localhost:1313/fr/experience/job-2/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0100</pubDate><guid>http://localhost:1313/fr/experience/job-2/</guid><description>&lt;h2 id="réparer-le-monde-un-octet-à-la-fois"&gt;Réparer le monde, un octet à la fois&lt;/h2&gt;
-&lt;p&gt;Poursuivant la quête.&lt;/p&gt;</description></item><item><title>Accueil</title><link>http://localhost:1313/fr/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/fr/home/home/</guid><description>&lt;section id="section-vedette" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://zhong-yuxi.github.io/fr/</link><description>Recent content on</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://zhong-yuxi.github.io/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Poste #3</title><link>https://zhong-yuxi.github.io/fr/experience/job-3/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0100</pubDate><guid>https://zhong-yuxi.github.io/fr/experience/job-3/</guid><description>&lt;h2 id="réparer-le-monde-un-octet-à-la-fois"&gt;Réparer le monde, un octet à la fois&lt;/h2&gt;
+&lt;p&gt;Prise de contrôle hostile - qui est le patron maintenant !&lt;/p&gt;</description></item><item><title>Poste #2</title><link>https://zhong-yuxi.github.io/fr/experience/job-2/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0100</pubDate><guid>https://zhong-yuxi.github.io/fr/experience/job-2/</guid><description>&lt;h2 id="réparer-le-monde-un-octet-à-la-fois"&gt;Réparer le monde, un octet à la fois&lt;/h2&gt;
+&lt;p&gt;Poursuivant la quête.&lt;/p&gt;</description></item><item><title>Accueil</title><link>https://zhong-yuxi.github.io/fr/home/home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zhong-yuxi.github.io/fr/home/home/</guid><description>&lt;section id="section-vedette" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"&gt;
  &lt;div id="main-content"&gt;
  
 
@@ -102,7 +102,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="dribbble"
@@ -112,7 +112,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="behance"
@@ -122,7 +122,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="youtube"
@@ -152,7 +152,7 @@
  
  
  &lt;a
- href="http://localhost:1313/"
+ href="https://zhong-yuxi.github.io/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="codepen"
@@ -360,7 +360,7 @@
 
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/fr/experience/job-3/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/fr/experience/job-3/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -382,7 +382,7 @@
  &lt;/div&gt;
  
  &lt;div class="experience"&gt;
- &lt;a href="http://localhost:1313/fr/experience/job-2/" class="experience__link"&gt;
+ &lt;a href="https://zhong-yuxi.github.io/fr/experience/job-2/" class="experience__link"&gt;
  &lt;div class="experience__header"&gt;
  
  
@@ -443,7 +443,7 @@
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/img/general/user-smile-fill.svg'
+ href='https://zhong-yuxi.github.io/img/general/user-smile-fill.svg'
  class="btn btn-frameless w-100"
  target="_blank"
  rel="noopener noreferrer"
@@ -457,7 +457,7 @@
  
  &lt;div class="col-12 col-lg-4"&gt;
  &lt;a
- href='http://localhost:1313/es/experience'
+ href='https://zhong-yuxi.github.io/es/experience'
  class="btn btn-frameless w-100"
  rel="noopener noreferrer"
  &gt;
@@ -473,4 +473,4 @@
  &lt;/div&gt;
 &lt;/section&gt;
 &lt;h2 id="expérience-liste"&gt;Expérience (liste)&lt;/h2&gt;
-&lt;p&gt;Vous pouvez voir une autre version, utilisant &lt;code&gt;experience-list&lt;/code&gt; sur &lt;a href="http://localhost:1313/cv"&gt;/cv&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Vous pouvez voir une autre version, utilisant &lt;code&gt;experience-list&lt;/code&gt; sur &lt;a href="https://zhong-yuxi.github.io/cv"&gt;/cv&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
