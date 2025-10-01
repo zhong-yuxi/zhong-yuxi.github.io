@@ -8,13 +8,13 @@
  &lt;div class="showcase-section row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate"&gt;
  &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"&gt;
  &lt;h1 class="display-1"&gt;
- Showcase section
+ YUXI ZHONG
  &lt;/h1&gt;
  &lt;h2 class="display-5"&gt;
- &lt;span&gt;Subtitle - coming from &lt;code&gt;home.md&lt;/code&gt;&lt;/span&gt;
+ &lt;span&gt;Sonam Dorji&lt;/span&gt;
  &lt;/h2&gt;
  &lt;div class="lead"&gt;
- &lt;strong&gt;Strong&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt; and normal text. This comes from &lt;a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'&gt;&lt;code&gt;home.md&lt;/code&gt;&lt;/a&gt;, using the &lt;code&gt;showcase-section&lt;/code&gt; &lt;a href=''&gt;shortcode&lt;/a&gt;.&lt;br/&gt;Below you can see the social links, provided by the &lt;code&gt;platform-links&lt;/code&gt; shortcode.
+ _____________________________________________
  &lt;/div&gt;
  
  &lt;/div&gt;
@@ -48,7 +48,7 @@
  
  
  &lt;a
- href="https://facebook.com/yourpage"
+ href="https://www.facebook.com/profile.php?id=100006690859267"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="square-facebook"
@@ -58,37 +58,7 @@
  
  
  &lt;a
- href="https://twitter.com/yourpage"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="square-twitter"
- &gt;&lt;i class="icon-square-twitter"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.linkedin.com/in/adrianmoreno/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="linkedin"
- &gt;&lt;i class="icon-linkedin"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://github.com/zetxek"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="square-github"
- &gt;&lt;i class="icon-square-github"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://twitter.com/zetxek"
+ href="https://x.com/dorji0704?s=21"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="x-twitter"
@@ -98,141 +68,11 @@
  
  
  &lt;a
- href="https://zhong-yuxi.github.io/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="dribbble"
- &gt;&lt;i class="icon-dribbble"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://zhong-yuxi.github.io/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="behance"
- &gt;&lt;i class="icon-behance"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://zhong-yuxi.github.io/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="youtube"
- &gt;&lt;i class="icon-youtube"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.instagram.com/zetxek/"
+ href="https://www.instagram.com/sonam_dorji__/"
  target="_blank"
  rel="noopener noreferrer"
  aria-label="instagram"
  &gt;&lt;i class="icon-instagram"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.facebook.com/zetxek/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="square-facebook"
- &gt;&lt;i class="icon-square-facebook"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://zhong-yuxi.github.io/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="codepen"
- &gt;&lt;i class="icon-codepen"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.yelp.com/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="yelp"
- &gt;&lt;i class="icon-yelp"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.bluesky.com/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="bluesky"
- &gt;&lt;i class="icon-bluesky"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.threads.net/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="threads"
- &gt;&lt;i class="icon-threads"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.adrianmoreno.info/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="face-smile"
- &gt;&lt;i class="icon-face-smile"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.adrianmoreno.info/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="user"
- &gt;&lt;i class="icon-user"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.adrianmoreno.info/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="quote-left"
- &gt;&lt;i class="icon-quote-left"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.adrianmoreno.info/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="cloud-arrow-down"
- &gt;&lt;i class="icon-cloud-arrow-down"&gt;&lt;/i&gt;
- &lt;/a&gt;
-
- 
- 
- &lt;a
- href="https://www.adrianmoreno.info/"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="square-xing"
- &gt;&lt;i class="icon-square-xing"&gt;&lt;/i&gt;
  &lt;/a&gt;
 
 
@@ -286,14 +126,14 @@
 
  &lt;/div&gt;
  &lt;div class="col-12 col-md-6 my-auto"&gt;
- &lt;h1&gt;About me&lt;/h1&gt;
+ &lt;h1&gt;Bio&lt;/h1&gt;
  &lt;div class="about-me content lead"&gt;
- This content is using the &lt;code&gt;about-section&lt;/code&gt; shortcode. &lt;br/&gt;You can write &lt;code&gt;HTML&lt;/code&gt;, as long as you &lt;em&gt;wrap it&lt;/em&gt; accordingly. 
+ &lt;strong&gt;Strong&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt; and normal text. This comes from &lt;a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'&gt;&lt;code&gt;home.md&lt;/code&gt;&lt;/a&gt;, using the &lt;code&gt;showcase-section&lt;/code&gt; &lt;a href=''&gt;shortcode&lt;/a&gt;.&lt;br/&gt;Below you can see the social links, provided by the &lt;code&gt;platform-links&lt;/code&gt; shortcode.
  &lt;/div&gt;
  
  &lt;a href="https://zhong-yuxi.github.io/skills" target="_blank" class="btn btn-primary"&gt;
  &lt;i class="icon-user"&gt;&lt;/i&gt;
- Check my skills
+ Read more
  &lt;/a&gt;
  
  &lt;/div&gt;
@@ -311,7 +151,7 @@
  &lt;div class="container-education"&gt;
  &lt;div class="row rad-fade-down"&gt;
  &lt;div class="col-12"&gt;
- &lt;h2&gt;Formal Education (education-list)&lt;/h2&gt;
+ &lt;h2&gt;Formal Education&lt;/h2&gt;
  &lt;div class="row pt-2 pt-md-4"&gt;
  
  &lt;div class="col-12 col-sm-6 mb-4 mb-sm-0"&gt;
@@ -353,7 +193,7 @@
  &lt;div class="experience-list col-12 col-md-6"&gt;
  &lt;h2&gt;
  
- My job experience (title)
+ Research Experience
  
  &lt;/h2&gt;
 
@@ -545,7 +385,7 @@ Through these experiences, I built a strong foundation in software development a
  &lt;div class="row flex-column-reverse flex-md-row rad-fade-down"&gt;
  &lt;div class="experience-list col-12 mt-5 mt-sm-0"&gt;
  
- &lt;h2 class="section__title mb-4"&gt;Experience (as list)&lt;/h2&gt;
+ &lt;h2 class="section__title mb-4"&gt;Experience&lt;/h2&gt;
  
  
  
