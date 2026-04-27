@@ -4,15 +4,15 @@ timezone = "America/Los_Angeles"
 titlecasestyle = "Go"
 
 [languages.en]
-copyright = "© Will Faught"
+copyright = "© 2026 Yuxi Zhong"
 languagecode = "en-us"
 languagedirection = "ltr"
 languagename = "English"
-title = "Paige"
+title = "Yuxi Zhong"
 weight = 10
 
 [languages.en.params.paige.site]
-description = "Powerful, pliable pixel perfection"
+description = "Material, Tibet, Cat"
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -34,13 +34,13 @@ term = ["atom", "html", "rss"]
 pagersize = 50
 
 [[params.paige.feeds.atom.authors]]
-email = "example@example.com"
-name = "John Doe"
-url = "https://example.com"
+email = "yuxi.zhonggg@gmail.com"
+name = "Yuxi Zhong"
+url = "https://zhong-yuxi.github.io/"
 
 [params.paige.feeds.rss]
-managing_editor = "example@example.com (John Doe)"
-web_master = "example@example.com (John Doe)"
+managing_editor = "yuxi.zhonggg@gmail.com (Yuxi Zhong)"
+web_master = "yuxi.zhonggg@gmail.com (Yuxi Zhong)"
 
 [params.paige.pages]
 disable_authors = true
