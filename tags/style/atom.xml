@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><author><email>example@example.com</email><name>John Doe</name><uri>https://example.com</uri></author><icon>https://example.com/</icon><id>tag:example.com,2023-09-18:/tags/style/atom.xml</id><link href="https://example.com/tags/style/atom.xml" hreflang="en-us" rel="self" type="application/atom+xml"/><link href="https://example.com/tags/style/atom.xml" hreflang="en-us" rel="alternate" type="application/atom+xml"/><link href="https://example.com/tags/style/" hreflang="en-us" rel="alternate" type="text/html"/><link href="https://example.com/tags/style/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/><logo>https://example.com/</logo><rights type="html">© Will Faught</rights><title type="html">Style · Tags · Paige</title><updated>2023-09-18T21:21:05-07:00</updated><entry><author><email>example@example.com</email><name>Author Demo</name><uri>https://example.com</uri></author><content type="html"><![CDATA[<p>This page styles some data differently than the rest of the site.</p><h2 id=parameters>Parameters</h2><p>This page has the following parameters:</p><div class=highlight><pre tabindex=0 style=background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>style</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-authors,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-content,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-date,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-description,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-file,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-keywords,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-reading-time,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-series,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-siblings,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-title,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-page-toc,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-breadcrumbs,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-copyright,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-credit,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-description,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-license,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-menu,
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>#paige-site-title {
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>    font-style: italic;
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>}
+</span></span></span><span style=display:flex><span><span style=color:#0a3069>&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>pages</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_authors</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_auto_schema</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_date</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_description</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_edit</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_history</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_keywords</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_next</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_prev</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_reading_time</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_series</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_title</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_toc</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_word_count</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>full_width</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>pages</span><span style=color:#1f2328>.</span><span style=color:#1f2328>base_schema</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>isAccessibleForFree</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>isFamilyFriendly</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>pages</span><span style=color:#1f2328>.</span><span style=color:#1f2328>base_schema</span><span style=color:#1f2328>.</span><span style=color:#1f2328>publisher</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@type&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Organization&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>name</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Paige&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://github.com/willfaught/paige&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>pages</span><span style=color:#1f2328>.</span><span style=color:#1f2328>microdata</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>itemid</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://willfaught.com/paige/customizations/&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>itemscope</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>itemtype</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://schema.org/HowTo&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>pages</span><span style=color:#1f2328>.</span><span style=color:#1f2328>schemas</span><span style=color:#1f2328>]]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@context&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://schema.org&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@type&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;WebPage&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>name</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Style&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://willfaught.com/paige/customizations/&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>site</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>color</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;#df4655&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>color_scheme</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;dark&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>credit</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#39;&lt;a class=&#34;link-secondary text-decoration-none&#34; href=&#34;https://github.com/willfaught/paige&#34;&gt;Paige Theme&lt;/a&gt;&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>date_format</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;:date_full&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>description</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Mighty, malleable media mastery&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_breadcrumbs</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_credit</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>disable_license</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>false</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>edit_url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://github.com/willfaught/paige/edit/master/example/content/%s&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>external_link_new_tab</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>history_url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://github.com/willfaught/paige/commits/master/example/content/%s&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>keyword_style</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;pills&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>license</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;EUPL License&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>menu_style</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;tabs&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>site</span><span style=color:#1f2328>.</span><span style=color:#1f2328>base_schema</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>isAccessibleForFree</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>isFamilyFriendly</span> <span style=color:#1f2328>=</span> <span style=color:#cf222e>true</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>site</span><span style=color:#1f2328>.</span><span style=color:#1f2328>base_schema</span><span style=color:#1f2328>.</span><span style=color:#1f2328>publisher</span><span style=color:#1f2328>]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@type&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Organization&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>name</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Paige&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://github.com/willfaught/paige&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>[[</span><span style=color:#1f2328>paige</span><span style=color:#1f2328>.</span><span style=color:#1f2328>site</span><span style=color:#1f2328>.</span><span style=color:#1f2328>schemas</span><span style=color:#1f2328>]]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@context&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://schema.org&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0a3069>&#34;@type&#34;</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;WebSite&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>name</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;Paige&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#1f2328>url</span> <span style=color:#1f2328>=</span> <span style=color:#0a3069>&#34;https://willfaught.com/paige/&#34;</span></span></span></code></pre></div>]]></content><id>tag:example.com,2023-09-18:/customizations/style/</id><link href="https://example.com/customizations/style/" hreflang="en-us" rel="alternate" type="text/html"/><published>2023-09-18T20:21:05-07:00</published><rights type="html">© Will Faught</rights><summary type="html">Demonstration of a customization that styles all data.</summary><title type="html">Style Data</title><updated>2023-09-18T20:21:05-07:00</updated></entry></feed>
