@@ -1,0 +1,181 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed  xml:lang="en-us"  xmlns="http://www.w3.org/2005/Atom">
+    
+        <author>
+            
+                <email>example@example.com</email>
+            
+
+            
+                <name>John Doe</name>
+            
+
+            
+                <uri>https://example.com</uri>
+            
+        </author>
+    
+
+    
+        <icon>http://localhost:1313/</icon>
+    
+
+    <id>tag:localhost:1313,0001-01-01:/tags/email/atom.xml</id>
+
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/tags/email/atom.xml" rel="self" type="application/atom+xml"/>
+        
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/tags/email/" rel="alternate" type="text/html"/>
+        
+    
+        
+
+        
+
+        
+            <link href="http://localhost:1313/tags/email/rss.xml" rel="alternate" type="application/rss+xml"/>
+        
+    
+
+    
+
+    
+        <logo>http://localhost:1313/</logo>
+    
+
+    
+        <rights type="html"><![CDATA[© Will Faught]]></rights>
+    
+
+    
+
+    <title type="html"><![CDATA[Email · Tags · ]]></title>
+
+    <updated>2023-09-18T21:21:05-07:00</updated>
+
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+                    
+                        <author>
+                            
+                                <email>example@example.com</email>
+                            
+
+                            
+                                <name>Author Demo</name>
+                            
+
+                            
+                                <uri>https://example.com</uri>
+                            
+                        </author>
+                    
+                
+
+                
+                    <content type="html"><![CDATA[<p>The <code>paige/email</code> shortcode hides e-mail addresses from crawlers.</p>
+<h2 id="address-parameter">Address parameter</h2>
+<p>Code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">{{</span><span class="err">%</span><span class="w"> </span><span class="nx">paige</span><span class="err">/</span><span class="nx">email</span><span class="w"> </span><span class="nx">address</span><span class="o">=</span><span class="s">&#34;example@example.com&#34;</span><span class="w"> </span><span class="err">%</span><span class="cp">}}</span>E-mail me<span class="cp">{{</span><span class="err">%</span><span class="w"> </span><span class="err">/</span><span class="nx">paige</span><span class="err">/</span><span class="nx">email</span><span class="w"> </span><span class="err">%</span><span class="cp">}}</span>
+</span></span></code></pre></div><p>Result:</p>
+<p><span class="paige-shortcode-email"><a href="" data-a="ZXhhbXBsZQ==" data-b="QA==" data-c="ZXhhbXBsZS5jb20=" onclick="this.href = 'mailto:' + atob(this.dataset.a) + atob(this.dataset.b) + atob(this.dataset.c)">E-mail me</a></span></p>]]></content>
+                
+
+                <id>tag:localhost:1313,0001-01-01:/shortcodes/email/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/shortcodes/email/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+
+                
+                    <rights type="html"><![CDATA[© Will Faught]]></rights>
+                
+
+                
+                    <summary type="html"><![CDATA[Demonstration of the email shortcode.]]></summary>
+                
+
+                <title type="html"><![CDATA[Email]]></title>
+
+                <updated>0001-01-01T00:00:00Z</updated>
+            </entry>
+        
+    
+</feed>
