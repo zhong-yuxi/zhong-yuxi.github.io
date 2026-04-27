@@ -1,4 +1,4 @@
-baseurl = "https://example.com"
+baseURL = "https://zhong-yuxi.github.io/"
 enablerobotstxt = true
 timezone = "America/Los_Angeles"
 titlecasestyle = "Go"
