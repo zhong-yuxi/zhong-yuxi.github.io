@@ -18,15 +18,22 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
-          extended: true  # 必须开启！因为你有 Sass/Dart
+          extended: true
+
+      - name: Install Dart Sass
+        run: |
+          curl -L https://github.com/sass/dart-sass/releases/download/1.77.0/dart-sass-1.77.0-linux-x64.tar.gz | tar -xz
+          echo "$PWD/dart-sass" >> $GITHUB_PATH
 
       - name: Build Web
-        run: hugo --gc --minify
+        run: |
+          hugo mod get -u
+          hugo --gc --minify
 
       - name: Deploy Web
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.HUGO_DEPLOY_TOKEN }}
-          PUBLISH_BRANCH: gh-pages # 建议发布到 gh-pages 分支，保持 main 分支是源码
+          PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
           commit_message: "自动部署: ${{ github.event.head_commit.message }}"
