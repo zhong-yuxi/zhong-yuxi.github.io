@@ -165,54 +165,6 @@
                     
 
                     
-                        <description><![CDATA[<p>The <code>paige/cloud</code> layout displays list page links as a link cloud.</p>
-<p>This page has the following parameters:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;paige/cloud&#34;</span><span class="w">
-</span></span></span></code></pre></div><p>Result:</p>]]></description>
-                    
-
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/videos/cloud/atom.xml</guid>
-
-                    
-                        <link>http://localhost:1313/videos/cloud/atom.xml</link>
-                    
-
-                    
-                        <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                    
-
-                    
-                        <title>Cloud</title>
-                    
-                </item>
-            
-        
-            
-                <item>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-
-                    
-
-                    
-
-                    
                         <description><![CDATA[<!--
 The MIT License (MIT)
 
@@ -706,60 +658,6 @@ SOFTWARE.
 
                     
                         <title>Placeholder Text</title>
-                    
-                </item>
-            
-        
-            
-                <item>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-
-                    
-
-                    
-
-                    
-                        <description><![CDATA[<p>The <code>paige/search</code> layout provides site search.</p>
-<p>Example <code>config.yaml</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">outputs</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">home</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;atom&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;html&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;paige-search&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;rss&#34;</span><span class="p">]</span><span class="w">
-</span></span></span></code></pre></div><p>Example <code>content/layouts/search.md</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;paige/search&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Search&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span></code></pre></div><p>Result:</p>]]></description>
-                    
-
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/videos/search/</guid>
-
-                    
-                        <link>http://localhost:1313/videos/search/</link>
-                    
-
-                    
-                        <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                    
-
-                    
-                        <title>Search</title>
                     
                 </item>
             

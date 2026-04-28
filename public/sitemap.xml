@@ -6,21 +6,13 @@
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
+    <loc>http://localhost:1313/videos/</loc>
+  </url><url>
     <loc>http://localhost:1313/photos/alert/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/alerts/</loc>
   </url><url>
-    <loc>http://localhost:1313/videos/cloud/apple/</loc>
-  </url><url>
-    <loc>http://localhost:1313/videos/cloud/banana/</loc>
-  </url><url>
-    <loc>http://localhost:1313/videos/cloud/cantaloupe/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/cloud/</loc>
-  </url><url>
-    <loc>http://localhost:1313/videos/cloud/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/content/</loc>
   </url><url>
@@ -35,10 +27,6 @@
     <loc>http://localhost:1313/tags/html/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/katex/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/layouts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/videos/</loc>
   </url><url>
     <loc>http://localhost:1313/photos/link/</loc>
   </url><url>
@@ -55,10 +43,6 @@
     <loc>http://localhost:1313/categories/paige/</loc>
   </url><url>
     <loc>http://localhost:1313/photos/placeholder-text/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/videos/search/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/sections/</loc>
   </url><url>
