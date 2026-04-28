@@ -1,1 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xml:lang="en-us" xmlns:atom="http://www.w3.org/2005/Atom"><channel><copyright>© 2026 Yuxi Zhong</copyright><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate><link>https://zhong-yuxi.github.io/tags/cloud/</link><atom:link href="https://zhong-yuxi.github.io/tags/cloud/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/><atom:link href="https://zhong-yuxi.github.io/tags/cloud/atom.xml" hreflang="en-us" rel="alternate" type="application/atom+xml"/><atom:link href="https://zhong-yuxi.github.io/tags/cloud/" hreflang="en-us" rel="alternate" type="text/html"/><atom:link href="https://zhong-yuxi.github.io/tags/cloud/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/><managingEditor>yuxi.zhonggg@gmail.com (Yuxi Zhong)</managingEditor><title>Cloud · Tags · YUXI ZHONG</title><webMaster>yuxi.zhonggg@gmail.com (Yuxi Zhong)</webMaster><item><description><![CDATA[<p>The <code>paige/cloud</code> layout displays list page links as a link cloud.</p><p>This page has the following parameters:</p><div class=highlight><pre tabindex=0 style=background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#0550ae>layout</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;paige/cloud&#34;</span></span></span></code></pre></div><p>Result:</p>]]></description><guid isPermaLink="false">tag:zhong-yuxi.github.io,0001-01-01:/videos/cloud/atom.xml</guid><link>https://zhong-yuxi.github.io/videos/cloud/atom.xml</link><atom:link href="https://zhong-yuxi.github.io/videos/cloud/atom.xml" hreflang="en-us" rel="alternate" type="application/atom+xml"/><atom:link href="https://zhong-yuxi.github.io/videos/cloud/atom.xml" hreflang="en-us" rel="alternate" type="text/html"/><atom:link href="https://zhong-yuxi.github.io/videos/cloud/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Cloud</title></item></channel></rss>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/tags/cloud/atom.xml" rel="self" type="application/atom+xml"/>
+            
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/tags/cloud/" rel="alternate" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1313/tags/cloud/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+            <copyright>© 2026 Yuxi Zhong</copyright>
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
+        
+
+        <link>http://localhost:1313/tags/cloud/</link>
+
+        
+            <managingEditor>yuxi.zhonggg@gmail.com (Yuxi Zhong)</managingEditor>
+        
+
+        <title>Cloud · Tags · </title>
+
+        
+            <webMaster>yuxi.zhonggg@gmail.com (Yuxi Zhong)</webMaster>
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>The <code>paige/cloud</code> layout displays list page links as a link cloud.</p>
+<p>This page has the following parameters:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;paige/cloud&#34;</span><span class="w">
+</span></span></span></code></pre></div><p>Result:</p>]]></description>
+                    
+
+                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/videos/cloud/atom.xml</guid>
+
+                    
+                        <link>http://localhost:1313/videos/cloud/atom.xml</link>
+                    
+
+                    
+                        <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                    
+
+                    
+                        <title>Cloud</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>
