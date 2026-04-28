@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
     <loc>http://localhost:1313/photos/alert/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/alerts/</loc>
@@ -15,8 +17,6 @@
     <loc>http://localhost:1313/videos/cloud/cantaloupe/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/cloud/</loc>
   </url><url>
@@ -53,8 +53,6 @@
     <loc>http://localhost:1313/photos/math-typesetting/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/paige/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/paige/</loc>
   </url><url>
     <loc>http://localhost:1313/photos/placeholder-text/</loc>
   </url><url>
