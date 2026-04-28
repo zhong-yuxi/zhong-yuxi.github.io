@@ -2,7 +2,7 @@
 
   <div class="row align-items-center mb-5">
     <div class="col-md-4">
-      <img src="/images/project1.jpg" class="img-fluid rounded-4 shadow" alt="Project 1">
+      <img src="/images/project1.jpeg" class="img-fluid rounded-4 shadow" alt="Project 1">
     </div>
     <div class="col-md-8">
       <h6 class="fw-bold" style="font-family: 'MyJost', sans-serif;">The Dialogue between “Om” and “Xiang”</h3>
