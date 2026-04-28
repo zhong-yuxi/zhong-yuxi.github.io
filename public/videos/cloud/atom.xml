@@ -1,0 +1,272 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed  xml:lang="en-us"  xmlns="http://www.w3.org/2005/Atom">
+    
+        <author>
+            
+                <email>yuxi.zhonggg@gmail.com</email>
+            
+
+            
+                <name>Yuxi Zhong</name>
+            
+
+            
+                <uri>https://zhong-yuxi.github.io/</uri>
+            
+        </author>
+    
+
+    
+        <icon>http://localhost:1313/</icon>
+    
+
+    <id>tag:localhost:1313,0001-01-01:/videos/cloud/atom.xml</id>
+
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/videos/cloud/atom.xml" rel="self" type="application/atom+xml"/>
+        
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/videos/cloud/" rel="alternate" type="text/html"/>
+        
+    
+        
+
+        
+
+        
+            <link href="http://localhost:1313/videos/cloud/rss.xml" rel="alternate" type="application/rss+xml"/>
+        
+    
+
+    
+
+    
+        <logo>http://localhost:1313/</logo>
+    
+
+    
+        <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+    
+
+    
+        <subtitle type="html"><![CDATA[Demonstration of the cloud layout.]]></subtitle>
+    
+
+    <title type="html"><![CDATA[Cloud · Layouts · ]]></title>
+
+    <updated>0001-01-01T00:00:00Z</updated>
+
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+
+                <id>tag:localhost:1313,0001-01-01:/videos/cloud/apple/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/videos/cloud/apple/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[Apple]]></title>
+
+                <updated>0001-01-01T00:00:00Z</updated>
+            </entry>
+        
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+
+                <id>tag:localhost:1313,0001-01-01:/videos/cloud/banana/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/videos/cloud/banana/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[Banana]]></title>
+
+                <updated>0001-01-01T00:00:00Z</updated>
+            </entry>
+        
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+
+                <id>tag:localhost:1313,0001-01-01:/videos/cloud/cantaloupe/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/videos/cloud/cantaloupe/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[Cantaloupe]]></title>
+
+                <updated>0001-01-01T00:00:00Z</updated>
+            </entry>
+        
+    
+</feed>

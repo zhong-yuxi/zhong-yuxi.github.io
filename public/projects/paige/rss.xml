@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/projects/paige/atom.xml" rel="self" type="application/atom+xml"/>
+            
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/projects/paige/" rel="alternate" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1313/projects/paige/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+            <copyright>© 2026 Yuxi Zhong</copyright>
+        
+
+        <description>Demonstration of a category.</description>
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
+        
+
+        <link>http://localhost:1313/projects/paige/</link>
+
+        
+            <managingEditor>yuxi.zhonggg@gmail.com (Yuxi Zhong)</managingEditor>
+        
+
+        <title>Paige · Categories · </title>
+
+        
+            <webMaster>yuxi.zhonggg@gmail.com (Yuxi Zhong)</webMaster>
+        
+
+        
+    </channel>
+</rss>

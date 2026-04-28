@@ -73,7 +73,42 @@ disable_summary = true
 disable_word_count = true
 
 [taxonomies]
-author = "authors"
 category = "categories"
 series = "series"
 tag = "tags"
+
+# ----------------------------------------------------------------------------
+# 导航栏手动菜单配置 (手动定义以覆盖默认文件夹抓取)
+# ----------------------------------------------------------------------------
+
+[[languages.en.menu.main]]
+    name = "about"
+    url = "/"
+    weight = 1
+
+
+[[languages.en.menu.main]]
+    name = "projects"
+    url = "/projects/"
+    weight = 2
+
+[[languages.en.menu.main]]
+    name = "photos"
+    url = "/photos/"
+    weight = 3
+
+[[languages.en.menu.main]]
+    name = "videos"
+    url = "/videos/"
+    weight = 4
+
+[[languages.en.menu.main]]
+    name = "Series"
+    url = "/series/"
+    weight = 5
+
+
+[[languages.en.menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 6

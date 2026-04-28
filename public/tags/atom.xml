@@ -48,7 +48,7 @@
         <icon>http://localhost:1313/</icon>
     
 
-    <id>tag:localhost:1313,2023-09-18:/tags/atom.xml</id>
+    <id>tag:localhost:1313,0001-01-01:/tags/atom.xml</id>
 
     
         
@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
 </feed>

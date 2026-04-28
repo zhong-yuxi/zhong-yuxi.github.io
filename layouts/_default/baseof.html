@@ -1,0 +1,96 @@
+{{ $page := . }}
+
+{{ $attrs := slice }}
+{{ $microdata := $page.Params.paige.pages.microdata }}
+
+{{ range $k, $v := $microdata }}
+    {{ $attrs = $attrs | append (printf `%s="%v"` $k $v) }}
+{{ end }}
+
+{{ $attrs = delimit (sort $attrs) " " }}
+
+<!doctype html>
+{{ partial "paige/html.html" $page }}
+    {{ partial "paige/head.html" $page }}
+
+<style>
+    /* 1. 声明字体 */
+    @font-face {
+        font-family: 'MyGillSans';
+        src: url('/fonts/GillSans.ttc') format('collection'), 
+             url('/fonts/GillSans.ttc') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'MyJost';
+        src: url('/fonts/Jost-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* 2. 全站标题和描述 */
+    #paige-site-title, #paige-site-title a {
+        font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
+        font-size: 3rem !important; 
+        font-weight: 700 !important;
+        letter-spacing: -0.03em !important;
+        color: #222 !important; 
+        text-decoration: none !important;
+    }
+    #paige-site-description {
+        font-family: 'MyJost', sans-serif !important;
+        font-size: 1.2rem !important;
+        letter-spacing: 0.05em !important;
+        color: #4a4a4a !important;
+    }
+
+    /* 3. 全站导航菜单样式 (常驻深青色，悬停亮青色) */
+    #paige-site-menu a {
+        color: #008b8b !important; 
+        text-decoration: none !important; 
+        transition: color 0.2s ease-in-out !important; 
+    }
+    #paige-site-menu a:hover, #paige-site-menu a:active {
+        color: #00FFFF !important; 
+    }
+
+    /* 4. 全站超链接去下划线 */
+    #paige-page a {
+        text-decoration: none !important; 
+    }
+
+    /* 5. 首页特有的联系信息 (Email & CV) */
+    .contact-info {
+        font-family: 'MyJost', sans-serif !important;
+        color: #222 !important; 
+    }
+    .contact-info a {
+        color: #00FFFF !important; 
+        text-decoration: none !important;
+    }
+    .contact-info a:hover {
+        color: #70FFFF !important;
+    }
+    </style>
+
+    {{ partial "paige/body.html" $page }}
+
+        {{ partial "paige/func-include.html" (dict "name" "body-first%s.html" "page" $page) }}
+
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3" id="paige-site" {{ with $attrs }} {{ $attrs | safeHTMLAttr }} {{ end }}>
+                    {{ partial "paige/func-include.html" (dict "name" "site-first%s.html" "page" $page) }}
+                    {{ partial "paige/site-header.html" $page }}
+                    {{ block "main" $page }}{{ end }}
+                    {{ partial "paige/site-footer.html" $page }}
+                    {{ partial "paige/func-include.html" (dict "name" "site-last%s.html" "page" $page) }}
+                </div>
+            </div>
+        </div>
+
+        {{ partial "paige/scripts.html" $page }}
+        {{ partial "paige/func-include.html" (dict "name" "body-last%s.html" "page" $page) }}
+    </body>
+</html>

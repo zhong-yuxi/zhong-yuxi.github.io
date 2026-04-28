@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Alerts · Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -122,22 +122,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>This page has the following parameters:</p>
@@ -148,7 +132,7 @@
 </span></span></span></code></pre></div>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/alert/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/alert/</id>
 
                 
                     
@@ -156,7 +140,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/content/alert/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/alert/" rel="alternate" type="text/html"/>
                     
                 
 

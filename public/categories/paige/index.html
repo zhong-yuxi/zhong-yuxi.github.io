@@ -110,8 +110,6 @@
 
 
 
-    <meta content="Demonstration of a category." name="description">
-
 
 
 
@@ -128,14 +126,12 @@
 <meta property="og:url" content="http://localhost:1313/categories/paige/">
   <meta property="og:site_name" content="Yuxi Zhong">
   <meta property="og:title" content="Paige">
-  <meta property="og:description" content="Demonstration of a category.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Paige">
-  <meta name="twitter:description" content="Demonstration of a category.">
 
 
 
@@ -720,6 +716,68 @@ table {
 
 </head>
 
+
+<style>
+     
+    @font-face {
+        font-family: 'MyGillSans';
+        src: url('/fonts/GillSans.ttc') format('collection'), 
+             url('/fonts/GillSans.ttc') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'MyJost';
+        src: url('/fonts/Jost-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+     
+    #paige-site-title, #paige-site-title a {
+        font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
+        font-size: 3rem !important; 
+        font-weight: 700 !important;
+        letter-spacing: -0.03em !important;
+        color: #222 !important; 
+        text-decoration: none !important;
+    }
+    #paige-site-description {
+        font-family: 'MyJost', sans-serif !important;
+        font-size: 1.2rem !important;
+        letter-spacing: 0.05em !important;
+        color: #4a4a4a !important;
+    }
+
+     
+    #paige-site-menu a {
+        color: #008b8b !important; 
+        text-decoration: none !important; 
+        transition: color 0.2s ease-in-out !important; 
+    }
+    #paige-site-menu a:hover, #paige-site-menu a:active {
+        color: #00FFFF !important; 
+    }
+
+     
+    #paige-page a {
+        text-decoration: none !important; 
+    }
+
+     
+    .contact-info {
+        font-family: 'MyJost', sans-serif !important;
+        color: #222 !important; 
+    }
+    .contact-info a {
+        color: #00FFFF !important; 
+        text-decoration: none !important;
+    }
+    .contact-info a:hover {
+        color: #70FFFF !important;
+    }
+    </style>
+
     <body>
 
 
@@ -940,37 +998,9 @@ table {
 
         
             
-                
-
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-
-                
-
                 <nav aria-label="Menu" class="paige-row-tall" id="paige-site-menu">
                     <ul class="align-items-center justify-content-center nav ">
                         
-
-                        <li class="nav-item">
-                            <a  class=" nav-link  text-decoration-underline " href="/">Home</a>
-                        </li>
-
-                        
                             
 
                             
@@ -979,8 +1009,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/authors/" ZgotmplZ>Authors</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/"   ZgotmplZ >about</a>
+
+                                
                             </li>
                         
                             
@@ -991,8 +1023,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  aria-current="page"  class=" active  fw-bold text-body   nav-link  text-decoration-underline " href="/categories/" ZgotmplZ>Categories</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/projects/"   ZgotmplZ >projects</a>
+
+                                
                             </li>
                         
                             
@@ -1003,8 +1037,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/content/" ZgotmplZ>Content</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/photos/"   ZgotmplZ >photos</a>
+
+                                
                             </li>
                         
                             
@@ -1015,8 +1051,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/customizations/" ZgotmplZ>Customizations</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/videos/"   ZgotmplZ >videos</a>
+
+                                
                             </li>
                         
                             
@@ -1027,8 +1065,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/layouts/" ZgotmplZ>Layouts</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/series/"   ZgotmplZ >Series</a>
+
+                                
                             </li>
                         
                             
@@ -1039,32 +1079,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/series/" ZgotmplZ>Series</a>
-                            </li>
-                        
-                            
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/tags/"   ZgotmplZ >Tags</a>
 
-                            
-                            
-                            
-
-                            
-
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/shortcodes/" ZgotmplZ>Shortcodes</a>
-                            </li>
-                        
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/tags/" ZgotmplZ>Tags</a>
+                                
                             </li>
                         
                     </ul>
@@ -1316,8 +1334,6 @@ table {
             
 
             
-                <p class="lead paige-row-tall" id="paige-page-description" >Demonstration of a category.</p>
-            
 
             
 
@@ -1399,10 +1415,6 @@ table {
 
 
 
-
-    
-
-    
 
 
 
@@ -1513,66 +1525,6 @@ table {
             
         
     
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
 
     
     
@@ -1629,7 +1581,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/alert/">Alert</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/alert/">Alert</a></p>
     
 
     
@@ -1693,135 +1645,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/code/">Code</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the code shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/email/">Email</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the email shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/emoji-support/">Emoji Support</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/emoji-support/">Emoji Support</a></p>
     
 
     
@@ -1885,263 +1709,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/figure/">Figure</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the figure shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/gallery/">Gallery</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the gallery shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/icon/">Icon</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the icon shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/image/">Image</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the image shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/link/">Link</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/link/">Link</a></p>
     
 
     
@@ -2205,7 +1773,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/markdown-syntax/">Markdown Syntax Guide</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/markdown-syntax/">Markdown Syntax Guide</a></p>
     
 
     
@@ -2269,7 +1837,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/math-typesetting/">Math Typesetting</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/math-typesetting/">Math Typesetting</a></p>
     
 
     
@@ -2333,7 +1901,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/placeholder-text/">Placeholder Text</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/placeholder-text/">Placeholder Text</a></p>
     
 
     
@@ -2397,523 +1965,11 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/quote/">Quote</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the quote shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/request/">Request</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the request shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/rich-content/">Rich Content</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">A brief description of Hugo Shortcodes.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/layouts/search/">Search</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/videos/search/">Search</a></p>
     
 
     
         <p class="paige-page-description paige-row-short text-center">Demonstration of the search layout.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/customizations/show/">Show Data</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of a customization that shows all data.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/customizations/style/">Style Data</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of a customization that styles all data.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/tabs/">Tabs</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the tabs shortcodes.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/vimeo/">Vimeo</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the Vimeo shortcode.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-            
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/shortcodes/youtube/">YouTube</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstration of the YouTube shortcode.</p>
     
 
     
@@ -2986,75 +2042,11 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/layouts/cloud/">Cloud</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/videos/cloud/">Cloud</a></p>
     
 
     
         <p class="paige-page-description paige-row-short text-center">Demonstration of the cloud layout.</p>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</div>
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-<div class="paige-page paige-status-published w-100">
-    
-        <p class="paige-row-short paige-page-title text-center"><a href="/customizations/">Customizations</a></p>
-    
-
-    
-        <p class="paige-page-description paige-row-short text-center">Demonstrations of customizations.</p>
     
 
     
@@ -3346,8 +2338,6 @@ table {
     
 
     
-        
-    
 
     
         
@@ -3364,13 +2354,9 @@ table {
     
 
     
-        
-    
 
     
 
-    
-        
     
 
     
@@ -3399,7 +2385,7 @@ table {
 
     
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","alternativeHeadline":"Demonstration of a category.","articleSection":"Paige","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2023-09-18T21:21:05-07:00","description":"Demonstration of a category.","headline":"Paige","inLanguage":"en","name":"Paige","url":"http://localhost:1313/categories/paige/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","articleSection":"Paige","copyrightNotice":"© 2026 Yuxi Zhong","headline":"Paige","inLanguage":"en","name":"Paige","url":"http://localhost:1313/categories/paige/"}</script>
 
 
 

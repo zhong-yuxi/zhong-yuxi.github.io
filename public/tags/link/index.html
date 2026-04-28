@@ -716,6 +716,68 @@ table {
 
 </head>
 
+
+<style>
+     
+    @font-face {
+        font-family: 'MyGillSans';
+        src: url('/fonts/GillSans.ttc') format('collection'), 
+             url('/fonts/GillSans.ttc') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'MyJost';
+        src: url('/fonts/Jost-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+     
+    #paige-site-title, #paige-site-title a {
+        font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
+        font-size: 3rem !important; 
+        font-weight: 700 !important;
+        letter-spacing: -0.03em !important;
+        color: #222 !important; 
+        text-decoration: none !important;
+    }
+    #paige-site-description {
+        font-family: 'MyJost', sans-serif !important;
+        font-size: 1.2rem !important;
+        letter-spacing: 0.05em !important;
+        color: #4a4a4a !important;
+    }
+
+     
+    #paige-site-menu a {
+        color: #008b8b !important; 
+        text-decoration: none !important; 
+        transition: color 0.2s ease-in-out !important; 
+    }
+    #paige-site-menu a:hover, #paige-site-menu a:active {
+        color: #00FFFF !important; 
+    }
+
+     
+    #paige-page a {
+        text-decoration: none !important; 
+    }
+
+     
+    .contact-info {
+        font-family: 'MyJost', sans-serif !important;
+        color: #222 !important; 
+    }
+    .contact-info a {
+        color: #00FFFF !important; 
+        text-decoration: none !important;
+    }
+    .contact-info a:hover {
+        color: #70FFFF !important;
+    }
+    </style>
+
     <body>
 
 
@@ -936,37 +998,9 @@ table {
 
         
             
-                
-
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-                    
-                        
-                    
-                
-
-                
-
                 <nav aria-label="Menu" class="paige-row-tall" id="paige-site-menu">
                     <ul class="align-items-center justify-content-center nav ">
                         
-
-                        <li class="nav-item">
-                            <a  class=" nav-link  text-decoration-underline " href="/">Home</a>
-                        </li>
-
-                        
                             
 
                             
@@ -975,8 +1009,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/authors/" ZgotmplZ>Authors</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/"   ZgotmplZ >about</a>
+
+                                
                             </li>
                         
                             
@@ -987,8 +1023,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/categories/" ZgotmplZ>Categories</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/projects/"   ZgotmplZ >projects</a>
+
+                                
                             </li>
                         
                             
@@ -999,8 +1037,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/content/" ZgotmplZ>Content</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/photos/"   ZgotmplZ >photos</a>
+
+                                
                             </li>
                         
                             
@@ -1011,8 +1051,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/customizations/" ZgotmplZ>Customizations</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/videos/"   ZgotmplZ >videos</a>
+
+                                
                             </li>
                         
                             
@@ -1023,8 +1065,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/layouts/" ZgotmplZ>Layouts</a>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/series/"   ZgotmplZ >Series</a>
+
+                                
                             </li>
                         
                             
@@ -1035,32 +1079,10 @@ table {
 
                             
 
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/series/" ZgotmplZ>Series</a>
-                            </li>
-                        
-                            
+                            <li class="nav-item ">
+                                <a  aria-current="page"   class=" active  fw-bold text-body    nav-link   text-decoration-underline "  href="/tags/"   ZgotmplZ >Tags</a>
 
-                            
-                            
-                            
-
-                            
-
-                            <li class="nav-item">
-                                <a  class=" nav-link  text-decoration-underline " href="/shortcodes/" ZgotmplZ>Shortcodes</a>
-                            </li>
-                        
-                            
-
-                            
-                            
-                            
-
-                            
-
-                            <li class="nav-item">
-                                <a  aria-current="page"  class=" active  fw-bold text-body   nav-link  text-decoration-underline " href="/tags/" ZgotmplZ>Tags</a>
+                                
                             </li>
                         
                     </ul>
@@ -1531,7 +1553,7 @@ table {
 
 <div class="paige-page paige-status-published w-100">
     
-        <p class="paige-row-short paige-page-title text-center"><a href="/content/link/">Link</a></p>
+        <p class="paige-row-short paige-page-title text-center"><a href="/photos/link/">Link</a></p>
     
 
     

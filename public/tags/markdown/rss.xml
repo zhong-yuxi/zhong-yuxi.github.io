@@ -73,7 +73,7 @@
         
 
         
-            <lastBuildDate>Mon, 18 Sep 2023 21:21:05 -0700</lastBuildDate>
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
         
 
         <link>http://localhost:1313/tags/markdown/</link>
@@ -102,12 +102,6 @@
                     
 
                     
-                        
-
-                        
-                            
-                        
-                    
 
                     
 
@@ -118,8 +112,6 @@
 
                     
 
-                    
-                        <author>example@example.com (Author Demo)</author>
                     
 
                     
@@ -167,7 +159,7 @@ SOFTWARE.
 <h3 id="blockquote-with-attribution">Blockquote with attribution</h3>
 <blockquote>
 <p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="http://localhost:1313/content/markdown-syntax/#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+— <cite>Rob Pike<sup id="fnref:1"><a href="http://localhost:1313/photos/markdown-syntax/#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
 </blockquote>
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
@@ -281,16 +273,16 @@ SOFTWARE.
 <ol>
 <li id="fn:1">
 <p>The above quote is excerpted from Rob Pike&rsquo;s <a  href="https://www.youtube.com/watch?v=PAAkCSZUG1c"   rel="external"   >talk</a>
- during Gopherfest, November 18, 2015.&#160;<a href="http://localhost:1313/content/markdown-syntax/#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+ during Gopherfest, November 18, 2015.&#160;<a href="http://localhost:1313/photos/markdown-syntax/#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>]]></description>
                     
 
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/content/markdown-syntax/</guid>
+                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/photos/markdown-syntax/</guid>
 
                     
-                        <link>http://localhost:1313/content/markdown-syntax/</link>
+                        <link>http://localhost:1313/photos/markdown-syntax/</link>
                     
 
                     
@@ -316,12 +308,6 @@ SOFTWARE.
                     
 
                     
-                        
-
-                        
-                            
-                        
-                    
 
                     
 
@@ -332,8 +318,6 @@ SOFTWARE.
 
                     
 
-                    
-                        <author>example@example.com (Author Demo)</author>
                     
 
                     
@@ -386,10 +370,10 @@ SOFTWARE.
 <p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></description>
                     
 
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/content/placeholder-text/</guid>
+                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/photos/placeholder-text/</guid>
 
                     
-                        <link>http://localhost:1313/content/placeholder-text/</link>
+                        <link>http://localhost:1313/photos/placeholder-text/</link>
                     
 
                     

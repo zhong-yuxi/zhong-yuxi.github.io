@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Typesetting · Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -121,22 +121,6 @@
                     
                 
 
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
                 
 
                 
@@ -191,7 +175,7 @@ $$
 $$</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/math-typesetting/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/math-typesetting/</id>
 
                 
                     
@@ -199,7 +183,7 @@ $$</p>]]></content>
                     
                         
 
-                        <link href="http://localhost:1313/content/math-typesetting/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/math-typesetting/" rel="alternate" type="text/html"/>
                     
                 
 

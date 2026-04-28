@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Layouts · Categories · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -122,22 +122,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>The <code>paige/cloud</code> layout displays list page links as a link cloud.</p>
@@ -146,7 +130,7 @@
 </span></span></span></code></pre></div><p>Result:</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/layouts/cloud/atom.xml</id>
+                <id>tag:localhost:1313,0001-01-01:/videos/cloud/atom.xml</id>
 
                 
                     
@@ -154,7 +138,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/layouts/cloud/atom.xml" rel="alternate" type="application/atom+xml"/>
+                        <link href="http://localhost:1313/videos/cloud/atom.xml" rel="alternate" type="application/atom+xml"/>
                     
                 
                     
@@ -162,7 +146,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/layouts/cloud/atom.xml" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/videos/cloud/atom.xml" rel="alternate" type="text/html"/>
                     
                 
                     
@@ -170,7 +154,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/layouts/cloud/rss.xml" rel="alternate" type="application/rss+xml"/>
+                        <link href="http://localhost:1313/videos/cloud/rss.xml" rel="alternate" type="application/rss+xml"/>
                     
                 
 
@@ -215,22 +199,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>The <code>paige/search</code> layout provides site search.</p>
@@ -245,7 +213,7 @@
 </span></span></span></code></pre></div><p>Result:</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/layouts/search/</id>
+                <id>tag:localhost:1313,0001-01-01:/videos/search/</id>
 
                 
                     
@@ -253,7 +221,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/layouts/search/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/videos/search/" rel="alternate" type="text/html"/>
                     
                 
 

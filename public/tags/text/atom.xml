@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Text · Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -121,22 +121,6 @@
                     
                 
 
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
                 
 
                 
@@ -189,7 +173,7 @@ SOFTWARE.
 <p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/placeholder-text/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/placeholder-text/</id>
 
                 
                     
@@ -197,7 +181,7 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/content/placeholder-text/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/placeholder-text/" rel="alternate" type="text/html"/>
                     
                 
 

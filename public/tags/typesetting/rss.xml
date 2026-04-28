@@ -73,7 +73,7 @@
         
 
         
-            <lastBuildDate>Mon, 18 Sep 2023 21:21:05 -0700</lastBuildDate>
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
         
 
         <link>http://localhost:1313/tags/typesetting/</link>
@@ -102,12 +102,6 @@
                     
 
                     
-                        
-
-                        
-                            
-                        
-                    
 
                     
 
@@ -118,8 +112,6 @@
 
                     
 
-                    
-                        <author>example@example.com (Author Demo)</author>
                     
 
                     
@@ -174,10 +166,10 @@ $$
 $$</p>]]></description>
                     
 
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/content/math-typesetting/</guid>
+                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/photos/math-typesetting/</guid>
 
                     
-                        <link>http://localhost:1313/content/math-typesetting/</link>
+                        <link>http://localhost:1313/photos/math-typesetting/</link>
                     
 
                     

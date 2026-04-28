@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Link · Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -128,29 +128,13 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>It takes you to the home page.</p>
-<p><a href="http://localhost:1313/content/link/" title="Link">⏎</a></p>]]></content>
+<p><a href="http://localhost:1313/photos/link/" title="Link">⏎</a></p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/link/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/link/</id>
 
                 
                     

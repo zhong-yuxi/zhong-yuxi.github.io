@@ -1,0 +1,104 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed  xml:lang="en-us"  xmlns="http://www.w3.org/2005/Atom">
+    
+        <author>
+            
+                <email>yuxi.zhonggg@gmail.com</email>
+            
+
+            
+                <name>Yuxi Zhong</name>
+            
+
+            
+                <uri>https://zhong-yuxi.github.io/</uri>
+            
+        </author>
+    
+
+    
+        <icon>http://localhost:1313/</icon>
+    
+
+    <id>tag:localhost:1313,0001-01-01:/projects/paige/atom.xml</id>
+
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/projects/paige/atom.xml" rel="self" type="application/atom+xml"/>
+        
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/projects/paige/" rel="alternate" type="text/html"/>
+        
+    
+        
+
+        
+
+        
+            <link href="http://localhost:1313/projects/paige/rss.xml" rel="alternate" type="application/rss+xml"/>
+        
+    
+
+    
+
+    
+        <logo>http://localhost:1313/</logo>
+    
+
+    
+        <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+    
+
+    
+        <subtitle type="html"><![CDATA[Demonstration of a category.]]></subtitle>
+    
+
+    <title type="html"><![CDATA[Paige · Categories · ]]></title>
+
+    <updated>0001-01-01T00:00:00Z</updated>
+
+    
+</feed>

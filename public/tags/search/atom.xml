@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Search · Tags · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -122,22 +122,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>The <code>paige/search</code> layout provides site search.</p>
@@ -152,7 +136,7 @@
 </span></span></span></code></pre></div><p>Result:</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/layouts/search/</id>
+                <id>tag:localhost:1313,0001-01-01:/videos/search/</id>
 
                 
                     
@@ -160,7 +144,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/layouts/search/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/videos/search/" rel="alternate" type="text/html"/>
                     
                 
 

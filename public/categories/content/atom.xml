@@ -96,7 +96,7 @@
 
     <title type="html"><![CDATA[Content · Categories · ]]></title>
 
-    <updated>2023-09-18T21:21:05-07:00</updated>
+    <updated>0001-01-01T00:00:00Z</updated>
 
     
         
@@ -122,22 +122,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>This page has the following parameters:</p>
@@ -148,7 +132,7 @@
 </span></span></span></code></pre></div>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/alert/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/alert/</id>
 
                 
                     
@@ -156,7 +140,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/content/alert/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/alert/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -201,22 +185,6 @@
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<!--
@@ -258,7 +226,7 @@ SOFTWARE.
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/emoji-support/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/emoji-support/</id>
 
                 
                     
@@ -266,7 +234,7 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/content/emoji-support/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/emoji-support/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -317,29 +285,13 @@ SOFTWARE.
                 
 
                 
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
 
                 
                     <content type="html"><![CDATA[<p>It takes you to the home page.</p>
-<p><a href="http://localhost:1313/content/link/" title="Link">⏎</a></p>]]></content>
+<p><a href="http://localhost:1313/photos/link/" title="Link">⏎</a></p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/link/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/link/</id>
 
                 
                     
@@ -391,22 +343,6 @@ SOFTWARE.
                     
                 
 
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
                 
 
                 
@@ -574,7 +510,7 @@ SOFTWARE.
 </div>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/markdown-syntax/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/markdown-syntax/</id>
 
                 
                     
@@ -582,7 +518,7 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/content/markdown-syntax/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/markdown-syntax/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -626,22 +562,6 @@ SOFTWARE.
                     
                 
 
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
                 
 
                 
@@ -696,7 +616,7 @@ $$
 $$</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/math-typesetting/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/math-typesetting/</id>
 
                 
                     
@@ -704,7 +624,7 @@ $$</p>]]></content>
                     
                         
 
-                        <link href="http://localhost:1313/content/math-typesetting/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/math-typesetting/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -748,22 +668,6 @@ $$</p>]]></content>
                     
                 
 
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
                 
 
                 
@@ -816,7 +720,7 @@ SOFTWARE.
 <p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/content/placeholder-text/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/placeholder-text/</id>
 
                 
                     
@@ -824,7 +728,7 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/content/placeholder-text/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/placeholder-text/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -841,116 +745,6 @@ SOFTWARE.
                 
 
                 <title type="html"><![CDATA[Placeholder Text]]></title>
-
-                <updated>0001-01-01T00:00:00Z</updated>
-            </entry>
-        
-    
-        
-            <entry>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                    
-                
-
-                
-                    
-                        <author>
-                            
-                                <email>example@example.com</email>
-                            
-
-                            
-                                <name>Author Demo</name>
-                            
-
-                            
-                                <uri>https://example.com</uri>
-                            
-                        </author>
-                    
-                
-
-                
-                    <content type="html"><![CDATA[<!--
-The MIT License (MIT)
-
-Copyright (c) 2014 Steve Francia
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<p>Hugo ships with several <a  href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes"   rel="external"   >Built-in Shortcodes</a>
- for rich content, along with a <a  href="https://gohugo.io/about/hugo-and-gdpr/"   rel="external"   >Privacy Config</a>
- and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
-<hr>
-<h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<hr>
-<h2 id="x-shortcode">X Shortcode</h2>
-
-<hr>
-<h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode</h2>]]></content>
-                
-
-                <id>tag:localhost:1313,0001-01-01:/content/rich-content/</id>
-
-                
-                    
-
-                    
-                        
-
-                        <link href="http://localhost:1313/content/rich-content/" rel="alternate" type="text/html"/>
-                    
-                
-
-                
-
-                
-
-                
-                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
-                
-
-                
-                    <summary type="html"><![CDATA[A brief description of Hugo Shortcodes.]]></summary>
-                
-
-                <title type="html"><![CDATA[Rich Content]]></title>
 
                 <updated>0001-01-01T00:00:00Z</updated>
             </entry>
