@@ -1,4 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xml:lang="en-us" xmlns:atom="http://www.w3.org/2005/Atom"><channel><copyright>© 2026 Yuxi Zhong</copyright><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate><link>https://zhong-yuxi.github.io/tags/alerts/</link><atom:link href="https://zhong-yuxi.github.io/tags/alerts/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/><atom:link href="https://zhong-yuxi.github.io/tags/alerts/atom.xml" hreflang="en-us" rel="alternate" type="application/atom+xml"/><atom:link href="https://zhong-yuxi.github.io/tags/alerts/" hreflang="en-us" rel="alternate" type="text/html"/><atom:link href="https://zhong-yuxi.github.io/tags/alerts/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/><managingEditor>yuxi.zhonggg@gmail.com (Yuxi Zhong)</managingEditor><title>Alerts · Tags · YUXI ZHONG</title><webMaster>yuxi.zhonggg@gmail.com (Yuxi Zhong)</webMaster><item><description><![CDATA[<p>This page has the following parameters:</p><div class=highlight><pre tabindex=0 style=background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#0550ae>paige</span><span style=color:#1f2328>:</span><span style=color:#fff>
-</span></span></span><span style=display:flex><span><span style=color:#fff>  </span><span style=color:#0550ae>alert</span><span style=color:#1f2328>:</span><span style=color:#fff>
-</span></span></span><span style=display:flex><span><span style=color:#fff>    </span><span style=color:#0550ae>message</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;Get more information &lt;a href=\&#34;#\&#34; class=\&#34;alert-link\&#34;&gt;here&lt;/a&gt;.&#34;</span><span style=color:#fff>
-</span></span></span><span style=display:flex><span><span style=color:#fff>    </span><span style=color:#0550ae>type</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;primary&#34;</span></span></span></code></pre></div>]]></description><guid isPermaLink="false">tag:zhong-yuxi.github.io,0001-01-01:/photos/alert/</guid><link>https://zhong-yuxi.github.io/photos/alert/</link><atom:link href="https://zhong-yuxi.github.io/photos/alert/" hreflang="en-us" rel="alternate" type="text/html"/><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Alert</title></item></channel></rss>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/tags/alerts/atom.xml" rel="self" type="application/atom+xml"/>
+            
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/tags/alerts/" rel="alternate" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1313/tags/alerts/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+            <copyright>© 2026 Yuxi Zhong</copyright>
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
+        
+
+        <link>http://localhost:1313/tags/alerts/</link>
+
+        
+            <managingEditor>yuxi.zhonggg@gmail.com (Yuxi Zhong)</managingEditor>
+        
+
+        <title>Alerts · Tags · </title>
+
+        
+            <webMaster>yuxi.zhonggg@gmail.com (Yuxi Zhong)</webMaster>
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>This page has the following parameters:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">paige</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">alert</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Get more information &lt;a href=\&#34;#\&#34; class=\&#34;alert-link\&#34;&gt;here&lt;/a&gt;.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;primary&#34;</span><span class="w">
+</span></span></span></code></pre></div>]]></description>
+                    
+
+                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/photos/alert/</guid>
+
+                    
+                        <link>http://localhost:1313/photos/alert/</link>
+                    
+
+                    
+                        <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                    
+
+                    
+                        <title>Alert</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>

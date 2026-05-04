@@ -1,7 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?><feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><author><email>yuxi.zhonggg@gmail.com</email><name>Yuxi Zhong</name><uri>https://zhong-yuxi.github.io/</uri></author><icon>https://zhong-yuxi.github.io/</icon><id>tag:zhong-yuxi.github.io,0001-01-01:/tags/math/atom.xml</id><link href="https://zhong-yuxi.github.io/tags/math/atom.xml" hreflang="en-us" rel="self" type="application/atom+xml"/><link href="https://zhong-yuxi.github.io/tags/math/atom.xml" hreflang="en-us" rel="alternate" type="application/atom+xml"/><link href="https://zhong-yuxi.github.io/tags/math/" hreflang="en-us" rel="alternate" type="text/html"/><link href="https://zhong-yuxi.github.io/tags/math/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/><logo>https://zhong-yuxi.github.io/</logo><rights type="html">© 2026 Yuxi Zhong</rights><title type="html">Math · Tags · YUXI ZHONG</title><updated>0001-01-01T00:00:00Z</updated><entry><content type="html"><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p><p>In this example we will be using <a href=https://katex.org/ rel=external>KaTeX</a></p><ul><li>Create a partial under <code>/layouts/partials/math.html</code></li><li>Within this partial reference the <a href=https://katex.org/docs/autorender.html rel=external>Auto-render Extension</a>
-or host these scripts locally.</li><li>Include the partial in your templates like so:</li></ul><pre tabindex=0><code>{{ if or .Params.math .Site.Params.math }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed  xml:lang="en-us"  xmlns="http://www.w3.org/2005/Atom">
+    
+        <author>
+            
+                <email>yuxi.zhonggg@gmail.com</email>
+            
+
+            
+                <name>Yuxi Zhong</name>
+            
+
+            
+                <uri>https://zhong-yuxi.github.io/</uri>
+            
+        </author>
+    
+
+    
+        <icon>http://localhost:1313/</icon>
+    
+
+    <id>tag:localhost:1313,0001-01-01:/tags/math/atom.xml</id>
+
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/tags/math/atom.xml" rel="self" type="application/atom+xml"/>
+        
+    
+        
+
+        
+            
+        
+
+        
+            <link href="http://localhost:1313/tags/math/" rel="alternate" type="text/html"/>
+        
+    
+        
+
+        
+
+        
+            <link href="http://localhost:1313/tags/math/rss.xml" rel="alternate" type="application/rss+xml"/>
+        
+    
+
+    
+
+    
+        <logo>http://localhost:1313/</logo>
+    
+
+    
+        <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+    
+
+    
+
+    <title type="html"><![CDATA[Math · Tags · ]]></title>
+
+    <updated>0001-01-01T00:00:00Z</updated>
+
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+                    <content type="html"><![CDATA[<!--
+The MIT License (MIT)
+
+Copyright (c) 2014 Steve Francia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>In this example we will be using <a  href="https://katex.org/"   rel="external"   >KaTeX</a>
+</p>
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a  href="https://katex.org/docs/autorender.html"   rel="external"   >Auto-render Extension</a>
+ or host these scripts locally.</li>
+<li>Include the partial in your templates like so:</li>
+</ul>
+<pre tabindex="0"><code>{{ if or .Params.math .Site.Params.math }}
 {{ partial &#34;math.html&#34; . }}
-{{ end }}</code></pre><ul><li>To enable KaTeX globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li><li>To enable KaTeX on a per page basis include the parameter <code>math: true</code> in content files</li></ul><p><strong>Note:</strong> Use the online reference of <a href=https://katex.org/docs/supported.html rel=external>Supported TeX Functions</a></p><h2 id=examples>Examples</h2><p>Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)</p><p>Block math:
+{{ end }}
+</code></pre><ul>
+<li>To enable KaTeX globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
+<li>To enable KaTeX on a per page basis include the parameter <code>math: true</code> in content files</li>
+</ul>
+<p><strong>Note:</strong> Use the online reference of <a  href="https://katex.org/docs/supported.html"   rel="external"   >Supported TeX Functions</a>
+</p>
+<h2 id="examples">Examples</h2>
+<p>
+Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
+</p>
+<p>Block math:
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>]]></content><id>tag:zhong-yuxi.github.io,0001-01-01:/photos/math-typesetting/</id><link href="https://zhong-yuxi.github.io/photos/math-typesetting/" hreflang="en-us" rel="alternate" type="text/html"/><published>0001-01-01T00:00:00Z</published><rights type="html">© 2026 Yuxi Zhong</rights><summary type="html">A brief guide to setup KaTeX.</summary><title type="html">Math Typesetting</title><updated>0001-01-01T00:00:00Z</updated></entry></feed>
+$$</p>]]></content>
+                
+
+                <id>tag:localhost:1313,0001-01-01:/photos/math-typesetting/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/photos/math-typesetting/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+                    <summary type="html"><![CDATA[A brief guide to setup KaTeX.]]></summary>
+                
+
+                <title type="html"><![CDATA[Math Typesetting]]></title>
+
+                <updated>0001-01-01T00:00:00Z</updated>
+            </entry>
+        
+    
+</feed>
