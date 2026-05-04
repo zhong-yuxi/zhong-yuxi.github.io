@@ -48,7 +48,7 @@
         <icon>http://localhost:1313/</icon>
     
 
-    <id>tag:localhost:1313,0001-01-01:/atom.xml</id>
+    <id>tag:localhost:1313,2026-05-04:/atom.xml</id>
 
     
         
@@ -102,7 +102,7 @@
 
     <title type="html"><![CDATA[]]></title>
 
-    <updated>0001-01-01T00:00:00Z</updated>
+    <updated>2026-05-04T00:00:00-07:00</updated>
 
     
         
@@ -120,7 +120,11 @@
                 
 
                 
+                    
+                
 
+                
+                    
                 
 
                 
@@ -130,15 +134,8 @@
                 
 
                 
-                    <content type="html"><![CDATA[<p>This page has the following parameters:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">paige</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">alert</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Get more information &lt;a href=\&#34;#\&#34; class=\&#34;alert-link\&#34;&gt;here&lt;/a&gt;.&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;primary&#34;</span><span class="w">
-</span></span></span></code></pre></div>]]></content>
-                
 
-                <id>tag:localhost:1313,0001-01-01:/photos/alert/</id>
+                <id>tag:localhost:1313,0001-01-01:/photos/xiangcheng/</id>
 
                 
                     
@@ -146,7 +143,7 @@
                     
                         
 
-                        <link href="http://localhost:1313/photos/alert/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/xiangcheng/" rel="alternate" type="text/html"/>
                     
                 
 
@@ -159,10 +156,8 @@
                 
 
                 
-                    <summary type="html"><![CDATA[An alert.]]></summary>
-                
 
-                <title type="html"><![CDATA[Alert]]></title>
+                <title type="html"><![CDATA[]]></title>
 
                 <updated>0001-01-01T00:00:00Z</updated>
             </entry>
@@ -187,52 +182,18 @@
                 
 
                 
-                    
-                
 
                 
 
                 
-                    <content type="html"><![CDATA[<!--
-The MIT License (MIT)
-
-Copyright (c) 2014 Steve Francia
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
-<p>The <a  href="https://gohugo.io/functions/emojify/"   rel="external"   ><code>emojify</code></a>
- function can be called directly in templates or <a  href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes"   rel="external"   >Inline Shortcodes</a>
-.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a  href="https://gohugo.io/getting-started/configuration/"   rel="external"   >configuration</a>
- and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
-<p>The <a  href="http://www.emoji-cheat-sheet.com/"   rel="external"   >Emoji cheat sheet</a>
- is a useful reference for emoji shorthand codes.</p>
-<hr>
-<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">.emoji {
-</span></span><span class="line"><span class="cl">  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>]]></content>
+                    <content type="html"><![CDATA[<p>These are the lives and breaths I capture on my journey.</p>
+<!-- 下面可以直接引用同文件夹里的图片，不用写复杂的路径！ -->
+<p><img src="01.jpeg" alt="New York Vibe">
+<img src="tokyo-02.jpg" alt="Tokyo Order"></p>
+]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/photos/emoji-support/</id>
+                <id>tag:localhost:1313,2026-04-29:/photos/opera/</id>
 
                 
                     
@@ -240,12 +201,14 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/photos/emoji-support/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/opera/" rel="alternate" type="text/html"/>
                     
                 
 
                 
 
+                
+                    <published>2026-04-29T00:00:00-07:00</published>
                 
 
                 
@@ -253,77 +216,10 @@ SOFTWARE.
                 
 
                 
-                    <summary type="html"><![CDATA[Guide to emoji usage in Hugo.]]></summary>
-                
 
-                <title type="html"><![CDATA[Emoji Support]]></title>
+                <title type="html"><![CDATA[Opera]]></title>
 
-                <updated>0001-01-01T00:00:00Z</updated>
-            </entry>
-        
-    
-        
-            <entry>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-                    
-
-                    
-
-                    
-                
-
-                
-
-                
-
-                
-                    
-                
-
-                
-
-                
-                    <content type="html"><![CDATA[<p>It takes you to the home page.</p>
-<p><a href="http://localhost:1313/photos/link/" title="Link">⏎</a></p>]]></content>
-                
-
-                <id>tag:localhost:1313,0001-01-01:/photos/link/</id>
-
-                
-                    
-
-                    
-                        
-
-                        <link href="https://willfaught.com/paige" rel="alternate" type="text/html"/>
-                    
-                
-
-                
-
-                
-
-                
-                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
-                
-
-                
-                    <summary type="html"><![CDATA[A front matter link.]]></summary>
-                
-
-                <title type="html"><![CDATA[Link]]></title>
-
-                <updated>0001-01-01T00:00:00Z</updated>
+                <updated>2026-04-29T00:00:00-07:00</updated>
             </entry>
         
     
@@ -346,177 +242,19 @@ SOFTWARE.
                 
 
                 
-                    
-                
 
                 
 
                 
-                    <content type="html"><![CDATA[<!--
-The MIT License (MIT)
-
-Copyright (c) 2014 Steve Francia
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-<h2 id="headings">Headings</h2>
-<p>The following HTML <code>&lt;h2&gt;</code>—<code>&lt;h6&gt;</code> elements represent five levels of section headings. <code>&lt;h2&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5">H5</h5>
-<h6 id="h6">H6</h6>
-<h2 id="paragraph">Paragraph</h2>
-<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-<h2 id="blockquotes">Blockquotes</h2>
-<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
-<h3 id="blockquote-without-attribution">Blockquote without attribution</h3>
-<blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
-<h3 id="blockquote-with-attribution">Blockquote with attribution</h3>
-<blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
-</blockquote>
-<h2 id="tables">Tables</h2>
-<p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Bob</td>
-          <td>27</td>
-      </tr>
-      <tr>
-          <td>Alice</td>
-          <td>23</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="inline-markdown-within-tables">Inline Markdown within tables</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Italics</th>
-          <th>Bold</th>
-          <th>Code</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><em>italics</em></td>
-          <td><strong>bold</strong></td>
-          <td><code>code</code></td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="code-blocks">Code Blocks</h2>
-<h3 id="code-block-with-backticks">Code block with backticks</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h3>
-<pre><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div>
-<h2 id="list-types">List Types</h2>
-<h3 id="ordered-list">Ordered List</h3>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-<h3 id="unordered-list">Unordered List</h3>
-<ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
-</ul>
-<h3 id="nested-list">Nested list</h3>
-<ul>
-<li>Fruit
-<ul>
-<li>Apple</li>
-<li>Orange</li>
-<li>Banana</li>
-</ul>
-</li>
-<li>Dairy
-<ul>
-<li>Milk</li>
-<li>Cheese</li>
-</ul>
-</li>
-</ul>
-<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
-<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
-<p>H<sub>2</sub>O</p>
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
-<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>The above quote is excerpted from Rob Pike&rsquo;s <a  href="https://www.youtube.com/watch?v=PAAkCSZUG1c"   rel="external"   >talk</a>
- during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>]]></content>
+                    <content type="html"><![CDATA[<p>These are the cuties I met.</p>
+<!-- 下面可以直接引用同文件夹里的图片，不用写复杂的路径！ -->
+<p><img src="01.jpeg" alt="New York Vibe">
+<img src="02.jpeg" alt="Tokyo Order">
+<img src="03.jpeg" alt="Tokyo Order"></p>
+]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/photos/markdown-syntax/</id>
+                <id>tag:localhost:1313,2026-04-29:/photos/stray-animal-shelter/</id>
 
                 
                     
@@ -524,12 +262,14 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/photos/markdown-syntax/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/stray-animal-shelter/" rel="alternate" type="text/html"/>
                     
                 
 
                 
 
+                
+                    <published>2026-04-29T00:00:00-07:00</published>
                 
 
                 
@@ -537,12 +277,10 @@ SOFTWARE.
                 
 
                 
-                    <summary type="html"><![CDATA[Sample article showcasing basic Markdown syntax and formatting for HTML elements.]]></summary>
-                
 
-                <title type="html"><![CDATA[Markdown Syntax Guide]]></title>
+                <title type="html"><![CDATA[Stray Animal Shelter]]></title>
 
-                <updated>0001-01-01T00:00:00Z</updated>
+                <updated>2026-04-29T00:00:00-07:00</updated>
             </entry>
         
     
@@ -565,64 +303,91 @@ SOFTWARE.
                 
 
                 
-                    
-                
 
                 
 
                 
-                    <content type="html"><![CDATA[<!--
-The MIT License (MIT)
+                    <content type="html"><![CDATA[<style>
+  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
+  @font-face {
+    font-family: 'MySparoseFont'; 
+    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
+    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
+  }
 
-Copyright (c) 2014 Steve Francia
+  /* 2. 让这个页面的标题（h1）变身 */
+  h1 {
+    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
+    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
+    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
+    text-align: center;  /* 居中对齐，更有仪式感 */
+    margin-top: 20px;    /* 顶部留白 */
+    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
+    color: #333;         /* 深灰色，比纯黑更有质感 */
+  }
+  
+  /* 3. 核心魔法：瀑布流画廊 (Masonry Gallery) */
+  .masonry-gallery {
+    /* 默认在电脑上显示 3 列 */
+    column-count: 3;
+    /* 列与列之间的间距 */
+    column-gap: 15px; 
+    /* 给画廊整体加一点内边距 */
+    padding: 20px;
+    max-width: 1200px; /* 限制一下最大宽度，让排版更好看 */
+    margin: 0 auto;    /* 让整个画廊居中 */
+  }
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  /* 单张图片的设置 */
+  .masonry-gallery img {
+    width: 100%;       /* 图片宽度占满所在的列 */
+    height: auto;      /* 高度自适应，保持原有比例 */
+    display: block;    /* 去掉图片底部的默认留白 */
+    margin-bottom: 15px; /* 上下图片之间的间距，要和 column-gap 保持一致 */
+    
+    /* ⚠️ 最关键的一句：防止一张图片被从中间劈开分到两列去 */
+    break-inside: avoid; 
+    
+    /* （可选）如果你想让图片像风景图那样有一点点精致的白边和阴影，可以保留下面两行；不需要就删掉 */
+    border: 5px solid #fff; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+  }
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a  href="https://katex.org/"   rel="external"   >KaTeX</a>
-</p>
-<ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a  href="https://katex.org/docs/autorender.html"   rel="external"   >Auto-render Extension</a>
- or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
-</ul>
-<pre tabindex="0"><code>{{ if or .Params.math .Site.Params.math }}
-{{ partial &#34;math.html&#34; . }}
-{{ end }}
-</code></pre><ul>
-<li>To enable KaTeX globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTeX on a per page basis include the parameter <code>math: true</code> in content files</li>
-</ul>
-<p><strong>Note:</strong> Use the online reference of <a  href="https://katex.org/docs/supported.html"   rel="external"   >Supported TeX Functions</a>
-</p>
-<h2 id="examples">Examples</h2>
-<p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-<p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>]]></content>
+  /* 4. 响应式设计：在手机屏幕上自动变成 1 列，平板上 2 列 */
+  @media (max-width: 800px) {
+    .masonry-gallery { column-count: 2; }
+  }
+  @media (max-width: 500px) {
+    .masonry-gallery { column-count: 1; }
+  }
+</style>
+<!-- 5. 你的胶片照片墙 -->
+<div class="masonry-gallery">
+  <!-- ⚠️ 敲黑板：再次提醒，仔细看你的截图，后缀名大小写不一样哦！ -->
+  <img src="film1.jpg" alt="Film 1">
+  <img src="film2.JPG" alt="Film 2">
+  <img src="film3.jpg" alt="Film 3">
+  <img src="film4.JPG" alt="Film 4">
+  <img src="film5.JPG" alt="Film 5">
+  <img src="film6.JPG" alt="Film 6">
+  <img src="film7.JPG" alt="Film 7">
+  <img src="film8.JPG" alt="Film 8">
+  <img src="film9.JPG" alt="Film 9">
+  <img src="film10.JPG" alt="Film 10">
+  <img src="film11.JPG" alt="Film 11">
+  <img src="film12.JPG" alt="Film 12">
+  <img src="film13.jpg" alt="Film 13">
+  <img src="film14.JPG" alt="Film 14">
+  <img src="film15.JPG" alt="Film 15">
+  <img src="film16.JPG" alt="Film 16">
+  <img src="film17.jpg" alt="Film 17">
+  <img src="film18.JPG" alt="Film 18">
+</div>
+]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/photos/math-typesetting/</id>
+                <id>tag:localhost:1313,2026-05-04:/photos/film/</id>
 
                 
                     
@@ -630,12 +395,14 @@ $$</p>]]></content>
                     
                         
 
-                        <link href="http://localhost:1313/photos/math-typesetting/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/film/" rel="alternate" type="text/html"/>
                     
                 
 
                 
 
+                
+                    <published>2026-05-04T00:00:00-07:00</published>
                 
 
                 
@@ -643,12 +410,10 @@ $$</p>]]></content>
                 
 
                 
-                    <summary type="html"><![CDATA[A brief guide to setup KaTeX.]]></summary>
-                
 
-                <title type="html"><![CDATA[Math Typesetting]]></title>
+                <title type="html"><![CDATA[Film]]></title>
 
-                <updated>0001-01-01T00:00:00Z</updated>
+                <updated>2026-05-04T00:00:00-07:00</updated>
             </entry>
         
     
@@ -671,62 +436,78 @@ $$</p>]]></content>
                 
 
                 
-                    
-                
 
                 
 
                 
-                    <content type="html"><![CDATA[<!--
-The MIT License (MIT)
+                    <content type="html"><![CDATA[<style>
+  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
+  @font-face {
+    font-family: 'MySparoseFont'; 
+    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
+    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
+  }
 
-Copyright (c) 2014 Steve Francia
+  /* 2. 让这个页面的标题（h1）变身 */
+  h1 {
+    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
+    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
+    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
+    text-align: center;  /* 居中对齐，更有仪式感 */
+    margin-top: 20px;    /* 顶部留白 */
+    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
+    color: #333;         /* 深灰色，比纯黑更有质感 */
+  }
+  
+  /* 隐藏页面的全局滚动条（可选，让页面看起来更干净） */
+  body { overflow-x: hidden; }
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  /* 画廊容器的设置 */
+  .horizontal-gallery {
+    display: flex;             /* 让图片横向排列 */
+    overflow-x: auto;          /* 开启横向滚动 */
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory; /* 增加滑动时的吸附感（像手机相册一样） */
+    
+    /* 这里的 gap 控制图片之间的间距。
+       假设你的图片宽度大约是 60vw（屏幕宽度的60%），半张图片的距离就是 30vw。
+       你可以随意修改这个数值（比如改成 400px 或者 20vw）来达到你想要的效果 */
+    gap: 10vw;                 
+    
+    padding: 20px 50vw 50px 20px; /* 右侧留白，让最后一张图能滑到中间 */
+  }
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  /* 隐藏画廊容器自带的丑陋滚动条 */
+  .horizontal-gallery::-webkit-scrollbar {
+    display: none; 
+  }
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
-<p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
-<ol>
-<li>Exierant elisi ambit vivere dedere</li>
-<li>Duce pollice</li>
-<li>Eris modo</li>
-<li>Spargitque ferrea quos palude</li>
-</ol>
-<p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.</p>
-<ol>
-<li>Comas hunc haec pietate fetum procerum dixit</li>
-<li>Post torum vates letum Tiresia</li>
-<li>Flumen querellas</li>
-<li>Arcanaque montibus omnes</li>
-<li>Quidem et</li>
-</ol>
-<h1 id="vagus-elidunt">Vagus elidunt</h1>
-<p><svg class="canon" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 496 373" height="373" width="496"><g fill="none"><path stroke="#000" stroke-width=".75" d="M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515"></path><path stroke="#ED1C24" stroke-width=".75" d="M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z"></path><path stroke="#000" stroke-width=".75" d="M.479.375h495v372h-495zM247.979.875v372"></path><ellipse cx="498.729" cy="177.625" rx=".75" ry="1.25"></ellipse><ellipse cx="247.229" cy="377.375" rx=".75" ry="1.25"></ellipse></g></svg></p>
-<p><a  href="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon"   rel="external"   >The Van de Graaf Canon</a>
-</p>
-<h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat</h2>
-<p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. <strong>Faces illo pepulere</strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.</p>
-<p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.</p>
-<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content>
+  /* 单张图片的设置 */
+  .horizontal-gallery img {
+    height: 70vh;              /* 统一图片的高度，占据屏幕高度的70% */
+    width: auto;               /* 宽度自动适应，保持比例 */
+    max-width: none;           /* 覆盖主题可能自带的图片限制 */
+    object-fit: contain;       /* 保证图片完整显示 */
+    scroll-snap-align: center; /* 滑动停下时，图片自动居中对齐 */
+    flex-shrink: 0;            /* 防止图片被挤压变形 */
+  }
+</style>
+<div class="horizontal-gallery">
+  <img src="mountain1.jpeg" alt="mountain 1">
+  <img src="mountain2.jpeg" alt="mountain 2">
+  <img src="mountain3.jpg" alt="mountain 3">
+  <img src="mountain4.jpeg" alt="mountain 4">
+  <img src="mountain5.JPG" alt="mountain 5">
+  <img src="mountain6.JPG" alt="mountain 6">
+  <img src="mountain7.jpeg" alt="mountain 7">
+  <img src="mountain8.jpeg" alt="mountain 8">
+  <img src="mountain9.JPG" alt="mountain 9">
+  </div>
+]]></content>
                 
 
-                <id>tag:localhost:1313,0001-01-01:/photos/placeholder-text/</id>
+                <id>tag:localhost:1313,2026-05-04:/photos/mountains/</id>
 
                 
                     
@@ -734,12 +515,14 @@ SOFTWARE.
                     
                         
 
-                        <link href="http://localhost:1313/photos/placeholder-text/" rel="alternate" type="text/html"/>
+                        <link href="http://localhost:1313/photos/mountains/" rel="alternate" type="text/html"/>
                     
                 
 
                 
 
+                
+                    <published>2026-05-04T00:00:00-07:00</published>
                 
 
                 
@@ -747,12 +530,665 @@ SOFTWARE.
                 
 
                 
-                    <summary type="html"><![CDATA[Lorem Ipsum Dolor Si Amet.]]></summary>
+
+                <title type="html"><![CDATA[Mountains]]></title>
+
+                <updated>2026-05-04T00:00:00-07:00</updated>
+            </entry>
+        
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
                 
 
-                <title type="html"><![CDATA[Placeholder Text]]></title>
+                
 
-                <updated>0001-01-01T00:00:00Z</updated>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                    <content type="html"><![CDATA[<style>
+  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
+  @font-face {
+    font-family: 'MySparoseFont'; 
+    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
+    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
+  }
+
+  /* 2. 让这个页面的标题（h1）变身 */
+  h1 {
+    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
+    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
+    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
+    text-align: center;  /* 居中对齐，更有仪式感 */
+    margin-top: 20px;    /* 顶部留白 */
+    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
+    color: #333;         /* 深灰色，比纯黑更有质感 */
+  }
+  
+  
+  /* 2. 画廊最外层包装：控制箭头和内容的位置 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
+
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道，带有截图1两边变淡消失的魔法 (Mask Image) */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+/* 让左右两边缘产生渐变透明的效果 */
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 25px;
+overflow-x: auto;
+scroll-behavior: smooth; /* 丝滑滚动 */
+padding: 20px 5%;
+scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
+}
+.scroll-track::-webkit-scrollbar { display: none; } /* Mac/Safari/Chrome 隐藏滚动条 */
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 280px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. 截图2特效：点击后弹出的沉浸式放大层 (Modal) */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8; /* 极简的米白色背景 */
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 60%;
+max-height: 80vh;
+}
+
+/* 悬浮在图片左上角的具体信息 */
+.spotlight-info {
+position: absolute;
+top: -80px; /* 放在图片正上方 */
+left: -40px; /* 稍微偏左，营造截图2的错落感 */
+font-family: 'Courier New', Courier, monospace; /* 使用打字机字体模拟截图2的复古印刷感 */
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+</style>
+<!-- ================= 页面结构 ================= -->
+<div class="carousel-wrapper">
+<!-- 左箭头 -->
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+<div class="scroll-container">
+<div class="scroll-track" id="temple-track">
+  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
+  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
+  <div class="photo-item" onclick="openSpotlight('temple1.JPG', '(01)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')">
+    <img src="temple1.JPG" alt="temple1">
+  </div>
+<div class="photo-item" onclick="openSpotlight('temple2.JPG', '(02)', 'Litang, sichuan<br>Lenggu Temple (New), 2024')"><img src="temple2.JPG" alt="temple2">
+  </div>
+<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(05)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
+    <img src="temple3.JPG" alt="temple3">
+  </div>
+<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(08)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(04)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
+    <img src="temple4.JPG" alt="temple4">
+  </div>
+<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(12)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(06)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(11)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(07)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple10.JPG', '(10)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple13.JPG', '(13)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple13.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple14.JPG', '(14)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple14.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple15.jpeg', '(15)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple15.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')"><img src="temple16.jpeg"></div>
+</div>
+</div>
+<!-- 右箭头 -->
+<p><button class="nav-arrow right-arrow" onclick="scrollGallery(1)">❯</button></p>
+</div>
+<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<!-- 阻止点击内部图片时关闭模态框 -->
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<!-- 截图2里的文字信息区域 -->
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<!-- 被放大的图片 -->
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+<!-- ================= 核心交互脚本 ================= -->
+<script>
+// 1. 控制画廊左右滑动的魔法
+function scrollGallery(direction) {
+const track = document.getElementById('temple-track');
+// 每次点击滑动 400 像素，你可以自己微调这个数字
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+// 2. 点击照片，激活高级放大层的魔法
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+// 3. 点击背景空白处，关闭放大层
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>
+]]></content>
+                
+
+                <id>tag:localhost:1313,2026-05-04:/photos/temple/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/photos/temple/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+                    <published>2026-05-04T00:00:00-07:00</published>
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[Temple]]></title>
+
+                <updated>2026-05-04T00:00:00-07:00</updated>
+            </entry>
+        
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                    <content type="html"><![CDATA[<style>
+  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
+  @font-face {
+    font-family: 'MySparoseFont'; 
+    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
+    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
+  }
+
+  /* 2. 让这个页面的标题（h1）变身 */
+  h1 {
+    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
+    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
+    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
+    text-align: center;  /* 居中对齐，更有仪式感 */
+    margin-top: 20px;    /* 顶部留白 */
+    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
+    color: #333;         /* 深灰色，比纯黑更有质感 */
+  }
+  
+ /* 2. 核心：瀑布流外层容器 (Masonry Container) */
+  .masonry-gallery {
+    /* 电脑端默认分 3 列 */
+    column-count: 3;
+    /* 列与列之间的呼吸感间距 */
+    column-gap: 15px; 
+    max-width: 1200px; 
+    margin: 40px auto; /* 居中显示 */
+    padding: 0 20px;
+  }
+
+  /* 3. 图片的自我修养：不裁剪、不断裂 */
+  .masonry-gallery img {
+    width: 100%;       /* 宽度占满当前列 */
+    height: auto;      /* ⭐️ 核心魔法：高度自适应！绝不裁剪任何一丝一毫！ */
+    display: block;
+    margin-bottom: 15px; /* 上下照片的间距，和 column-gap 保持一致 */
+    border-radius: 4px;  /* 可选：加一点极微小的圆角，质感更温润 */
+    
+    /* ⭐️ 防坑指南：防止一张图片被从中间劈开，分到两列去 */
+    break-inside: avoid; 
+    -webkit-column-break-inside: avoid;
+    
+    /* 一点点极简的交互：鼠标放上去微微发光 */
+    transition: filter 0.3s ease;
+  }
+  
+  .masonry-gallery img:hover {
+    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
+  }
+
+  /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
+  @media (max-width: 800px) {
+    .masonry-gallery { column-count: 2; } /* 平板变成 2 列 */
+  }
+  @media (max-width: 500px) {
+    .masonry-gallery { column-count: 1; } /* 手机乖乖变成 1 列大图 */
+  }
+</style>
+<!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
+<div class="masonry-gallery">
+  <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
+  <img src="yinuo1.jpeg" alt="Yinuo 1">
+  <img src="yinuo2.jpeg" alt="Yinuo 2">
+  <img src="yinuo3.jpg" alt="Yinuo 3">
+  <img src="yinuo4.JPG" alt="Yinuo 4">
+  <img src="yinuo5.JPG" alt="Yinuo 5">
+  <img src="yinuo6.JPG" alt="Yinuo 6">
+  <img src="yinuo7.JPG" alt="Yinuo 7">
+  <img src="yinuo8.JPG" alt="Yinuo 8">
+  <img src="yinuo9.JPG" alt="Yinuo 9">
+  <img src="yinuo10.JPG" alt="Yinuo 10">
+  <img src="yinuo11.jpeg" alt="Yinuo 11">
+  <img src="yinuo12.jpg" alt="Yinuo 12">
+  <img src="yinuo13.jpg" alt="Yinuo 13">
+  <img src="yinuo14.jpg" alt="Yinuo 14">
+  <img src="yinuo15.jpg" alt="Yinuo 15">
+  <img src="yinuo16.jpg" alt="Yinuo 16">
+  <img src="yinuo17.jpg" alt="Yinuo 17">
+  <img src="yinuo18.jpg" alt="Yinuo 18">
+  <img src="yinuo19.jpg" alt="Yinuo 19">
+</div>
+]]></content>
+                
+
+                <id>tag:localhost:1313,2026-05-04:/photos/my-love-yinuo/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/photos/my-love-yinuo/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+                    <published>2026-05-04T00:00:00-07:00</published>
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[YiNuo]]></title>
+
+                <updated>2026-05-04T00:00:00-07:00</updated>
+            </entry>
+        
+    
+        
+            <entry>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                    <content type="html"><![CDATA[<style>
+/* 1. 你的专属 Sparose 标题定制 */
+@font-face { 
+font-family: 'Sparose'; 
+src: url('/fonts/Sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'Sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #333;
+}
+
+/* 2. 画廊最外层包装：控制箭头和内容的位置 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
+
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道，带有截图1两边变淡消失的魔法 (Mask Image) */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+/* 让左右两边缘产生渐变透明的效果 */
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 25px;
+overflow-x: auto;
+scroll-behavior: smooth; /* 丝滑滚动 */
+padding: 20px 5%;
+scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
+}
+.scroll-track::-webkit-scrollbar { display: none; } /* Mac/Safari/Chrome 隐藏滚动条 */
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 280px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. 截图2特效：点击后弹出的沉浸式放大层 (Modal) */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8; /* 极简的米白色背景 */
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 60%;
+max-height: 80vh;
+}
+
+/* 悬浮在图片左上角的具体信息 */
+.spotlight-info {
+position: absolute;
+top: -80px; /* 放在图片正上方 */
+left: -40px; /* 稍微偏左，营造截图2的错落感 */
+font-family: 'Courier New', Courier, monospace; /* 使用打字机字体模拟截图2的复古印刷感 */
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+</style>
+<!-- ================= 页面结构 ================= -->
+<div class="carousel-wrapper">
+<!-- 左箭头 -->
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+<div class="scroll-container">
+<div class="scroll-track" id="street-track">
+  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
+  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
+  <div class="photo-item" onclick="openSpotlight('street1.jpeg', '(01)', 'Dalian, Liaoning<br>A family by the sea, 2025')">
+    <img src="street1.jpeg" alt="street1">
+  </div>
+<div class="photo-item" onclick="openSpotlight('street5.jpg', '(05)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street2.jpg', '(02)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
+    <img src="street2.jpg" alt="street2">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street3.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
+    <img src="street3.jpg" alt="street3">
+  </div>
+<div class="photo-item" onclick="openSpotlight('street8.JPG', '(08)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street4.jpg', '(04)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
+    <img src="street4.jpg" alt="street4">
+  </div>
+<div class="photo-item" onclick="openSpotlight('street12.JPG', '(12)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('street6.jpg', '(06)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(11)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(07)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(09)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(10)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')"><img src="street13.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')"><img src="street14.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')"><img src="street15.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street16.jpg', '(16)', 'cehngdu, sichuan<br>Birds resting')"><img src="street16.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street17.jpg', '(17)', 'dalian, liaoning<br>fishermen')"><img src="street17.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street18.089.jpg', '(18)', 'dalian, liaoning<br>reader')"><img src="street18.089.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street19.jpeg', '(19)', 'chengdu, sichuan<br>Peddler and fish')"><img src="street19.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(21)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street20.jpg', '(20)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
+</div>
+</div>
+<!-- 右箭头 -->
+<p><button class="nav-arrow right-arrow" onclick="scrollGallery(1)">❯</button></p>
+</div>
+<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<!-- 阻止点击内部图片时关闭模态框 -->
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<!-- 截图2里的文字信息区域 -->
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<!-- 被放大的图片 -->
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+<!-- ================= 核心交互脚本 ================= -->
+<script>
+// 1. 控制画廊左右滑动的魔法
+function scrollGallery(direction) {
+const track = document.getElementById('street-track');
+// 每次点击滑动 400 像素，你可以自己微调这个数字
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+// 2. 点击照片，激活高级放大层的魔法
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+// 3. 点击背景空白处，关闭放大层
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>
+]]></content>
+                
+
+                <id>tag:localhost:1313,2026-05-04:/photos/street/</id>
+
+                
+                    
+
+                    
+                        
+
+                        <link href="http://localhost:1313/photos/street/" rel="alternate" type="text/html"/>
+                    
+                
+
+                
+
+                
+                    <published>2026-05-04T00:00:00-07:00</published>
+                
+
+                
+                    <rights type="html"><![CDATA[© 2026 Yuxi Zhong]]></rights>
+                
+
+                
+
+                <title type="html"><![CDATA[Street]]></title>
+
+                <updated>2026-05-04T00:00:00-07:00</updated>
             </entry>
         
     

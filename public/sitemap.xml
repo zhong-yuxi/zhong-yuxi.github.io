@@ -2,47 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/photos/my-love-yinuo/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/on-the-road/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/opera/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/stray-animal-shelter/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/street/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/</loc>
+    <lastmod>2026-04-29T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/xiangcheng/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/videos/</loc>
   </url><url>
-    <loc>http://localhost:1313/photos/alert/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/alerts/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/content/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/css/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/emoji-support/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/katex/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/link/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/link/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/markdown-syntax/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/math/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/math-typesetting/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/paige/</loc>
-  </url><url>
-    <loc>http://localhost:1313/photos/placeholder-text/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/sections/</loc>
   </url><url>
@@ -51,9 +38,5 @@
     <loc>http://localhost:1313/series/series-demo/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/text/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/typesetting/</loc>
   </url>
 </urlset>
