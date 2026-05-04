@@ -7,11 +7,11 @@ draft: false
 <style>
 /* 1. 你的专属 Sparose 标题定制 */
 @font-face { 
-font-family: 'Sparose'; 
-src: url('/fonts/Sparose.ttf') format('truetype'); 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
 }
 h1 {
-font-family: 'Sparose', sans-serif;
+font-family: 'sparose', sans-serif;
 font-size: 1.5rem;
 font-weight: 300;
 text-align: center;
