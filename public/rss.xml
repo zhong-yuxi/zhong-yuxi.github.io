@@ -79,7 +79,7 @@
         
 
         
-            <lastBuildDate>Mon, 04 May 2026 00:00:00 PDT</lastBuildDate>
+            <lastBuildDate>Wed, 06 May 2026 00:00:00 CST</lastBuildDate>
         
 
         <link>http://localhost:1313/</link>
@@ -112,150 +112,6 @@
                     
 
                     
-                        
-                    
-
-                    
-                    
-
-                    
-                        
-                    
-
-                    
-
-                    
-
-                    <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/photos/xiangcheng/</guid>
-
-                    
-                        <link>http://localhost:1313/photos/xiangcheng/</link>
-                    
-
-                    
-                        <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                    
-
-                    
-                </item>
-            
-        
-            
-                <item>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-
-                    
-
-                    
-
-                    
-                        <description><![CDATA[<p>These are the lives and breaths I capture on my journey.</p>
-<!-- 下面可以直接引用同文件夹里的图片，不用写复杂的路径！ -->
-<p><img src="01.jpeg" alt="New York Vibe">
-<img src="tokyo-02.jpg" alt="Tokyo Order"></p>
-]]></description>
-                    
-
-                    <guid isPermaLink="false">tag:localhost:1313,2026-04-29:/photos/opera/</guid>
-
-                    
-                        <link>http://localhost:1313/photos/opera/</link>
-                    
-
-                    
-                        <pubDate>Wed, 29 Apr 2026 00:00:00 PDT</pubDate>
-                    
-
-                    
-                        <title>Opera</title>
-                    
-                </item>
-            
-        
-            
-                <item>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    
-
-                    
-
-                    
-
-                    
-                        <description><![CDATA[<p>These are the cuties I met.</p>
-<!-- 下面可以直接引用同文件夹里的图片，不用写复杂的路径！ -->
-<p><img src="01.jpeg" alt="New York Vibe">
-<img src="02.jpeg" alt="Tokyo Order">
-<img src="03.jpeg" alt="Tokyo Order"></p>
-]]></description>
-                    
-
-                    <guid isPermaLink="false">tag:localhost:1313,2026-04-29:/photos/stray-animal-shelter/</guid>
-
-                    
-                        <link>http://localhost:1313/photos/stray-animal-shelter/</link>
-                    
-
-                    
-                        <pubDate>Wed, 29 Apr 2026 00:00:00 PDT</pubDate>
-                    
-
-                    
-                        <title>Stray Animal Shelter</title>
-                    
-                </item>
-            
-        
-            
-                <item>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-                    
-
-                    
-
-                    
 
                     
                     
@@ -266,31 +122,41 @@
 
                     
                         <description><![CDATA[<style>
-  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
-  @font-face {
-    font-family: 'MySparoseFont'; 
-    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/Sparose.ttf') format('truetype'); 
-    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
-  }
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
 
-  /* 2. 让这个页面的标题（h1）变身 */
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
   h1 {
-    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
-    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
-    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
-    text-align: center;  /* 居中对齐，更有仪式感 */
-    margin-top: 20px;    /* 顶部留白 */
-    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
   }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
   
   /* 3. 核心魔法：瀑布流画廊 (Masonry Gallery) */
   .masonry-gallery {
     /* 默认在电脑上显示 3 列 */
-    column-count: 3;
+    column-count: 4;
     /* 列与列之间的间距 */
-    column-gap: 15px; 
+    column-gap: 20px; 
     /* 给画廊整体加一点内边距 */
     padding: 20px;
     max-width: 1200px; /* 限制一下最大宽度，让排版更好看 */
@@ -314,10 +180,10 @@
 
   /* 4. 响应式设计：在手机屏幕上自动变成 1 列，平板上 2 列 */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 2; }
+    .masonry-gallery { column-count: 3; }
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 1; }
+    .masonry-gallery { column-count: 2; }
   }
 </style>
 <!-- 5. 你的胶片照片墙 -->
@@ -341,6 +207,34 @@
   <img src="film16.JPG" alt="Film 16">
   <img src="film17.jpg" alt="Film 17">
   <img src="film18.JPG" alt="Film 18">
+<img src="film19.jpg" alt="Film 19">
+<img src="film20.jpg" alt="Film 20">
+<img src="film21.jpg" alt="Film 21">
+<img src="film22.jpg" alt="Film 22">
+<img src="film23.JPG" alt="Film 23">
+<img src="film24.JPG" alt="Film 24">
+<img src="film25.JPG" alt="Film 25">
+<img src="film26.jpg" alt="Film 26">
+<img src="film27.JPG" alt="Film 27">
+<img src="film28.JPG" alt="Film 28">
+<img src="film29.JPG" alt="Film 29">
+<img src="film30.jpg" alt="Film 30">
+<img src="film31.jpg" alt="Film 31">
+<img src="film32.jpg" alt="Film 32">
+<img src="film33.JPG" alt="Film 33">
+<img src="film34.jpg" alt="Film 34">
+<img src="film35.jpg" alt="Film 35">
+<img src="film36.jpg" alt="Film 36">
+<img src="film37.jpg" alt="Film 37">
+<img src="film38.jpg" alt="Film 38">
+<img src="film39.JPG" alt="Film 39">
+<img src="film40.JPG" alt="Film 40">
+<img src="film41.jpg" alt="Film 41">
+<img src="film42.jpg" alt="Film 42">
+<img src="film43.jpg" alt="Film 43">
+<img src="film44.jpg" alt="Film 44">
+<img src="film45.jpg" alt="Film 45">
+<img src="film46.JPG" alt="Film 46">
 </div>
 ]]></description>
                     
@@ -352,7 +246,7 @@
                     
 
                     
-                        <pubDate>Mon, 04 May 2026 00:00:00 PDT</pubDate>
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
                     
 
                     
@@ -392,7 +286,7 @@
   @font-face {
     font-family: 'MySparoseFont'; 
     /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    src: url('/fonts/sparose.ttf') format('truetype'); 
     font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
   }
 
@@ -404,68 +298,100 @@
     text-align: center;  /* 居中对齐，更有仪式感 */
     margin-top: 20px;    /* 顶部留白 */
     letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
+  
+ /* 2. 核心：瀑布流外层容器 (Masonry Container) */
+  .masonry-gallery {
+    /* 电脑端默认分 3 列 */
+    column-count: 3;
+    /* 列与列之间的呼吸感间距 */
+    column-gap: 15px; 
+    max-width: 1200px; 
+    margin: 40px auto; /* 居中显示 */
+    padding: 0 20px;
+  }
+
+  /* 3. 图片的自我修养：不裁剪、不断裂 */
+  .masonry-gallery img {
+    width: 100%;       /* 宽度占满当前列 */
+    height: auto;      /* ⭐️ 核心魔法：高度自适应！绝不裁剪任何一丝一毫！ */
+    display: block;
+    margin-bottom: 15px; /* 上下照片的间距，和 column-gap 保持一致 */
+    border-radius: 4px;  /* 可选：加一点极微小的圆角，质感更温润 */
+    
+    /* ⭐️ 防坑指南：防止一张图片被从中间劈开，分到两列去 */
+    break-inside: avoid; 
+    -webkit-column-break-inside: avoid;
+    
+    /* 一点点极简的交互：鼠标放上去微微发光 */
+    transition: filter 0.3s ease;
   }
   
-  /* 隐藏页面的全局滚动条（可选，让页面看起来更干净） */
-  body { overflow-x: hidden; }
-
-  /* 画廊容器的设置 */
-  .horizontal-gallery {
-    display: flex;             /* 让图片横向排列 */
-    overflow-x: auto;          /* 开启横向滚动 */
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory; /* 增加滑动时的吸附感（像手机相册一样） */
-    
-    /* 这里的 gap 控制图片之间的间距。
-       假设你的图片宽度大约是 60vw（屏幕宽度的60%），半张图片的距离就是 30vw。
-       你可以随意修改这个数值（比如改成 400px 或者 20vw）来达到你想要的效果 */
-    gap: 10vw;                 
-    
-    padding: 20px 50vw 50px 20px; /* 右侧留白，让最后一张图能滑到中间 */
+  .masonry-gallery img:hover {
+    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
   }
 
-  /* 隐藏画廊容器自带的丑陋滚动条 */
-  .horizontal-gallery::-webkit-scrollbar {
-    display: none; 
+  /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
+  @media (max-width: 800px) {
+    .masonry-gallery { column-count: 2; } /* 平板变成 2 列 */
   }
-
-  /* 单张图片的设置 */
-  .horizontal-gallery img {
-    height: 70vh;              /* 统一图片的高度，占据屏幕高度的70% */
-    width: auto;               /* 宽度自动适应，保持比例 */
-    max-width: none;           /* 覆盖主题可能自带的图片限制 */
-    object-fit: contain;       /* 保证图片完整显示 */
-    scroll-snap-align: center; /* 滑动停下时，图片自动居中对齐 */
-    flex-shrink: 0;            /* 防止图片被挤压变形 */
+  @media (max-width: 500px) {
+    .masonry-gallery { column-count: 1; } /* 手机乖乖变成 1 列大图 */
   }
 </style>
-<div class="horizontal-gallery">
-  <img src="mountain1.jpeg" alt="mountain 1">
-  <img src="mountain2.jpeg" alt="mountain 2">
-  <img src="mountain3.jpg" alt="mountain 3">
-  <img src="mountain4.jpeg" alt="mountain 4">
-  <img src="mountain5.JPG" alt="mountain 5">
-  <img src="mountain6.JPG" alt="mountain 6">
-  <img src="mountain7.jpeg" alt="mountain 7">
-  <img src="mountain8.jpeg" alt="mountain 8">
-  <img src="mountain9.JPG" alt="mountain 9">
-  </div>
+<!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
+<div class="masonry-gallery">
+  <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
+  <img src="yinuo1.jpeg" alt="Yinuo 1">
+  <img src="yinuo2.jpeg" alt="Yinuo 2">
+  <img src="yinuo3.jpg" alt="Yinuo 3">
+  <img src="yinuo4.JPG" alt="Yinuo 4">
+  <img src="yinuo5.JPG" alt="Yinuo 5">
+  <img src="yinuo6.JPG" alt="Yinuo 6">
+  <img src="yinuo7.JPG" alt="Yinuo 7">
+  <img src="yinuo8.JPG" alt="Yinuo 8">
+  <img src="yinuo9.JPG" alt="Yinuo 9">
+  <img src="yinuo10.JPG" alt="Yinuo 10">
+  <img src="yinuo11.jpeg" alt="Yinuo 11">
+  <img src="yinuo12.jpg" alt="Yinuo 12">
+  <img src="yinuo13.jpg" alt="Yinuo 13">
+  <img src="yinuo14.jpg" alt="Yinuo 14">
+  <img src="yinuo15.jpg" alt="Yinuo 15">
+  <img src="yinuo16.jpg" alt="Yinuo 16">
+  <img src="yinuo17.jpg" alt="Yinuo 17">
+  <img src="yinuo18.jpg" alt="Yinuo 18">
+  <img src="yinuo19.jpg" alt="Yinuo 19">
+</div>
 ]]></description>
                     
 
-                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/mountains/</guid>
+                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/opera/</guid>
 
                     
-                        <link>http://localhost:1313/photos/mountains/</link>
-                    
-
-                    
-                        <pubDate>Mon, 04 May 2026 00:00:00 PDT</pubDate>
+                        <link>http://localhost:1313/photos/opera/</link>
                     
 
                     
-                        <title>Mountains</title>
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
+                    
+
+                    
+                        <title>Opera</title>
                     
                 </item>
             
@@ -501,7 +427,7 @@
   @font-face {
     font-family: 'MySparoseFont'; 
     /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/Sparose.ttf') format('truetype'); 
+    src: url('/fonts/sparose.ttf') format('truetype'); 
     font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
   }
 
@@ -513,9 +439,151 @@
     text-align: center;  /* 居中对齐，更有仪式感 */
     margin-top: 20px;    /* 顶部留白 */
     letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
+  
+ /* 2. 核心：瀑布流外层容器 (Masonry Container) */
+  .masonry-gallery {
+    /* 电脑端默认分 4 列 */
+    column-count: 4;
+    /* 列与列之间的呼吸感间距 */
+    column-gap: 30px; 
+    max-width: 1200px; 
+    margin: 40px auto; /* 居中显示 */
+    padding: 0 20px;
+  }
+
+  /* 3. 图片的自我修养：不裁剪、不断裂 */
+  .masonry-gallery img {
+    width: 100%;       /* 宽度占满当前列 */
+    height: auto;      /* ⭐️ 核心魔法：高度自适应！绝不裁剪任何一丝一毫！ */
+    display: block;
+    margin-bottom: 30px; /* 上下照片的间距，和 column-gap 保持一致 */
+    border-radius: 0px;  /* 可选：加一点极微小的圆角，质感更温润 */
+    
+    /* ⭐️ 防坑指南：防止一张图片被从中间劈开，分到两列去 */
+    break-inside: avoid; 
+    -webkit-column-break-inside: avoid;
+    
+    /* 一点点极简的交互：鼠标放上去微微发光 */
+    transition: filter 0.3s ease;
   }
   
+  .masonry-gallery img:hover {
+    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
+  }
+
+  /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
+  @media (max-width: 800px) {
+    .masonry-gallery { column-count: 3; } /* 平板变成 2 列 */
+  }
+  @media (max-width: 500px) {
+    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 1 列大图 */
+  }
+</style>
+<!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
+<div class="masonry-gallery">
+  <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
+<img src="portrait1.jpeg" alt="Portrait 1">
+<img src="portrait2.jpeg" alt="Portrait 2">
+<img src="portrait3.jpeg" alt="Portrait 3">
+<img src="portrait4.jpeg" alt="Portrait 4">
+<img src="portrait5.jpg" alt="Portrait 5">
+<img src="portrait6.JPG" alt="Portrait 6">
+<img src="portrait7.JPG" alt="Portrait 7">
+<img src="portrait8.JPG" alt="Portrait 8">
+<img src="portrait9.JPG" alt="Portrait 9">
+<img src="portrait10.JPG" alt="Portrait 10">
+<img src="portrait11.JPG" alt="Portrait 11">
+</div>
+]]></description>
+                    
+
+                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/portraits/</guid>
+
+                    
+                        <link>http://localhost:1313/photos/portraits/</link>
+                    
+
+                    
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
+                    
+
+                    
+                        <title>Portraits</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<style>
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
   
   /* 2. 画廊最外层包装：控制箭头和内容的位置 */
 .carousel-wrapper {
@@ -567,7 +635,7 @@ scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
 
 /* 5. 单张图片设置 */
 .photo-item {
-flex: 0 0 280px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+flex: 0 0 350px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
 cursor: pointer;
 transition: filter 0.3s, transform 0.3s;
 }
@@ -639,20 +707,20 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   </div>
 <div class="photo-item" onclick="openSpotlight('temple2.JPG', '(02)', 'Litang, sichuan<br>Lenggu Temple (New), 2024')"><img src="temple2.JPG" alt="temple2">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(05)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
+<div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
     <img src="temple3.JPG" alt="temple3">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(08)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(04)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
+<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(04)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
+<div class="photo-item" onclick="openSpotlight('temple10.JPG', '(05)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(06)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(07)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
     <img src="temple4.JPG" alt="temple4">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(12)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(06)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(11)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(07)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple10.JPG', '(10)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(08)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(10)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(11)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(12)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple13.JPG', '(13)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple13.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple14.JPG', '(14)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple14.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple15.jpeg', '(15)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple15.jpeg"></div>
@@ -708,7 +776,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
 
                     
-                        <pubDate>Mon, 04 May 2026 00:00:00 PDT</pubDate>
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
                     
 
                     
@@ -744,29 +812,39 @@ document.getElementById('spotlight-modal').classList.remove('active');
 
                     
                         <description><![CDATA[<style>
-  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
-  @font-face {
-    font-family: 'MySparoseFont'; 
-    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/Sparose.ttf') format('truetype'); 
-    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
-  }
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
 
-  /* 2. 让这个页面的标题（h1）变身 */
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
   h1 {
-    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
-    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
-    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
-    text-align: center;  /* 居中对齐，更有仪式感 */
-    margin-top: 20px;    /* 顶部留白 */
-    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
   }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
   
  /* 2. 核心：瀑布流外层容器 (Masonry Container) */
   .masonry-gallery {
-    /* 电脑端默认分 3 列 */
-    column-count: 3;
+    /* 电脑端默认分 4 列 */
+    column-count: 4;
     /* 列与列之间的呼吸感间距 */
     column-gap: 15px; 
     max-width: 1200px; 
@@ -796,7 +874,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 2; } /* 平板变成 2 列 */
+    .masonry-gallery { column-count: 3; } /* 平板变成 3 列 */
   }
   @media (max-width: 500px) {
     .masonry-gallery { column-count: 1; } /* 手机乖乖变成 1 列大图 */
@@ -824,18 +902,24 @@ document.getElementById('spotlight-modal').classList.remove('active');
   <img src="yinuo17.jpg" alt="Yinuo 17">
   <img src="yinuo18.jpg" alt="Yinuo 18">
   <img src="yinuo19.jpg" alt="Yinuo 19">
+<img src="yinuo20.jpg" alt="Yinuo 20">
+  <img src="yinuo21.jpg" alt="Yinuo 21">
+  <img src="yinuo22.jpg" alt="Yinuo 22">
+  <img src="yinuo23.jpg" alt="Yinuo 23">
+<img src="yinuo24.jpeg" alt="Yinuo 24">
+  <img src="yinuo25.jpeg" alt="Yinuo 25">
 </div>
 ]]></description>
                     
 
-                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/my-love-yinuo/</guid>
+                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/yinuo/</guid>
 
                     
-                        <link>http://localhost:1313/photos/my-love-yinuo/</link>
+                        <link>http://localhost:1313/photos/yinuo/</link>
                     
 
                     
-                        <pubDate>Mon, 04 May 2026 00:00:00 PDT</pubDate>
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
                     
 
                     
@@ -871,19 +955,285 @@ document.getElementById('spotlight-modal').classList.remove('active');
 
                     
                         <description><![CDATA[<style>
-/* 1. 你的专属 Sparose 标题定制 */
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
 @font-face { 
-font-family: 'Sparose'; 
-src: url('/fonts/Sparose.ttf') format('truetype'); 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
 }
 h1 {
-font-family: 'Sparose', sans-serif;
+font-family: 'sparose', sans-serif;
 font-size: 1.5rem;
 font-weight: 300;
 text-align: center;
 margin-top: 20px;
 letter-spacing: 2px;
-color: #333;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
+
+/* 2. 画廊最外层包装 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
+
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道与 Mask Image 边缘消隐 */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 50px;
+overflow-x: auto;
+scroll-behavior: smooth;
+padding: 20px 5%;
+scrollbar-width: none;
+}
+.scroll-track::-webkit-scrollbar { display: none; }
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 400px;
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. Spotlight 沉浸式放大层 */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8;
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 80%;
+max-height: 80vh;
+}
+
+.spotlight-info {
+position: absolute;
+top: -80px;
+left: -40px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+</style>
+<!-- ================= 页面结构 ================= -->
+<div class="carousel-wrapper">
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+<div class="scroll-container">
+<div class="scroll-track" id="mountain-track">
+  <div class="photo-item" onclick="openSpotlight('mountain10.jpeg', '(01)', 'Mount Gongga<br>Kangding, Sichuan')">
+    <img src="mountain10.jpeg" alt="Mingshashan">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain1.jpeg', '(02)', 'Qiangren Valley<br>Aba Prefecture, Sichuan')">
+    <img src="mountain1.jpeg" alt="Qiangren Valley">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain9.JPG', '(03)', 'Dawa Gengzha<br>Ya\'an, Sichuan')">
+    <img src="mountain9.JPG" alt="Dawa Gengzha">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain2.jpeg', '(04)', 'Snow Mountain and Halaha River<br>Arxan, Inner Mongolia')">
+    <img src="mountain2.jpeg" alt="Arxan River">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain6.JPG', '(05)', 'Singing Sand Mountains<br>Dunhuang, Gansu')">
+    <img src="mountain6.JPG" alt="Mingshashan">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain3.jpg', '(06)', 'Snow Mountain<br>Arxan, Inner Mongolia')">
+    <img src="mountain3.jpg" alt="Arxan Mountain">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain4.jpeg', '(07)', 'Sundog over Arxan<br>Arxan, Inner Mongolia')">
+    <img src="mountain4.jpeg" alt="Sundog">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain11.JPG', '(08)', 'Mount Genyen<br>Litang, Sichuan')">
+    <img src="mountain11.JPG" alt="Mingshashan">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain5.JPG', '(09)', 'Qianshan Mountain<br>Anshan, Liaoning')">
+    <img src="mountain5.JPG" alt="Qianshan">
+  </div>
+<div class="photo-item" onclick="openSpotlight('mountain8.jpeg', '(11)', 'Landscape of Ya\'an<br>Ya\'an, Sichuan')">
+    <img src="mountain8.jpeg" alt="Ya'an">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain7.jpeg', '(10)', 'Mount Gongga<br>Garze Prefecture, Sichuan')">
+    <img src="mountain7.jpeg" alt="Gongga">
+  </div>
+</div>
+</div>
+<p><button class="nav-arrow right-arrow" onclick="scrollGallery(1)">❯</button></p>
+</div>
+<!-- Spotlight 模态框 -->
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+<script>
+function scrollGallery(direction) {
+const track = document.getElementById('mountain-track');
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>
+]]></description>
+                    
+
+                    <guid isPermaLink="false">tag:localhost:1313,2026-05-04:/photos/mountains/</guid>
+
+                    
+                        <link>http://localhost:1313/photos/mountains/</link>
+                    
+
+                    
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
+                    
+
+                    
+                        <title>Mountains</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<style>
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
 }
 
 /* 2. 画廊最外层包装：控制箭头和内容的位置 */
@@ -1006,23 +1356,23 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   <div class="photo-item" onclick="openSpotlight('street1.jpeg', '(01)', 'Dalian, Liaoning<br>A family by the sea, 2025')">
     <img src="street1.jpeg" alt="street1">
   </div>
-<div class="photo-item" onclick="openSpotlight('street5.jpg', '(05)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
-  <div class="photo-item" onclick="openSpotlight('street2.jpg', '(02)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
+<div class="photo-item" onclick="openSpotlight('street5.jpg', '(02)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street2.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
     <img src="street2.jpg" alt="street2">
   </div>
-  <div class="photo-item" onclick="openSpotlight('street3.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
+  <div class="photo-item" onclick="openSpotlight('street3.jpg', '(04)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
     <img src="street3.jpg" alt="street3">
   </div>
-<div class="photo-item" onclick="openSpotlight('street8.JPG', '(08)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street4.jpg', '(04)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
+<div class="photo-item" onclick="openSpotlight('street8.JPG', '(05)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street4.jpg', '(06)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
     <img src="street4.jpg" alt="street4">
   </div>
-<div class="photo-item" onclick="openSpotlight('street12.JPG', '(12)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('street6.jpg', '(06)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(11)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(07)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(09)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(10)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
+<div class="photo-item" onclick="openSpotlight('street12.JPG', '(07)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('street6.jpg', '(08)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(09)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(10)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(11)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(12)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
   <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')"><img src="street13.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')"><img src="street14.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')"><img src="street15.jpeg"></div>
@@ -1030,8 +1380,11 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   <div class="photo-item" onclick="openSpotlight('street17.jpg', '(17)', 'dalian, liaoning<br>fishermen')"><img src="street17.jpg"></div>
   <div class="photo-item" onclick="openSpotlight('street18.089.jpg', '(18)', 'dalian, liaoning<br>reader')"><img src="street18.089.jpg"></div>
   <div class="photo-item" onclick="openSpotlight('street19.jpeg', '(19)', 'chengdu, sichuan<br>Peddler and fish')"><img src="street19.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(21)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street20.jpg', '(20)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(20)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street20.jpg', '(21)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street22.jpg', '(22)', 'weihai, shandong<br>')"><img src="street22.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street23.jpg', '(23)', 'weihai, shandong<br>')"><img src="street23.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street24.jpg', '(24)', 'weihai, shandong<br>')"><img src="street24.jpg"></div>
 </div>
 </div>
 <!-- 右箭头 -->
@@ -1083,11 +1436,259 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
 
                     
-                        <pubDate>Mon, 04 May 2026 00:00:00 PDT</pubDate>
+                        <pubDate>Mon, 04 May 2026 00:00:00 CST</pubDate>
                     
 
                     
                         <title>Street</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<style>
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
+  
+  /* 2. 画廊最外层包装：控制箭头和内容的位置 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
+
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道，带有截图1两边变淡消失的魔法 (Mask Image) */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+/* 让左右两边缘产生渐变透明的效果 */
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 25px;
+overflow-x: auto;
+scroll-behavior: smooth; /* 丝滑滚动 */
+padding: 20px 5%;
+scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
+}
+.scroll-track::-webkit-scrollbar { display: none; } /* Mac/Safari/Chrome 隐藏滚动条 */
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 350px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. 截图2特效：点击后弹出的沉浸式放大层 (Modal) */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8; /* 极简的米白色背景 */
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 60%;
+max-height: 80vh;
+}
+
+/* 悬浮在图片左上角的具体信息 */
+.spotlight-info {
+position: absolute;
+top: -80px; /* 放在图片正上方 */
+left: -40px; /* 稍微偏左，营造截图2的错落感 */
+font-family: 'Courier New', Courier, monospace; /* 使用打字机字体模拟截图2的复古印刷感 */
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+</style>
+<!-- ================= 页面结构 ================= -->
+<div class="carousel-wrapper">
+<!-- 左箭头 -->
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+<div class="scroll-container">
+<div class="scroll-track" id="xiangcheng-track">
+  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
+  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
+<div class="photo-item" onclick="openSpotlight('xiangcheng10.JPG', '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')"><img src="xiangcheng10.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng11.jpeg', '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')"><img src="xiangcheng11.jpeg"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng15.JPG', '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')"><img src="xiangcheng15.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng13.JPG', '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')"><img src="xiangcheng13.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng14.JPG', '(05)', 'Xiangcheng, Sichuan<br>Texture of the abandoned White Tibetan House')"><img src="xiangcheng14.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng5.JPG', '(06)', 'Xiangcheng, Sichuan<br>A corner of the Sangpiling Temple')"><img src="xiangcheng5.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng6.JPG', '(07)', 'Xiangcheng, Sichuan<br>Winding mountain road')"><img src="xiangcheng6.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng7.JPG', '(08)', 'Xiangcheng, Sichuan<br>Star trails over the valley')"><img src="xiangcheng7.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng12.JPG', '(09)', 'Xiangcheng, Sichuan<br>Highland pasture')"><img src="xiangcheng12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng9.JPG', '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')"><img src="xiangcheng9.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng1.jpg', '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')"><img src="xiangcheng1.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng8.JPG', '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')"><img src="xiangcheng8.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng2.JPG', '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')"><img src="xiangcheng2.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng3.JPG', '(03)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')"><img src="xiangcheng3.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng4.JPG', '(04)', 'Xiangcheng, Sichuan<br>Local gathering')"><img src="xiangcheng4.JPG"></div>
+</div>
+</div>
+<!-- 右箭头 -->
+<p><button class="nav-arrow right-arrow" onclick="scrollGallery(1)">❯</button></p>
+</div>
+<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<!-- 阻止点击内部图片时关闭模态框 -->
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<!-- 截图2里的文字信息区域 -->
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<!-- 被放大的图片 -->
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+<!-- ================= 核心交互脚本 ================= -->
+<script>
+// 1. 控制画廊左右滑动的魔法
+function scrollGallery(direction) {
+const track = document.getElementById('xiangcheng-track');
+// 每次点击滑动 400 像素，你可以自己微调这个数字
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+// 2. 点击照片，激活高级放大层的魔法
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+// 3. 点击背景空白处，关闭放大层
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>
+]]></description>
+                    
+
+                    <guid isPermaLink="false">tag:localhost:1313,2026-05-06:/photos/xiangcheng/</guid>
+
+                    
+                        <link>http://localhost:1313/photos/xiangcheng/</link>
+                    
+
+                    
+                        <pubDate>Wed, 06 May 2026 00:00:00 CST</pubDate>
+                    
+
+                    
+                        <title>Xiangcheng</title>
                     
                 </item>
             

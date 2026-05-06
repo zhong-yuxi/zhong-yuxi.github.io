@@ -67,7 +67,6 @@ Email: [yuxi.zhonggg@gmail.com](mailto:yuxi.zhonggg@gmail.com)
     font-size: 3rem !important; 
     font-weight: 700 !important;
     letter-spacing: -0.03em !important;
-    color: #222 !important; 
     text-decoration: none !important;
 }
 
@@ -76,7 +75,6 @@ Email: [yuxi.zhonggg@gmail.com](mailto:yuxi.zhonggg@gmail.com)
     font-family: 'MyJost', sans-serif !important;
     font-size: 1.2rem !important;
     letter-spacing: 0.05em !important;
-    color: #4a4a4a !important;
     margin-top: 10px !important;
 }
 

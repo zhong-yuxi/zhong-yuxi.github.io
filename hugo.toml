@@ -1,6 +1,6 @@
 baseURL = "https://zhong-yuxi.github.io/"
 enablerobotstxt = true
-timezone = "America/Los_Angeles"
+timezone = "Asia/Shanghai"
 titlecasestyle = "Go"
 
 [languages.en]

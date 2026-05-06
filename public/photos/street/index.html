@@ -130,8 +130,8 @@
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="photos">
-    <meta property="article:published_time" content="2026-05-04T00:00:00-07:00">
-    <meta property="article:modified_time" content="2026-05-04T00:00:00-07:00">
+    <meta property="article:published_time" content="2026-05-04T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-05-04T00:00:00+08:00">
 
 
   <meta name="twitter:card" content="summary">
@@ -1466,7 +1466,7 @@ table {
 
 
             <style>
-/* 1. 你的专属 Sparose 标题定制 */
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
 @font-face { 
 font-family: 'sparose'; 
 src: url('/fonts/sparose.ttf') format('truetype'); 
@@ -1478,7 +1478,21 @@ font-weight: 300;
 text-align: center;
 margin-top: 20px;
 letter-spacing: 2px;
-color: #333;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
 }
 
 /* 2. 画廊最外层包装：控制箭头和内容的位置 */
@@ -1601,23 +1615,23 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   <div class="photo-item" onclick="openSpotlight('street1.jpeg', '(01)', 'Dalian, Liaoning<br>A family by the sea, 2025')">
     <img src="street1.jpeg" alt="street1">
   </div>
-<div class="photo-item" onclick="openSpotlight('street5.jpg', '(05)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
-  <div class="photo-item" onclick="openSpotlight('street2.jpg', '(02)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
+<div class="photo-item" onclick="openSpotlight('street5.jpg', '(02)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street2.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
     <img src="street2.jpg" alt="street2">
   </div>
-  <div class="photo-item" onclick="openSpotlight('street3.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
+  <div class="photo-item" onclick="openSpotlight('street3.jpg', '(04)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
     <img src="street3.jpg" alt="street3">
   </div>
-<div class="photo-item" onclick="openSpotlight('street8.JPG', '(08)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street4.jpg', '(04)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
+<div class="photo-item" onclick="openSpotlight('street8.JPG', '(05)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street4.jpg', '(06)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
     <img src="street4.jpg" alt="street4">
   </div>
-<div class="photo-item" onclick="openSpotlight('street12.JPG', '(12)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('street6.jpg', '(06)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(11)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(07)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(09)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(10)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
+<div class="photo-item" onclick="openSpotlight('street12.JPG', '(07)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('street6.jpg', '(08)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(09)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(10)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(11)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(12)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
   <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')"><img src="street13.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')"><img src="street14.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')"><img src="street15.jpeg"></div>
@@ -1625,8 +1639,11 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   <div class="photo-item" onclick="openSpotlight('street17.jpg', '(17)', 'dalian, liaoning<br>fishermen')"><img src="street17.jpg"></div>
   <div class="photo-item" onclick="openSpotlight('street18.089.jpg', '(18)', 'dalian, liaoning<br>reader')"><img src="street18.089.jpg"></div>
   <div class="photo-item" onclick="openSpotlight('street19.jpeg', '(19)', 'chengdu, sichuan<br>Peddler and fish')"><img src="street19.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(21)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street20.jpg', '(20)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(20)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street20.jpg', '(21)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street22.jpg', '(22)', 'weihai, shandong<br>')"><img src="street22.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street23.jpg', '(23)', 'weihai, shandong<br>')"><img src="street23.jpg"></div>
+<div class="photo-item" onclick="openSpotlight('street24.jpg', '(24)', 'weihai, shandong<br>')"><img src="street24.jpg"></div>
 </div>
 </div>
 <!-- 右箭头 -->
@@ -2121,7 +2138,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
         
     
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" \u0026#10094; ❯","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00-07:00","headline":"Street","inLanguage":"en","name":"Street","timeRequired":"PT1M","url":"http://localhost:1313/photos/street/","wordCount":5}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" \u0026#10094; ❯","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00+08:00","headline":"Street","inLanguage":"en","name":"Street","timeRequired":"PT1M","url":"http://localhost:1313/photos/street/","wordCount":5}</script>
 
 
 

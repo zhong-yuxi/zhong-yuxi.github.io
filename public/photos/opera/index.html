@@ -130,8 +130,8 @@
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="photos">
-    <meta property="article:published_time" content="2026-05-04T00:00:00-07:00">
-    <meta property="article:modified_time" content="2026-05-04T00:00:00-07:00">
+    <meta property="article:published_time" content="2026-05-04T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-05-04T00:00:00+08:00">
 
 
   <meta name="twitter:card" content="summary">
@@ -1482,8 +1482,22 @@ table {
     text-align: center;  /* 居中对齐，更有仪式感 */
     margin-top: 20px;    /* 顶部留白 */
     letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
   }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
   
  /* 2. 核心：瀑布流外层容器 (Masonry Container) */
   .masonry-gallery {
@@ -1996,7 +2010,7 @@ table {
 
     
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" ","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00-07:00","headline":"Opera","inLanguage":"en","name":"Opera","url":"http://localhost:1313/photos/opera/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" ","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00+08:00","headline":"Opera","inLanguage":"en","name":"Opera","url":"http://localhost:1313/photos/opera/"}</script>
 
 
 

@@ -6,25 +6,34 @@ weight: 3
 ---
 
 <style>
-  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
-  @font-face {
-    font-family: 'MySparoseFont'; 
-    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/sparose.ttf') format('truetype'); 
-    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
-  }
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
 
-  /* 2. 让这个页面的标题（h1）变身 */
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
   h1 {
-    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
-    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
-    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
-    text-align: center;  /* 居中对齐，更有仪式感 */
-    margin-top: 20px;    /* 顶部留白 */
-    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
   }
-  
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
   
   /* 2. 画廊最外层包装：控制箭头和内容的位置 */
 .carousel-wrapper {
@@ -76,7 +85,7 @@ scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
 
 /* 5. 单张图片设置 */
 .photo-item {
-flex: 0 0 280px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+flex: 0 0 350px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
 cursor: pointer;
 transition: filter 0.3s, transform 0.3s;
 }
@@ -151,20 +160,20 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   </div>
 <div class="photo-item" onclick="openSpotlight('temple2.JPG', '(02)', 'Litang, sichuan<br>Lenggu Temple (New), 2024')"><img src="temple2.JPG" alt="temple2">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(05)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
+<div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
     <img src="temple3.JPG" alt="temple3">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(08)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(04)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
+<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(04)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
+<div class="photo-item" onclick="openSpotlight('temple10.JPG', '(05)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(06)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(07)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
     <img src="temple4.JPG" alt="temple4">
   </div>
-<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(12)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(06)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(11)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(07)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple10.JPG', '(10)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(08)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(10)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(11)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
+  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(12)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple13.JPG', '(13)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple13.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple14.JPG', '(14)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple14.JPG"></div>
   <div class="photo-item" onclick="openSpotlight('temple15.jpeg', '(15)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple15.jpeg"></div>
