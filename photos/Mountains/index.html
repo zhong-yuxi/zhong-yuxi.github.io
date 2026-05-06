@@ -126,17 +126,17 @@
 <meta property="og:url" content="http://localhost:1313/photos/mountains/">
   <meta property="og:site_name" content="YUXI ZHONG">
   <meta property="og:title" content="Mountains">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="❮ ❯">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="photos">
-    <meta property="article:published_time" content="2026-05-04T00:00:00-07:00">
-    <meta property="article:modified_time" content="2026-05-04T00:00:00-07:00">
+    <meta property="article:published_time" content="2026-05-04T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-05-04T00:00:00+08:00">
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mountains">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:description" content="❮ ❯">
 
 
 
@@ -1466,69 +1466,212 @@ table {
 
 
             <style>
-  /* 1. 引入你的本地字体（这就是字体的“身份证”） */
-  @font-face {
-    font-family: 'MySparoseFont'; 
-    /* 路径必须从根目录开始写，因为在 static 下，所以直接写 /fonts/ */
-    src: url('/fonts/sparose.ttf') format('truetype'); 
-    font-display: swap; /* 增加加载性能，防止字体没出来时文字消失 */
-  }
+/* 1. 字体定制 - 沿用你最爱的 Sparose */
+@font-face { 
+font-family: 'sparose'; 
+src: url('/fonts/sparose.ttf') format('truetype'); 
+}
+h1 {
+font-family: 'sparose', sans-serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-top: 20px;
+letter-spacing: 2px;
+color: #166D7A; /* 👈 白底时的专属颜色 */
+  transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
 
-  /* 2. 让这个页面的标题（h1）变身 */
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
   h1 {
-    font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
-    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
-    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
-    text-align: center;  /* 居中对齐，更有仪式感 */
-    margin-top: 20px;    /* 顶部留白 */
-    letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
-    color: #333;         /* 深灰色，比纯黑更有质感 */
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
   }
-  
-  /* 隐藏页面的全局滚动条（可选，让页面看起来更干净） */
-  body { overflow-x: hidden; }
+}
 
-  /* 画廊容器的设置 */
-  .horizontal-gallery {
-    display: flex;             /* 让图片横向排列 */
-    overflow-x: auto;          /* 开启横向滚动 */
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory; /* 增加滑动时的吸附感（像手机相册一样） */
-    
-    /* 这里的 gap 控制图片之间的间距。
-       假设你的图片宽度大约是 60vw（屏幕宽度的60%），半张图片的距离就是 30vw。
-       你可以随意修改这个数值（比如改成 400px 或者 20vw）来达到你想要的效果 */
-    gap: 10vw;                 
-    
-    padding: 20px 50vw 50px 20px; /* 右侧留白，让最后一张图能滑到中间 */
-  }
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
 
-  /* 隐藏画廊容器自带的丑陋滚动条 */
-  .horizontal-gallery::-webkit-scrollbar {
-    display: none; 
-  }
+/* 2. 画廊最外层包装 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
 
-  /* 单张图片的设置 */
-  .horizontal-gallery img {
-    height: 70vh;              /* 统一图片的高度，占据屏幕高度的70% */
-    width: auto;               /* 宽度自动适应，保持比例 */
-    max-width: none;           /* 覆盖主题可能自带的图片限制 */
-    object-fit: contain;       /* 保证图片完整显示 */
-    scroll-snap-align: center; /* 滑动停下时，图片自动居中对齐 */
-    flex-shrink: 0;            /* 防止图片被挤压变形 */
-  }
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道与 Mask Image 边缘消隐 */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 50px;
+overflow-x: auto;
+scroll-behavior: smooth;
+padding: 20px 5%;
+scrollbar-width: none;
+}
+.scroll-track::-webkit-scrollbar { display: none; }
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 400px;
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. Spotlight 沉浸式放大层 */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8;
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 80%;
+max-height: 80vh;
+}
+
+.spotlight-info {
+position: absolute;
+top: -80px;
+left: -40px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
 </style>
-<div class="horizontal-gallery">
-  <img src="mountain1.jpeg" alt="mountain 1">
-  <img src="mountain2.jpeg" alt="mountain 2">
-  <img src="mountain3.jpg" alt="mountain 3">
-  <img src="mountain4.jpeg" alt="mountain 4">
-  <img src="mountain5.JPG" alt="mountain 5">
-  <img src="mountain6.JPG" alt="mountain 6">
-  <img src="mountain7.jpeg" alt="mountain 7">
-  <img src="mountain8.jpeg" alt="mountain 8">
-  <img src="mountain9.JPG" alt="mountain 9">
+<!-- ================= 页面结构 ================= -->
+<div class="carousel-wrapper">
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+<div class="scroll-container">
+<div class="scroll-track" id="mountain-track">
+  <div class="photo-item" onclick="openSpotlight('mountain10.jpeg', '(01)', 'Mount Gongga<br>Kangding, Sichuan')">
+    <img src="mountain10.jpeg" alt="Mingshashan">
   </div>
+  <div class="photo-item" onclick="openSpotlight('mountain1.jpeg', '(02)', 'Qiangren Valley<br>Aba Prefecture, Sichuan')">
+    <img src="mountain1.jpeg" alt="Qiangren Valley">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain9.JPG', '(03)', 'Dawa Gengzha<br>Ya\'an, Sichuan')">
+    <img src="mountain9.JPG" alt="Dawa Gengzha">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain2.jpeg', '(04)', 'Snow Mountain and Halaha River<br>Arxan, Inner Mongolia')">
+    <img src="mountain2.jpeg" alt="Arxan River">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain6.JPG', '(05)', 'Singing Sand Mountains<br>Dunhuang, Gansu')">
+    <img src="mountain6.JPG" alt="Mingshashan">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain3.jpg', '(06)', 'Snow Mountain<br>Arxan, Inner Mongolia')">
+    <img src="mountain3.jpg" alt="Arxan Mountain">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain4.jpeg', '(07)', 'Sundog over Arxan<br>Arxan, Inner Mongolia')">
+    <img src="mountain4.jpeg" alt="Sundog">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain11.JPG', '(08)', 'Mount Genyen<br>Litang, Sichuan')">
+    <img src="mountain11.JPG" alt="Mingshashan">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain5.JPG', '(09)', 'Qianshan Mountain<br>Anshan, Liaoning')">
+    <img src="mountain5.JPG" alt="Qianshan">
+  </div>
+<div class="photo-item" onclick="openSpotlight('mountain8.jpeg', '(11)', 'Landscape of Ya\'an<br>Ya\'an, Sichuan')">
+    <img src="mountain8.jpeg" alt="Ya'an">
+  </div>
+  <div class="photo-item" onclick="openSpotlight('mountain7.jpeg', '(10)', 'Mount Gongga<br>Garze Prefecture, Sichuan')">
+    <img src="mountain7.jpeg" alt="Gongga">
+  </div>
+</div>
+</div>
+<p><button class="nav-arrow right-arrow" onclick="scrollGallery(1)">❯</button></p>
+</div>
+<!-- Spotlight 模态框 -->
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+<script>
+function scrollGallery(direction) {
+const track = document.getElementById('mountain-track');
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>
 
             
 
@@ -1973,12 +2116,16 @@ table {
     
 
     
-
+        
     
 
     
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" ","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00-07:00","headline":"Mountains","inLanguage":"en","name":"Mountains","url":"http://localhost:1313/photos/mountains/"}</script>
+    
+        
+    
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" \u0026#10094; ❯","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-04T00:00:00+08:00","headline":"Mountains","inLanguage":"en","name":"Mountains","timeRequired":"PT1M","url":"http://localhost:1313/photos/mountains/","wordCount":5}</script>
 
 
 
