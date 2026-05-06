@@ -37,7 +37,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   
   /* 3. 核心魔法：瀑布流画廊 (Masonry Gallery) */
   .masonry-gallery {
-    /* 默认在电脑上显示 3 列 */
+    /* 默认在电脑上显示 4 列 */
     column-count: 4;
     /* 列与列之间的间距 */
     column-gap: 20px; 
@@ -62,9 +62,9 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
   }
 
-  /* 4. 响应式设计：在手机屏幕上自动变成 1 列，平板上 2 列 */
+  /* 4. 响应式设计：在手机屏幕上自动变成 2 列，平板上 4 列 */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 3; }
+    .masonry-gallery { column-count: 4; }
   }
   @media (max-width: 500px) {
     .masonry-gallery { column-count: 2; }

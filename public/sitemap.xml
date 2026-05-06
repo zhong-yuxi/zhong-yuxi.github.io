@@ -5,13 +5,13 @@
     <loc>http://localhost:1313/photos/xiangcheng/</loc>
     <lastmod>2026-05-06T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/photos/animal/</loc>
-    <lastmod>2026-05-04T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/photos/film/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/photos/opera/</loc>
+    <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/portraits/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/photos/temple/</loc>

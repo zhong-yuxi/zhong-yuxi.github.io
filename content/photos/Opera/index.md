@@ -41,8 +41,8 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   
  /* 2. 核心：瀑布流外层容器 (Masonry Container) */
   .masonry-gallery {
-    /* 电脑端默认分 3 列 */
-    column-count: 3;
+    /* 电脑端默认分 4 列 */
+    column-count: 4;
     /* 列与列之间的呼吸感间距 */
     column-gap: 15px; 
     max-width: 1200px; 
@@ -72,35 +72,31 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 2; } /* 平板变成 2 列 */
+    .masonry-gallery { column-count: 4; } /* 平板变成 4 列 */
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 1; } /* 手机乖乖变成 1 列大图 */
+    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 2 列大图 */
   }
 </style>
 
 <!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
 <div class="masonry-gallery">
   <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
-  <img src="yinuo1.jpeg" alt="Yinuo 1">
-  <img src="yinuo2.jpeg" alt="Yinuo 2">
-  <img src="yinuo3.jpg" alt="Yinuo 3">
-  <img src="yinuo4.JPG" alt="Yinuo 4">
-  <img src="yinuo5.JPG" alt="Yinuo 5">
-  <img src="yinuo6.JPG" alt="Yinuo 6">
-  <img src="yinuo7.JPG" alt="Yinuo 7">
-  
-  <img src="yinuo8.JPG" alt="Yinuo 8">
-  <img src="yinuo9.JPG" alt="Yinuo 9">
-  <img src="yinuo10.JPG" alt="Yinuo 10">
-  <img src="yinuo11.jpeg" alt="Yinuo 11">
-  <img src="yinuo12.jpg" alt="Yinuo 12">
-  <img src="yinuo13.jpg" alt="Yinuo 13">
-  <img src="yinuo14.jpg" alt="Yinuo 14">
-  
-  <img src="yinuo15.jpg" alt="Yinuo 15">
-  <img src="yinuo16.jpg" alt="Yinuo 16">
-  <img src="yinuo17.jpg" alt="Yinuo 17">
-  <img src="yinuo18.jpg" alt="Yinuo 18">
-  <img src="yinuo19.jpg" alt="Yinuo 19">
+<img src="opera1.jpeg" alt="Opera 1">
+<img src="opera2.jpeg" alt="Opera 2">
+<img src="opera3.jpeg" alt="Opera 3">
+<img src="opera4.JPG" alt="Opera 4">
+<img src="opera5.JPG" alt="Opera 5">
+<img src="opera6.JPG" alt="Opera 6">
+<img src="opera7.jpg" alt="Opera 7">
+<img src="opera8.jpg" alt="Opera 8">
+<img src="opera9.JPG" alt="Opera 9">
+<img src="opera10.JPG" alt="Opera 10">
+<img src="opera11.JPG" alt="Opera 11">
+<img src="opera12.JPG" alt="Opera 12">
+<img src="opera13.JPG" alt="Opera 13">
+<img src="opera14.JPG" alt="Opera 14">
+<img src="opera15.JPG" alt="Opera 15">
+<img src="opera16.jpg" alt="Opera 16">
+<img src="opera17.jpg" alt="Opera 17">
 </div>

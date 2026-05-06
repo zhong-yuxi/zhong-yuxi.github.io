@@ -68,10 +68,10 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 3; } /* 平板变成 3 列 */
+    .masonry-gallery { column-count: 4; } /* 平板变成 4 列 */
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 1; } /* 手机乖乖变成 1 列大图 */
+    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 2 列大图 */
   }
 </style>
 
