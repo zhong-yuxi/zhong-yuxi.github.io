@@ -89,3 +89,58 @@
 
 </div> 
 
+<!-- ==========================================
+ 🧙‍♂️ 强制注入：当前页面的导航栏字体与颜色魔法
+ 为什么要放在最下面？
+ 因为在 HTML 渲染时，越靠下的代码优先级越高 (Cascading)。
+ 放在最后能确保它覆盖掉默认主题的所有样式！
+ ========================================== -->
+<style>
+
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
+}
+
+/* ==========================================
+   🚀 空间魔法：增加顶部留白，让整体往下移
+   ========================================== */
+#paige-site-header {
+    margin-top: 2rem !important; /* 这里的 4rem 就是往下移的距离，你可以随便改！ */
+}
+
+/* 1. 加载你的专属 Jost 字体 */
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. 强制覆盖导航栏的字体和初始颜色 */
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; 
+    color: #008b8b !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+/* 3. 鼠标悬停变浅（变白一点） */
+#paige-site-menu a:hover {
+    color: #66cdcd !important; 
+}
+
+/* 4. 鼠标点下去的瞬间变深 */
+#paige-site-menu a:active {
+    color: #004d4d !important; 
+}
+
+/* 5. 当前所在页面的高亮保持深色 (表示你正在 Projects 页面) */
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
+}
+</style>

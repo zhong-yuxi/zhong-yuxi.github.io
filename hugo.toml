@@ -82,33 +82,33 @@ tag = "tags"
 # ----------------------------------------------------------------------------
 
 [[languages.en.menu.main]]
-    name = "about"
+    name = "ABOUT"
     url = "/"
     weight = 1
 
 
 [[languages.en.menu.main]]
-    name = "projects"
+    name = "PROJECTS"
     url = "/projects/"
     weight = 2
 
 [[languages.en.menu.main]]
-    name = "photos"
+    name = "PHOTOS"
     url = "/photos/"
     weight = 3
 
 [[languages.en.menu.main]]
-    name = "videos"
+    name = "VIDEOS"
     url = "/videos/"
     weight = 4
 
 [[languages.en.menu.main]]
-    name = "Series"
+    name = "SERIES"
     url = "/series/"
     weight = 5
 
 
 [[languages.en.menu.main]]
-    name = "Tags"
+    name = "TAGS"
     url = "/tags/"
     weight = 6

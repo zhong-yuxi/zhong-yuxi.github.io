@@ -1,9 +1,9 @@
 +++
 keywords = [
-    "Yuxi Zhong", "Tibet", "Material Culture", "Religion", "Cat", "Ganzi", 
-    "Visual", "Ecology", "Multi-species Ethnography", "Xiangcheng", 
-    "Stove Cat", "Nehulay", "Vernacular Religion", "Intangible Cultural Heritage", 
-    "ICH", "Sonam Dorji"
+"Yuxi Zhong", "Tibet", "Material Culture", "Religion", "Cat", "Ganzi", 
+"Visual", "Ecology", "Multi-species Ethnography", "Xiangcheng", 
+"Stove Cat", "Nehulay", "Vernacular Religion", "Intangible Cultural Heritage", 
+"ICH", "Sonam Dorji"
 ]
 [paige.pages]
 disable_collections = true
@@ -11,34 +11,62 @@ disable_pages = true
 disable_sections = true
 +++
 
-{{< paige/image alt="Landscape of Xiangcheng" breakpoints=true class="mt-3 object-fit-cover rounded-4 shadow" fetchpriority="high" height="20rem" loading="eager" process="webp" src="images/my_home.jpg" width="100%" >}}
+<!-- ==========================================
+1. 顶部宽屏风景横幅 (True Responsive Banner) 
+========================================== -->
+<div class="hero-banner full-bleed-banner position-relative mb-5 shadow-sm">
+{{< paige/image alt="Landscape of Xiangcheng" src="images/my_home.jpg" class="w-100" style="display: block; height: auto;" >}}
 
-<h1 class="h4 text-start" style="margin-top: 2rem">Hi, I'm Yuxi Zhong, you can call me Sonam Dorji!</h1>
-
-<div class="container-fluid">
-<div class="justify-content-start row">
-<div class="col col-auto col-lg-8 px-0" style="font-family: 'Calibri', sans-serif;">
-
-<p class="text-start" style="font-size: 1.1rem; margin-bottom: 3rem;">
-I'm a scholar exploring how faith and identity are carved into the material world. My research tracks the evolving material culture and ritual objects of my hometown, Xiangcheng (乡城). Outside of academia, you'll find me performing Peking Opera or advocating for animal welfare.
-
-</p> <div class="contact-info">
-
-Email: [yuxi.zhonggg@gmail.com](mailto:yuxi.zhonggg@gmail.com)
-
-[Download CV](/CV_Yuxi_Zhong.pdf)
-
+<!-- 名字与副标题浮层 -->
+<div class="position-absolute bottom-0 start-0 p-4 w-100" 
+     style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
+    <h1 class="text-white mb-0 text-uppercase" 
+        style="font-family: 'MyGillSans', sans-serif; font-size: calc(1rem + 2vw); letter-spacing: 0.15em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+        YUXI ZHONG
+    </h1>
+    <p class="text-white mt-1 mb-0" 
+       style="font-family: 'MyJost', sans-serif; font-size: 1.2rem; letter-spacing: 0.05em; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
+        Material, Tibet, Cat
+    </p>
 </div>
 </div>
+
+<!-- ==========================================
+2. 下方两栏内容区 (Two-column Bio Section)
+========================================== -->
+<div class="container-fluid px-0 mb-5">
+<div class="row align-items-center">
+    <!-- 左侧：个人照 -->
+    <div class="col-md-5 mb-4 mb-md-0 text-center text-md-start">
+        {{< paige/image alt="Yuxi Zhong" src="images/profile_pic.jpg" class="img-fluid shadow-sm rounded-1" >}}
+    </div>
+    <!-- 右侧：文字介绍 (已更新欢迎语与字体) -->
+    <div class="col-md-7 px-md-5">
+        <p class="text-start" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8; color: #222;">
+            <strong>Hi, I'm Yuxi Zhong, you can call me Sonam Dorji!</strong><br>
+            I am a scholar exploring how faith and identity are carved into the material world. My research tracks the evolving material culture and ritual objects of my hometown, Xiangcheng (乡城). Outside of academia, you'll find me performing Peking Opera or advocating for animal welfare.
+        </p>
+        <div class="contact-info mt-4">
+            <p class="mb-2">Email: <a href="mailto:yuxi.zhonggg@gmail.com">yuxi.zhonggg@gmail.com</a></p>
+            <a href="/CV_Yuxi_Zhong.pdf" style="font-family: 'MyJost', sans-serif; font-weight: bold; text-decoration: underline !important; letter-spacing: 0.05em; text-transform: uppercase;">Download CV</a>
+        </div>
+    </div>
+</div>
 </div>
 
-<div class="column-gap-3 d-flex display-6 justify-content-center mt-4">
+<!-- ==========================================
+3. 底部社交图标分割线
+========================================== -->
+<div class="column-gap-3 d-flex fs-4 justify-content-center mt-5 pt-4 border-top">
 {{< paige/icon class="bi bi-instagram" title="Instagram" url="https://www.instagram.com/sonam_dorji__/" >}}
 {{< paige/icon class="bi bi-twitter-x" title="X" url="https://x.com/dorji0704/" >}}
 </div>
 
+<!-- ==========================================
+4. 全局 CSS 样式
+========================================== -->
 <style>
-/* 1. 声明 Gill Sans 字体 (用于名字) */
+/* --- 字体声明区 --- */
 @font-face {
     font-family: 'MyGillSans';
     src: url('/fonts/GillSans.ttc') format('collection'), 
@@ -46,79 +74,61 @@ Email: [yuxi.zhonggg@gmail.com](mailto:yuxi.zhonggg@gmail.com)
     font-weight: bold;
     font-style: normal;
 }
-
-/* 2. 声明 Jost 字体 (用于描述) */
 @font-face {
     font-family: 'MyJost';
     src: url('/fonts/Jost-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-/* =========================================
-   以下是精准应用到各部分的样式
-   ========================================= */
-
-/* 3. 主标题：Yuxi Zhong */
-#paige-site-title,
-#paige-site-title a {
-    font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
-    /* 【修改点】：从 4.5rem 缩小到了 3.5rem，你可以改成 3rem 继续缩小 */
-    font-size: 3rem !important; 
-    font-weight: 700 !important;
-    letter-spacing: -0.03em !important;
-    text-decoration: none !important;
+/* 👇 新增：Open Sans 字体声明 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype'); /* 请确保你有这个字体文件 */
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* 4. 描述：Material, Tibet, Cat */
-#paige-site-description {
-    font-family: 'MyJost', sans-serif !important;
-    font-size: 1.2rem !important;
-    letter-spacing: 0.05em !important;
-    margin-top: 10px !important;
+/* --- 布局与导航魔法 --- */
+#paige-site-header {
+    margin-top: 2rem !important;
 }
 
-/* 5. 导航菜单 (about, projects, photos 等) */
 #paige-site-menu a {
-    /* 【修改点】：常驻颜色设为 00FFFF，去除下划线 */
+    font-family: 'MyJost', sans-serif !important;
     color: #008b8b !important;
-    text-decoration: none !important; 
-    /* 加一个平滑过渡动画，显得高级 */
-    transition: color 0.2s ease-in-out !important; 
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
 }
 
-/* 导航菜单悬停时的颜色 */
-#paige-site-menu a:hover,
-#paige-site-menu a:active {
-    /* 【修改点】：选中/鼠标悬停时变成 70FFFF */
-    color: #00FFFF !important; 
+#paige-site-menu a:hover { color: #66cdcd !important; }
+#paige-site-menu a:active { color: #004d4d !important; }
+
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
 }
 
-/* 6. 正文的超链接去下划线 (全局生效，这样你的介绍里如果有链接也不会有下划线) */
-#paige-page a {
-    text-decoration: none !important; 
+/* 隐藏顶部默认元素 */
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
 }
 
-#paige-page a:hover {
-    opacity: 0.7 !important;
+/* 破框横幅 */
+.full-bleed-banner {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
 }
 
-/* 7. 精准打击：只让带有 contact-info 马甲的部分变成 Jost 字体 */
-.contact-info {
-    font-family: 'MyJost', sans-serif !important;
-    color: #222 !important; /* 【修改点】：让 "Email:" 这种普通文字恢复黑色 */
-}
+.full-bleed-banner img { width: 100% !important; }
 
-.contact-info a {
-    font-family: 'MyJost', sans-serif !important;
-    color: #00FFFF !important; /* 【修改点】：让邮箱地址和 Download CV 变成青色 */
-    text-decoration: none !important; /* 去掉下划线 */
-    transition: color 0.2s ease-in-out !important; /* 增加一点丝滑的颜色过渡 */
-}
-
-/* 鼠标悬停在 Email 或 CV 上时的效果 */
-.contact-info a:hover {
-    color: #70FFFF !important; /* 悬停时变亮一点 */
-    opacity: 1 !important; /* 确保悬停时不透明 */
-}
+/* 其他样式 */
+#paige-page a { text-decoration: none !important; }
+.contact-info { font-family: 'MyJost', sans-serif !important; color: #222 !important; }
+.contact-info a { color: #008b8b !important; }
 </style>
