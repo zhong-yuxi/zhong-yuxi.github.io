@@ -1,0 +1,39 @@
+/* ==========================================
+   1. 导入全局自定义字体 (Import Custom Fonts)
+   ========================================== */
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================
+   2. 导航栏全局交互样式 (Global Navbar Styles)
+   ========================================== */
+
+/* 默认状态：穿上 Jost 字体，设定初始颜色 */
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; /* 👈 魔法生效处：Jost 字体回来啦！ */
+    color: #008b8b !important;
+    font-weight: 500 !important;                  /* 中等粗细，更有质感 */
+    letter-spacing: 0.05em !important;            /* 稍微拉开一点字间距，增加高级的呼吸感 */
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+/* 鼠标悬停时 (变白/变浅一点) */
+#paige-site-menu a:hover {
+    color: #66cdcd !important; 
+}
+
+/* 鼠标点按下去的瞬间 (变深) */
+#paige-site-menu a:active {
+    color: #004d4d !important; 
+}
+
+/* 当用户处于该栏目页面时 (保持深色高亮) */
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; /* 当前页面的菜单项加粗，提示位置 */
+}
