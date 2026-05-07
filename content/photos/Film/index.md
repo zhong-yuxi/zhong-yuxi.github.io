@@ -157,6 +157,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="film18.JPG" alt="Film 18" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film19.jpg" alt="Film 19" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film20.jpg" alt="Film 20" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film48.JPG" alt="Film 48" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film21.jpg" alt="Film 21" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film22.jpg" alt="Film 22" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film23.JPG" alt="Film 23" loading="lazy" process="resize 800x webp" >}}
@@ -183,4 +184,5 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="film44.jpg" alt="Film 44" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film45.jpg" alt="Film 45" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="film46.JPG" alt="Film 46" loading="lazy" process="resize 800x webp" >}}
+{{< paige/image src="film47.jpg" alt="Film 45" loading="lazy" process="resize 800x webp" >}}
 </div>

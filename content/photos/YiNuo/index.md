@@ -87,7 +87,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
     /* 电脑端默认分 4 列 */
     column-count: 4;
     /* 列与列之间的呼吸感间距 */
-    column-gap: 15px; 
+    column-gap: 25px; 
     max-width: 1200px; 
     margin: 40px auto; /* 居中显示 */
     padding: 0 20px;
@@ -112,7 +112,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   }
   
   .masonry-gallery img:hover {
-    filter: brightness(1.05); 
+    filter: brightness(1.06); 
   }
 
   /* 4. 响应式布局 */
@@ -136,10 +136,10 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 </style>
 
 <div class="masonry-gallery">
-  {{< paige/image src="yinuo1.jpeg" alt="Yinuo 1" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo1.jpeg" alt="Yinuo 1" >}}
   {{< paige/image src="yinuo2.jpeg" alt="Yinuo 2" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo3.jpg" alt="Yinuo 3" loading="lazy" process="resize 800x webp" >}}
-  {{< paige/image src="yinuo4.JPG" alt="Yinuo 4" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo4.JPG" alt="Yinuo 4" >}}
   {{< paige/image src="yinuo5.JPG" alt="Yinuo 5" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo6.JPG" alt="Yinuo 6" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo7.JPG" alt="Yinuo 7" loading="lazy" process="resize 800x webp" >}}
@@ -162,6 +162,9 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="yinuo21.jpg" alt="Yinuo 21" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo22.jpg" alt="Yinuo 22" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo23.jpg" alt="Yinuo 23" loading="lazy" process="resize 800x webp" >}}
-  {{< paige/image src="yinuo24.jpeg" alt="Yinuo 24" loading="lazy" process="resize 800x webp" >}}
-  {{< paige/image src="yinuo25.jpeg" alt="Yinuo 25" >}}
+  {{< paige/image src="yinuo24.jpeg" alt="Yinuo 24" >}}
+  {{< paige/image src="yinuo25.jpeg" alt="Yinuo 25" >}}  
+  {{< paige/image src="yinuo26.jpg" alt="Yinuo 26" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo27.jpg" alt="Yinuo 27" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo28.jpg" alt="Yinuo 28" loading="lazy" process="resize 800x webp" >}}
 </div>

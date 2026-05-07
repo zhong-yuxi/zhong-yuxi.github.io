@@ -116,7 +116,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   }
   
   .masonry-gallery img:hover {
-    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
+    filter: brightness(1.08); /* 鼠标悬停稍微变亮一点，高级感拉满 */
   }
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
@@ -157,4 +157,7 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="opera15.JPG" alt="Opera 15" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera16.jpg" alt="Opera 16" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera17.jpg" alt="Opera 17" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="opera18.jpg" alt="Opera 18" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="opera19.jpg" alt="Opera 19" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="opera20.jpeg" alt="Opera 20" loading="lazy" process="resize 800x webp" >}}
 </div>
