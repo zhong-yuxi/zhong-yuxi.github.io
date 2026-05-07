@@ -161,3 +161,24 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="opera19.jpg" alt="Opera 19" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera20.jpeg" alt="Opera 20" loading="lazy" process="resize 800x webp" >}}
 </div>
+
+<script>
+// 等待网页内容加载完毕后再施展魔法
+document.addEventListener("DOMContentLoaded", function() {
+    const gallery = document.querySelector('.masonry-gallery');
+    if (!gallery) return;
+
+    // 获取相册里的所有图片项
+    const items = Array.from(gallery.children);
+
+    // 洗牌魔法：随机打乱这些图片的顺序
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        // 交换位置
+        [items[i], items[j]] = [items[j], items[i]];
+    }
+
+    // 按照新的随机顺序，把图片重新放回相册里
+    items.forEach(item => gallery.appendChild(item));
+});
+</script>
