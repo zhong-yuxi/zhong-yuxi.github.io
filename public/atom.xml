@@ -89,6 +89,22 @@
     
 
     
+        
+            
+                <link href="http://localhost:1313/zh/atom.xml" hreflang="zh" rel="alternate" type="application/atom+xml"/>
+            
+        
+            
+        
+            
+                <link href="http://localhost:1313/zh/paige-search.json" hreflang="zh" rel="alternate" type="application/json"/>
+            
+        
+            
+                <link href="http://localhost:1313/zh/rss.xml" hreflang="zh" rel="alternate" type="application/rss+xml"/>
+            
+        
+    
 
     
         <logo>http://localhost:1313/</logo>
@@ -344,6 +360,10 @@ panel.style.opacity = '0';
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 

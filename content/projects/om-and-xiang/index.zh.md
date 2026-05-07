@@ -1,0 +1,177 @@
+<div id="stage-1" class="container-fluid px-0 text-center my-5 breakout-width">
+  <h3 class="fw-bold mb-5" style="font-family: 'MyJost', sans-serif; color: #008b8b;">选择一尊你喜欢的灶台</h3>
+  
+  <div class="row justify-content-center g-4">
+    <div class="col-12 col-md-4">
+      <img src="/projects/om-and-xiang/stove1.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove1.jpg')" alt="Stove 1">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="/projects/om-and-xiang/stove2.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove2.jpg')" alt="Stove 2">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="/projects/om-and-xiang/stove3.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove3.jpg')" alt="Stove 3">
+    </div>
+  </div>
+</div>
+
+<div id="stage-2" class="container-fluid px-0 d-none my-4">
+<button onclick="goBack()" class="btn btn-sm btn-outline-secondary mb-3" style="font-family: 'MyJost', sans-serif;">&larr; 返回</button>
+
+<div class="d-flex w-100" style="gap: 20px;">
+
+<div id="main-image-wrapper" class="position-relative transition-layout" style="width: 100%;">
+  <img id="main-enlarged-img" src="" class="img-fluid rounded-4 shadow w-100" alt="Enlarged Stove">
+  
+  <div id="hotspots-container"></div>
+</div>
+
+<div id="details-panel" class="transition-layout d-flex flex-column gap-3" style="width: 0%; opacity: 0; max-height: 80vh; overflow-y: auto; overflow-x: hidden; padding-right: 10px;">
+  <h5 id="detail-title" class="fw-bold m-0 sticky-top bg-white py-2" style="font-family: 'MyJost', sans-serif; z-index: 10;"></h5>
+  <div id="detail-images-container" class="d-flex flex-column gap-3">
+    </div>
+</div>
+
+</div>
+</div>
+
+<style>
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
+}
+
+#paige-site-header {
+    margin-top: 2rem !important;
+}
+
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; 
+    color: #008b8b !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+#paige-site-menu a:hover { color: #66cdcd !important; }
+#paige-site-menu a:active { color: #004d4d !important; }
+
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
+}
+
+.stove-option { cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.stove-option:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important; }
+.transition-layout { transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease; }
+.hotspot-circle {
+position: absolute; width: 90px; height: 90px; background: rgba(255, 255, 255, 0.2);
+border: 2px solid #24F1FF; border-radius: 50%; transform: translate(-50%, -50%);
+cursor: pointer; box-shadow: 0 0 0 0 rgba(36, 241, 255, 0.7); animation: pulse 2s infinite; transition: background 0.3s ease;
+}
+.hotspot-circle:hover { background: rgba(36, 241, 255, 0.8); }
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(36, 241, 255, 0.7); }
+70% { box-shadow: 0 0 0 15px rgba(36, 241, 255, 0); }
+100% { box-shadow: 0 0 0 0 rgba(36, 241, 255, 0); }
+}
+@media (prefers-color-scheme: dark) {
+#stage-1 h3, #detail-title { color: #24F1FF !important; }
+#detail-title { background-color: #121212 !important; } 
+}
+#details-panel::-webkit-scrollbar { width: 6px; }
+#details-panel::-webkit-scrollbar-thumb { background-color: #008b8b; border-radius: 10px; }
+
+.breakout-width {
+  width: 90vw !important; 
+  max-width: 1600px !important; 
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .breakout-width { width: 95vw !important; }
+}
+</style>
+
+<script>
+// 魔法生效：所有图片全部加上绝对路径
+const detailData = {
+'cat': { title: "灶壁猫", images: ["/projects/om-and-xiang/cat1.jpg", "/projects/om-and-xiang/cat2.jpg", "/projects/om-and-xiang/cat3.jpg", "/projects/om-and-xiang/cat4.jpg"] },
+'kirtimukha': { title: "饕餮/塌鼻兽", images: ["/projects/om-and-xiang/kirtimukha1.jpg", "/projects/om-and-xiang/kirtimukha2.jpg", "/projects/om-and-xiang/kirtimukha3.jpg", "/projects/om-and-xiang/kirtimukha4.jpg"] },
+'stovegod': { title: "灶神", images: ["/projects/om-and-xiang/stovegod1.jpg", "/projects/om-and-xiang/stovegod2.jpg", "/projects/om-and-xiang/stovegod3.jpg", "/projects/om-and-xiang/stovegod4.jpg"] },
+'nehulay': { title: "吐宝鼠", images: ["/projects/om-and-xiang/nehulay1.jpg", "/projects/om-and-xiang/nehulay2.jpg", "/projects/om-and-xiang/nehulay3.jpg", "/projects/om-and-xiang/nehulay4.jpg"] },
+'snow-lion': { title: "雪狮", images: ["/projects/om-and-xiang/snow-lion1.jpg", "/projects/om-and-xiang/snow-lion2.jpg", "/projects/om-and-xiang/snow-lion3.jpg", "/projects/om-and-xiang/snow-lion4.jpg"] }
+};
+
+// 魔法生效：这里的 key 也必须跟着换成绝对路径
+const stoveHotspots = {
+'/projects/om-and-xiang/stove1.jpg': [
+{ id: 'cat', top: '48%', left: '30%' },
+{ id: 'kirtimukha', top: '58%', left: '50.5%' }
+],
+'/projects/om-and-xiang/stove2.jpg': [
+{ id: 'stovegod', top: '42%', left: '51%' }
+],
+'/projects/om-and-xiang/stove3.jpg': [
+{ id: 'nehulay', top: '50%', left: '42%' },
+{ id: 'snow-lion', top: '60%', left: '63%' }
+]
+};
+
+function enterStage2(imgSrc) {
+document.getElementById('stage-1').classList.add('d-none');
+document.getElementById('stage-2').classList.remove('d-none');
+document.getElementById('main-enlarged-img').src = imgSrc;
+
+const container = document.getElementById('hotspots-container');
+container.innerHTML = ''; 
+
+const spots = stoveHotspots[imgSrc]; 
+if (spots) {
+spots.forEach(spot => {
+  container.innerHTML += `<div class="hotspot-circle" style="top: ${spot.top}; left: ${spot.left};" onclick="showDetails('${spot.id}')"></div>`;
+});
+}
+
+resetLayout();
+}
+
+function goBack() {
+document.getElementById('stage-2').classList.add('d-none');
+document.getElementById('stage-1').classList.remove('d-none');
+}
+
+function showDetails(keyword) {
+document.getElementById('main-image-wrapper').style.width = '65%';
+const panel = document.getElementById('details-panel');
+panel.style.width = '35%';
+panel.style.opacity = '1';
+
+const data = detailData[keyword];
+document.getElementById('detail-title').innerText = data.title;
+
+const imgContainer = document.getElementById('detail-images-container');
+imgContainer.innerHTML = ''; 
+
+data.images.forEach(imgSrc => {
+imgContainer.innerHTML += `<img src="${imgSrc}" class="img-fluid rounded-3 shadow-sm">`;
+});
+}
+
+function resetLayout() {
+document.getElementById('main-image-wrapper').style.width = '100%';
+const panel = document.getElementById('details-panel');
+panel.style.width = '0%';
+panel.style.opacity = '0';
+}
+</script>

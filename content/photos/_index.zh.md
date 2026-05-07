@@ -1,0 +1,292 @@
+<style>
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
+}
+
+/* ==========================================
+   🚀 空间魔法：增加顶部留白，让整体往下移
+   ========================================== */
+#paige-site-header {
+    margin-top: 2rem !important; /* 这里的 4rem 就是往下移的距离，你可以随便改！ */
+}
+
+/* 隐藏 Paige 主题底部自动生成的子页面列表 */
+#paige-page-pages {
+  display: none !important;
+}
+
+/* 引入外部自定义字体 */
+@font-face {
+  font-family: 'Sparose'; /* 给这个字体起个代号，随便叫什么都行，这里我们就叫 Sparose */
+  /* 注意这里的路径！在 Hugo 里，static 目录代表根目录 / ，所以不要写 static 进去 */
+  src: url('/fonts/sparose.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- 核心容器 --- */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  overflow: hidden; /* 防止边缘溢出 */
+  row-gap: 0; /* 桌面端和平板端上下无缝贴合 */
+}
+
+/* --- 核心卡片 & 斜切魔法 --- */
+.photo-card {
+  --s: 35px; /* 控制斜切的角度和宽度，数值越大倾斜越猛 */
+  height: 450px; 
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none !important;
+  color: white !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 顶部和底部内容分离 */
+  padding: 30px;
+  
+  /* 默认：电脑端一排4张 */
+  /* 精确的数学计算，让它们互相叠加且填满 100% 宽度 */
+  width: calc(25% + var(--s));
+  margin-left: calc(-1 * var(--s));
+  clip-path: polygon(var(--s) 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%);
+  transition: filter 0.4s ease;
+}
+
+/* 电脑端(4张一排)：修复最左边和最右边卡片的边缘，让它外侧是直的 */
+.photo-card:nth-child(4n + 1) {
+  margin-left: 0;
+  width: calc(25% + (var(--s) / 2));
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%);
+}
+.photo-card:nth-child(4n) {
+  width: calc(25% + (var(--s) / 2));
+  clip-path: polygon(var(--s) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* 渐变遮罩：让白色文字在任何背景下都清晰可见 */
+.photo-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* 顶部有轻微变暗，底部加深变暗 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+  transition: background 0.4s ease;
+}
+
+/* 鼠标悬停时的微光效果 */
+.photo-card:hover::before {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+}
+.photo-card:hover {
+  filter: brightness(1.05); 
+}
+
+/* --- 文字排版完全复刻图1 --- */
+.card-top, .card-bottom {
+  position: relative;
+  z-index: 2; /* 保证文字浮在遮罩上面 */
+}
+
+/* 左上角细小文字 */
+.card-top {
+  font-size: 0.65rem;
+  letter-spacing: 4px; /* 字间距拉开显得高级 */
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* 左下角标题与描述 */
+.card-bottom h3 {
+font-family: 'Sparose', serif;
+  font-size: 1.5rem;
+  font-weight: 200; /* 细体，还原图1优雅感 */
+  margin: 0 0 8px 0;
+  padding: 0;
+  border: none;
+  letter-spacing: 2px;
+}
+.card-bottom p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin: 0 0 20px 0;
+  max-width: 90%;
+  font-weight: 300;
+}
+.view-btn {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* --- 响应式：平板端 (1排2张) --- */
+@media (max-width: 1024px) {
+  .photo-card {
+    width: calc(50% + var(--s)) !important;
+    margin-left: calc(-1 * var(--s)) !important;
+    clip-path: polygon(var(--s) 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%) !important;
+  }
+  /* 平板端重置首尾边缘修复 */
+  .photo-card:nth-child(2n + 1) {
+    margin-left: 0 !important;
+    width: calc(50% + (var(--s) / 2)) !important;
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--s)) 100%, 0 100%) !important;
+  }
+  .photo-card:nth-child(2n) {
+    width: calc(50% + (var(--s) / 2)) !important;
+    clip-path: polygon(var(--s) 0, 100% 0, 100% 100%, 0 100%) !important;
+  }
+}
+
+/* --- 响应式：手机端 (1排1张) --- */
+@media (max-width: 768px) {
+  .gallery-container {
+    row-gap: 5px; /* 手机端上下加上一点点间隙，显得不那么压抑 */
+  }
+  .photo-card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    clip-path: none !important; /* 手机屏幕太窄，去掉斜切变回常规矩形更易阅读 */
+    height: 380px;
+    padding: 25px;
+  }
+}
+
+/* ==========================================
+   🌟 强制注入：导航栏字体与颜色魔法 (Brute Force Styles)
+   ========================================== */
+/* 1. 加载导航栏专属的 Jost 字体 (与相册标题的 Sparose 互不冲突) */
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. 强制覆盖导航栏的字体和初始颜色 */
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; 
+    color: #008b8b !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+/* 3. 鼠标悬停变浅（变白一点） */
+#paige-site-menu a:hover {
+    color: #66cdcd !important; 
+}
+
+/* 4. 鼠标点下去的瞬间变深 */
+#paige-site-menu a:active {
+    color: #004d4d !important; 
+}
+
+/* 5. 当前所在页面的高亮保持深色 (表示你正在 Photos 页面) */
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
+}
+
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 常驻颜色为 24F1FF */
+    #paige-site-menu a { color: #24F1FF !important; }
+    /* 鼠标指向的颜色为 B1F5FA */
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    /* 选中之后的颜色为 FFFFFF */
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+}
+
+</style>
+
+<!-- 网页的结构部分 -->
+<div class="gallery-container">
+
+<!-- 卡片 1: 乡城 -->
+  <a href="/photos/xiangcheng/" class="photo-card" style="background-image: url('/images/photoxiangcheng.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>乡城</h3>
+      <p>吾乡所在</p>
+    </div>
+  </a>
+
+  <!-- 卡片 2: 寺庙 -->
+  <a href="/photos/temple/" class="photo-card" style="background-image: url('/images/phototemple.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>寺庙</h3>
+      <p>隐于万千古寺的幽微深处</p>
+    </div>
+  </a>
+
+  <!-- 卡片 3: 街头 -->
+  <a href="/photos/street/" class="photo-card" style="background-image: url('/images/photostreet.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>街拍</h3>
+      <p>烟火的律动</p>
+    </div>
+  </a>
+  
+<!-- 卡片 6: 胶片 -->
+  <a href="/photos/film/" class="photo-card" style="background-image: url('/images/photofilm.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>胶片</h3>
+      <p>颗粒间的故事</p>
+    </div>
+  </a>
+  
+<!-- 卡片 8: 一诺 -->
+  <a href="/photos/yinuo/" class="photo-card" style="background-image: url('/images/photoyinuo.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>顗糯</h3>
+      <p>真正的绅士</p>
+    </div>
+  </a>
+
+  <!-- 卡片 5: 山脉 -->
+  <a href="/photos/mountains/" class="photo-card" style="background-image: url('/images/photomountain.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>群山</h3>
+      <p>大地的起伏</p>
+    </div>
+  </a>
+
+  <!-- 卡片 7: 戏曲/戏剧 -->
+  <a href="/photos/opera/" class="photo-card" style="background-image: url('/images/photoopera.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>戏曲</h3>
+      <p>戏里戏外</p>
+    </div>
+  </a>
+  
+<!-- 卡片 4: 动物 -->
+  <a href="/photos/portraits/" class="photo-card" style="background-image: url('/images/photoanimal.jpg');">
+    <div class="card-top">-</div>
+    <div class="card-bottom">
+      <h3>生命</h3>
+      <p>流浪动物救助站的掠影</p>
+    </div>
+  </a>
+
+</div>

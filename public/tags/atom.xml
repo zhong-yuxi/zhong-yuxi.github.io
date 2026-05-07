@@ -81,6 +81,18 @@
     
 
     
+        
+            
+                <link href="http://localhost:1313/zh/tags/atom.xml" hreflang="zh" rel="alternate" type="application/atom+xml"/>
+            
+        
+            
+        
+            
+                <link href="http://localhost:1313/zh/tags/rss.xml" hreflang="zh" rel="alternate" type="application/rss+xml"/>
+            
+        
+    
 
     
         <logo>http://localhost:1313/</logo>
