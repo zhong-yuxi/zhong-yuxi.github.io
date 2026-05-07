@@ -136,6 +136,8 @@ cursor: pointer;
 transition: filter 0.3s, transform 0.3s;
 }
 .photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+
+/* 适配 Paige 短代码生成的图片容器 */
 .photo-item img {
 width: 100%;
 height: auto;
@@ -202,70 +204,101 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 </style>
 
-<!-- ================= 页面结构 ================= -->
 <div class="carousel-wrapper">
-<!-- 左箭头 -->
 <button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
 
 <div class="scroll-container">
 <div class="scroll-track" id="street-track">
-  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
-  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
   
   <div class="photo-item" onclick="openSpotlight('street1.jpeg', '(01)', 'Dalian, Liaoning<br>A family by the sea, 2025')">
-    <img src="street1.jpeg" alt="street1">
+    {{< paige/image src="street1.jpeg" alt="street1" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('street5.jpg', '(02)', 'yantai, shandong<br>Fisherman and sunset, 2025')"><img src="street5.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street5.jpg', '(02)', 'yantai, shandong<br>Fisherman and sunset, 2025')">
+    {{< paige/image src="street5.jpg" alt="street5" loading="lazy" process="resize 800x webp" >}}
+  </div>
   <div class="photo-item" onclick="openSpotlight('street2.jpg', '(03)', 'Arxan City, Inner Mongolia<br>Winter Street, 2025')">
-    <img src="street2.jpg" alt="street2">
+    {{< paige/image src="street2.jpg" alt="street2" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street3.jpg', '(04)', 'Arxan City, Inner Mongolia<br>Cows and Snow, 2025')">
-    <img src="street3.jpg" alt="street3">
+    {{< paige/image src="street3.jpg" alt="street3" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('street8.JPG', '(05)', 'shenyang, liaoning<br>Storefront')"><img src="street8.JPG"></div>
+  <div class="photo-item" onclick="openSpotlight('street8.JPG', '(05)', 'shenyang, liaoning<br>Storefront')">
+    {{< paige/image src="street8.JPG" alt="street8" loading="lazy" process="resize 800x webp" >}}
+  </div>
   <div class="photo-item" onclick="openSpotlight('street4.jpg', '(06)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
-    <img src="street4.jpg" alt="street4">
+    {{< paige/image src="street4.jpg" alt="street4" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('street12.JPG', '(07)', 'yaan, sichuan<br>Minimalist sky')"><img src="street12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('street6.jpg', '(08)', 'yantai, shandong<br>Haenyeo and shoreline')"><img src="street6.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street11.jpeg', '(09)', 'shenyang, liaoning<br>fishing sunset')"><img src="street11.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(10)', 'shenyang, liaoning<br>snow and window')"><img src="street7.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(11)', 'quanzhou, fujian<br>Night market')"><img src="street9.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(12)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')"><img src="street10.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')"><img src="street13.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')"><img src="street14.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')"><img src="street15.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street16.jpg', '(16)', 'cehngdu, sichuan<br>Birds resting')"><img src="street16.jpg"></div>
-  <div class="photo-item" onclick="openSpotlight('street17.jpg', '(17)', 'dalian, liaoning<br>fishermen')"><img src="street17.jpg"></div>
-  <div class="photo-item" onclick="openSpotlight('street18.089.jpg', '(18)', 'dalian, liaoning<br>reader')"><img src="street18.089.jpg"></div>
-  <div class="photo-item" onclick="openSpotlight('street19.jpeg', '(19)', 'chengdu, sichuan<br>Peddler and fish')"><img src="street19.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(20)', 'chengdu, sichuan<br>Building gap')"><img src="street21.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street20.jpg', '(21)', 'chengdu, sichuan<br>Traditional textures')"><img src="street20.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street22.jpg', '(22)', 'weihai, shandong<br>')"><img src="street22.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street23.jpg', '(23)', 'weihai, shandong<br>')"><img src="street23.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('street24.jpg', '(24)', 'weihai, shandong<br>')"><img src="street24.jpg"></div>
+  <div class="photo-item" onclick="openSpotlight('street12.JPG', '(07)', 'yaan, sichuan<br>Minimalist sky')">
+    {{< paige/image src="street12.JPG" alt="street12" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street6.jpg', '(08)', 'yantai, shandong<br>Haenyeo and shoreline')">
+    {{< paige/image src="street6.jpg" alt="street6" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street11.jpeg', '(09)', 'shenyang, liaoning<br>fishing sunset')">
+    {{< paige/image src="street11.jpeg" alt="street11" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street7.JPG', '(10)', 'shenyang, liaoning<br>snow and window')">
+    {{< paige/image src="street7.JPG" alt="street7" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(11)', 'quanzhou, fujian<br>Night market')">
+    {{< paige/image src="street9.jpeg" alt="street9" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(12)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')">
+    {{< paige/image src="street10.jpeg" alt="street10" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')">
+    {{< paige/image src="street13.JPG" alt="street13" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')">
+    {{< paige/image src="street14.JPG" alt="street14" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')">
+    {{< paige/image src="street15.jpeg" alt="street15" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street16.jpg', '(16)', 'cehngdu, sichuan<br>Birds resting')">
+    {{< paige/image src="street16.jpg" alt="street16" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street17.jpg', '(17)', 'dalian, liaoning<br>fishermen')">
+    {{< paige/image src="street17.jpg" alt="street17" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street18.089.jpg', '(18)', 'dalian, liaoning<br>reader')">
+    {{< paige/image src="street18.089.jpg" alt="street18" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street19.jpeg', '(19)', 'chengdu, sichuan<br>Peddler and fish')">
+    {{< paige/image src="street19.jpeg" alt="street19" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street21.jpg', '(20)', 'chengdu, sichuan<br>Building gap')">
+    {{< paige/image src="street21.jpg" alt="street21" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street20.jpg', '(21)', 'chengdu, sichuan<br>Traditional textures')">
+    {{< paige/image src="street20.jpg" alt="street20" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street22.jpg', '(22)', 'weihai, shandong<br>')">
+    {{< paige/image src="street22.jpg" alt="street22" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street23.jpg', '(23)', 'weihai, shandong<br>')">
+    {{< paige/image src="street23.jpg" alt="street23" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  <div class="photo-item" onclick="openSpotlight('street24.jpg', '(24)', 'weihai, shandong<br>')">
+    {{< paige/image src="street24.jpg" alt="street24" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
 </div>
 </div>
 
-<!-- 右箭头 -->
 <button class="nav-arrow right-arrow" onclick="scrollGallery(1)">&#10095;</button>
 </div>
 
-<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
 <div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
-<!-- 阻止点击内部图片时关闭模态框 -->
 <div class="spotlight-content" onclick="event.stopPropagation()">
-<!-- 截图2里的文字信息区域 -->
 <div class="spotlight-info">
   <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
   <div id="spotlight-desc">DESC TEXT</div>
 </div>
-<!-- 被放大的图片 -->
 <img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
 </div>
 </div>
 
-<!-- ================= 核心交互脚本 ================= -->
 <script>
 // 1. 控制画廊左右滑动的魔法
 function scrollGallery(direction) {

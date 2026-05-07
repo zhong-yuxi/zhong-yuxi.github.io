@@ -64,10 +64,10 @@ weight: 3
   /* 2. 让这个页面的标题（h1）变身 */
   h1 {
     font-family: 'MySparoseFont', serif; /* 如果 Caliban 加载失败，默认使用衬线体 */
-    font-size: 1.5rem;   /* 大小：适中偏大，很有张力 */
-    font-weight: 300;    /* 粗细：500是中等粗细，600是半粗体 */
-    text-align: center;  /* 居中对齐，更有仪式感 */
-    margin-top: 20px;    /* 顶部留白 */
+    font-size: 1.5rem;    /* 大小：适中偏大，很有张力 */
+    font-weight: 300;     /* 粗细：500是中等粗细，600是半粗体 */
+    text-align: center;   /* 居中对齐，更有仪式感 */
+    margin-top: 20px;     /* 顶部留白 */
     letter-spacing: 2px; /* 字符间距：稍微拉开一点，更高级 */
 color: #166D7A; /* 👈 白底时的专属颜色 */
   transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
@@ -97,32 +97,34 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
     padding: 0 20px;
   }
 
+  /* 适配 Paige 短代码容器，防止瀑布流断裂，并保持 30px 间距 */
+  .masonry-gallery .paige-shortcode-image {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 30px;
+  }
+
   /* 3. 图片的自我修养：不裁剪、不断裂 */
   .masonry-gallery img {
     width: 100%;       /* 宽度占满当前列 */
-    height: auto;      /* ⭐️ 核心魔法：高度自适应！绝不裁剪任何一丝一毫！ */
+    height: auto;      /* ⭐️ 核心魔法：高度自适应！ */
     display: block;
-    margin-bottom: 30px; /* 上下照片的间距，和 column-gap 保持一致 */
-    border-radius: 0px;  /* 可选：加一点极微小的圆角，质感更温润 */
+    border-radius: 0px;  /* 肖像保持原汁原味的直角 */
     
-    /* ⭐️ 防坑指南：防止一张图片被从中间劈开，分到两列去 */
-    break-inside: avoid; 
-    -webkit-column-break-inside: avoid;
-    
-    /* 一点点极简的交互：鼠标放上去微微发光 */
+    /* 交互：鼠标放上去稍微变亮 */
     transition: filter 0.3s ease;
   }
   
   .masonry-gallery img:hover {
-    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
+    filter: brightness(1.05); 
   }
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 3; } /* 平板变成 2 列 */
+    .masonry-gallery { column-count: 3; } /* 平板保持 3 列 */
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 1 列大图 */
+    .masonry-gallery { column-count: 2; } /* 手机变成 2 列 */
   }
   
   /* 1. 系统级别的夜间模式适配 */
@@ -137,18 +139,16 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 }
 </style>
 
-<!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
 <div class="masonry-gallery">
-  <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
-<img src="portrait1.jpeg" alt="Portrait 1">
-<img src="portrait2.jpeg" alt="Portrait 2">
-<img src="portrait3.jpeg" alt="Portrait 3">
-<img src="portrait4.jpeg" alt="Portrait 4">
-<img src="portrait5.jpg" alt="Portrait 5">
-<img src="portrait6.JPG" alt="Portrait 6">
-<img src="portrait7.JPG" alt="Portrait 7">
-<img src="portrait8.JPG" alt="Portrait 8">
-<img src="portrait9.JPG" alt="Portrait 9">
-<img src="portrait10.JPG" alt="Portrait 10">
-<img src="portrait11.JPG" alt="Portrait 11">
+  {{< paige/image src="portrait1.jpeg" alt="Portrait 1" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait2.jpeg" alt="Portrait 2" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait3.jpeg" alt="Portrait 3" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait4.jpeg" alt="Portrait 4" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait5.jpg" alt="Portrait 5" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait6.JPG" alt="Portrait 6" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait7.JPG" alt="Portrait 7" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait8.JPG" alt="Portrait 8" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait9.JPG" alt="Portrait 9" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait10.JPG" alt="Portrait 10" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="portrait11.JPG" alt="Portrait 11" loading="lazy" process="resize 800x webp" >}}
 </div>

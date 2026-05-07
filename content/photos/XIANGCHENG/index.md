@@ -137,6 +137,8 @@ cursor: pointer;
 transition: filter 0.3s, transform 0.3s;
 }
 .photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+
+/* 适配 Paige 短代码生成的图片容器 */
 .photo-item img {
 width: 100%;
 height: auto;
@@ -203,54 +205,74 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 </style>
 
-<!-- ================= 页面结构 ================= -->
 <div class="carousel-wrapper">
-<!-- 左箭头 -->
 <button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
 
 <div class="scroll-container">
 <div class="scroll-track" id="xiangcheng-track">
-  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
-  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
   
-<div class="photo-item" onclick="openSpotlight('xiangcheng10.JPG', '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')"><img src="xiangcheng10.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng11.jpeg', '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')"><img src="xiangcheng11.jpeg"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng15.JPG', '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')"><img src="xiangcheng15.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng13.JPG', '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')"><img src="xiangcheng13.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng14.JPG', '(05)', 'Xiangcheng, Sichuan<br>Texture of the abandoned White Tibetan House')"><img src="xiangcheng14.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng5.JPG', '(06)', 'Xiangcheng, Sichuan<br>A corner of the Sangpiling Temple')"><img src="xiangcheng5.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng6.JPG', '(07)', 'Xiangcheng, Sichuan<br>Winding mountain road')"><img src="xiangcheng6.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng7.JPG', '(08)', 'Xiangcheng, Sichuan<br>Star trails over the valley')"><img src="xiangcheng7.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng12.JPG', '(09)', 'Xiangcheng, Sichuan<br>Highland pasture')"><img src="xiangcheng12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng9.JPG', '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')"><img src="xiangcheng9.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng1.jpg', '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')"><img src="xiangcheng1.jpg"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng8.JPG', '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')"><img src="xiangcheng8.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng2.JPG', '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')"><img src="xiangcheng2.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng3.JPG', '(03)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')"><img src="xiangcheng3.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng4.JPG', '(04)', 'Xiangcheng, Sichuan<br>Local gathering')"><img src="xiangcheng4.JPG"></div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng10.JPG', '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')">
+    {{< paige/image src="xiangcheng10.JPG" alt="Xiangcheng 10" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng11.jpeg', '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')">
+    {{< paige/image src="xiangcheng11.jpeg" alt="Xiangcheng 11" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng15.JPG', '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')">
+    {{< paige/image src="xiangcheng15.JPG" alt="Xiangcheng 15" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng13.JPG', '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')">
+    {{< paige/image src="xiangcheng13.JPG" alt="Xiangcheng 13" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng14.JPG', '(05)', 'Xiangcheng, Sichuan<br>Texture of the abandoned White Tibetan House')">
+    {{< paige/image src="xiangcheng14.JPG" alt="Xiangcheng 14" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng5.JPG', '(06)', 'Xiangcheng, Sichuan<br>A corner of the Sangpiling Temple')">
+    {{< paige/image src="xiangcheng5.JPG" alt="Xiangcheng 5" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng6.JPG', '(07)', 'Xiangcheng, Sichuan<br>Winding mountain road')">
+    {{< paige/image src="xiangcheng6.JPG" alt="Xiangcheng 6" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng7.JPG', '(08)', 'Xiangcheng, Sichuan<br>Star trails over the valley')">
+    {{< paige/image src="xiangcheng7.JPG" alt="Xiangcheng 7" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng12.JPG', '(09)', 'Xiangcheng, Sichuan<br>Highland pasture')">
+    {{< paige/image src="xiangcheng12.JPG" alt="Xiangcheng 12" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng9.JPG', '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')">
+    {{< paige/image src="xiangcheng9.JPG" alt="Xiangcheng 9" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng1.jpg', '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')">
+    {{< paige/image src="xiangcheng1.jpg" alt="Xiangcheng 1" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng8.JPG', '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')">
+    {{< paige/image src="xiangcheng8.JPG" alt="Xiangcheng 8" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng2.JPG', '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')">
+    {{< paige/image src="xiangcheng2.JPG" alt="Xiangcheng 2" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng3.JPG', '(14)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')">
+    {{< paige/image src="xiangcheng3.JPG" alt="Xiangcheng 3" loading="lazy" process="resize 800x webp" >}}
+</div>
+<div class="photo-item" onclick="openSpotlight('xiangcheng4.JPG', '(15)', 'Xiangcheng, Sichuan<br>Local gathering')">
+    {{< paige/image src="xiangcheng4.JPG" alt="Xiangcheng 4" >}}
+</div>
 
 </div>
 </div>
 
-<!-- 右箭头 -->
 <button class="nav-arrow right-arrow" onclick="scrollGallery(1)">&#10095;</button>
 </div>
 
-<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
 <div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
-<!-- 阻止点击内部图片时关闭模态框 -->
 <div class="spotlight-content" onclick="event.stopPropagation()">
-<!-- 截图2里的文字信息区域 -->
 <div class="spotlight-info">
   <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
   <div id="spotlight-desc">DESC TEXT</div>
 </div>
-<!-- 被放大的图片 -->
 <img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
 </div>
 </div>
 
-<!-- ================= 核心交互脚本 ================= -->
 <script>
 // 1. 控制画廊左右滑动的魔法
 function scrollGallery(direction) {

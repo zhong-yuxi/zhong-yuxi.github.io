@@ -200,7 +200,6 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 </style>
 
-<!-- ================= 页面结构 ================= -->
 <div class="carousel-wrapper">
 <button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
 
@@ -208,47 +207,47 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 <div class="scroll-track" id="mountain-track">
   
   <div class="photo-item" onclick="openSpotlight('mountain10.jpeg', '(01)', 'Mount Gongga<br>Kangding, Sichuan')">
-    <img src="mountain10.jpeg" alt="Mingshashan">
+    {{< paige/image src="mountain10.jpeg" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain1.jpeg', '(02)', 'Qiangren Valley<br>Aba Prefecture, Sichuan')">
-    <img src="mountain1.jpeg" alt="Qiangren Valley">
+    {{< paige/image src="mountain1.jpeg" alt="Qiangren Valley" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain9.JPG', '(03)', 'Dawa Gengzha<br>Ya\'an, Sichuan')">
-    <img src="mountain9.JPG" alt="Dawa Gengzha">
+    {{< paige/image src="mountain9.JPG" alt="Dawa Gengzha" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain2.jpeg', '(04)', 'Snow Mountain and Halaha River<br>Arxan, Inner Mongolia')">
-    <img src="mountain2.jpeg" alt="Arxan River">
+    {{< paige/image src="mountain2.jpeg" alt="Arxan River" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain6.JPG', '(05)', 'Singing Sand Mountains<br>Dunhuang, Gansu')">
-    <img src="mountain6.JPG" alt="Mingshashan">
+    {{< paige/image src="mountain6.JPG" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain3.jpg', '(06)', 'Snow Mountain<br>Arxan, Inner Mongolia')">
-    <img src="mountain3.jpg" alt="Arxan Mountain">
+    {{< paige/image src="mountain3.jpg" alt="Arxan Mountain" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain4.jpeg', '(07)', 'Sundog over Arxan<br>Arxan, Inner Mongolia')">
-    <img src="mountain4.jpeg" alt="Sundog">
+    {{< paige/image src="mountain4.jpeg" alt="Sundog" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain11.JPG', '(08)', 'Mount Genyen<br>Litang, Sichuan')">
-    <img src="mountain11.JPG" alt="Mingshashan">
+    {{< paige/image src="mountain11.JPG" alt="Mingshashan" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain5.JPG', '(09)', 'Qianshan Mountain<br>Anshan, Liaoning')">
-    <img src="mountain5.JPG" alt="Qianshan">
+    {{< paige/image src="mountain5.JPG" alt="Qianshan" loading="lazy" process="resize 800x webp" >}}
   </div>
   
 <div class="photo-item" onclick="openSpotlight('mountain8.jpeg', '(11)', 'Landscape of Ya\'an<br>Ya\'an, Sichuan')">
-    <img src="mountain8.jpeg" alt="Ya'an">
+    {{< paige/image src="mountain8.jpeg" alt="Ya'an" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain7.jpeg', '(10)', 'Mount Gongga<br>Garze Prefecture, Sichuan')">
-    <img src="mountain7.jpeg" alt="Gongga">
+    {{< paige/image src="mountain7.jpeg" alt="Gongga" loading="lazy" process="resize 800x webp" >}}
   </div>
 
 </div>
@@ -257,7 +256,6 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 <button class="nav-arrow right-arrow" onclick="scrollGallery(1)">&#10095;</button>
 </div>
 
-<!-- Spotlight 模态框 -->
 <div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
 <div class="spotlight-content" onclick="event.stopPropagation()">
 <div class="spotlight-info">

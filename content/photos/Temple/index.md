@@ -204,62 +204,92 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 
 </style>
 
-<!-- ================= 页面结构 ================= -->
 <div class="carousel-wrapper">
-<!-- 左箭头 -->
 <button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
 
 <div class="scroll-container">
 <div class="scroll-track" id="temple-track">
-  <!-- 注意：这里我帮你提取了所有21张图片的名字，极其小心地保留了大小写！ -->
-  <!-- 参数分别是：(1)图片路径, (2)编号, (3)详细描述 -->
   
   <div class="photo-item" onclick="openSpotlight('temple1.JPG', '(01)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')">
-    <img src="temple1.JPG" alt="temple1">
+    {{< paige/image src="temple1.JPG" alt="temple1" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('temple2.JPG', '(02)', 'Litang, sichuan<br>Lenggu Temple (New), 2024')"><img src="temple2.JPG" alt="temple2">
+
+  <div class="photo-item" onclick="openSpotlight('temple2.JPG', '(02)', 'Litang, sichuan<br>Lenggu Temple (New), 2024')">
+    {{< paige/image src="temple2.JPG" alt="temple2" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
-    <img src="temple3.JPG" alt="temple3">
+
+  <div class="photo-item" onclick="openSpotlight('temple3.JPG', '(03)', 'zhangye, gansu<br>Mati Temple, 2023')">
+    {{< paige/image src="temple3.JPG" alt="temple3" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(04)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')"><img src="temple5.jpeg"></div>
-<div class="photo-item" onclick="openSpotlight('temple10.JPG', '(05)', 'quanzhou, fujian<br>Tianhou Palace, 2023')"><img src="temple10.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(06)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple8.jpeg"></div>
+
+  <div class="photo-item" onclick="openSpotlight('temple5.jpeg', '(04)', 'Hohhot, Inner Mongolia<br>xili tuzhao, 2025')">
+    {{< paige/image src="temple5.jpeg" alt="temple5" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple10.JPG', '(05)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
+    {{< paige/image src="temple10.JPG" alt="temple10" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple8.jpeg', '(06)', 'tianshui, gansu<br>zhongshan grottoes')">
+    {{< paige/image src="temple8.jpeg" alt="temple8" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
   <div class="photo-item" onclick="openSpotlight('temple4.JPG', '(07)', 'quanzhou, fujian<br>Tianhou Palace, 2023')">
-    <img src="temple4.JPG" alt="temple4">
+    {{< paige/image src="temple4.JPG" alt="temple4" loading="lazy" process="resize 800x webp" >}}
   </div>
-<div class="photo-item" onclick="openSpotlight('temple12.JPG', '(08)', 'zhangye, gansu<br>Jinta Temple Grottoes')"><img src="temple12.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple6.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple6.JPG"></div>
-<div class="photo-item" onclick="openSpotlight('temple11.JPG', '(10)', 'wuwei, gansu<br>Kumarajiva stupa')"><img src="temple11.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(11)', 'yulin, shaanxi<br>xianglu temple, 2025')"><img src="temple7.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(12)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')"><img src="temple9.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple13.JPG', '(13)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple13.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple14.JPG', '(14)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')"><img src="temple14.JPG"></div>
-  <div class="photo-item" onclick="openSpotlight('temple15.jpeg', '(15)', 'tianshui, gansu<br>zhongshan grottoes')"><img src="temple15.jpeg"></div>
-  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')"><img src="temple16.jpeg"></div>
+
+  <div class="photo-item" onclick="openSpotlight('temple12.JPG', '(08)', 'zhangye, gansu<br>Jinta Temple Grottoes')">
+    {{< paige/image src="temple12.JPG" alt="temple12" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple6.JPG', '(09)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')">
+    {{< paige/image src="temple6.JPG" alt="temple6" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple11.JPG', '(10)', 'wuwei, gansu<br>Kumarajiva stupa')">
+    {{< paige/image src="temple11.JPG" alt="temple11" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple7.jpeg', '(11)', 'yulin, shaanxi<br>xianglu temple, 2025')">
+    {{< paige/image src="temple7.jpeg" alt="temple7" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple9.JPG', '(12)', 'Litang, sichuan<br>Lenggu Temple (Old), 2024')">
+    {{< paige/image src="temple9.JPG" alt="temple9" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple13.JPG', '(13)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')">
+    {{< paige/image src="temple13.JPG" alt="temple13" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple14.JPG', '(14)', 'zhangye, gansu<br>Tian Ti Mountain Grottoes')">
+    {{< paige/image src="temple14.JPG" alt="temple14" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple15.jpeg', '(15)', 'tianshui, gansu<br>zhongshan grottoes')">
+    {{< paige/image src="temple15.jpeg" alt="temple15" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')">
+    {{< paige/image src="temple16.jpeg" alt="temple16" >}}
+  </div>
 
 </div>
 </div>
 
-<!-- 右箭头 -->
 <button class="nav-arrow right-arrow" onclick="scrollGallery(1)">&#10095;</button>
 </div>
 
-<!-- 沉浸式放大层：平时隐藏，点击后触发 -->
 <div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
-<!-- 阻止点击内部图片时关闭模态框 -->
 <div class="spotlight-content" onclick="event.stopPropagation()">
-<!-- 截图2里的文字信息区域 -->
 <div class="spotlight-info">
   <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
   <div id="spotlight-desc">DESC TEXT</div>
 </div>
-<!-- 被放大的图片 -->
 <img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
 </div>
 </div>
 
-<!-- ================= 核心交互脚本 ================= -->
 <script>
 // 1. 控制画廊左右滑动的魔法
 function scrollGallery(direction) {

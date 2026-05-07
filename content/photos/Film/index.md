@@ -95,12 +95,17 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
     margin: 0 auto;    /* 让整个画廊居中 */
   }
 
+  /* ⚠️ 为了兼容 Paige 主题的 div 包装，添加了针对外层容器的设置以防止图片被劈开 */
+  .masonry-gallery .paige-shortcode-image {
+    break-inside: avoid;
+    margin-bottom: 15px;
+  }
+
   /* 单张图片的设置 */
   .masonry-gallery img {
     width: 100%;       /* 图片宽度占满所在的列 */
     height: auto;      /* 高度自适应，保持原有比例 */
     display: block;    /* 去掉图片底部的默认留白 */
-    margin-bottom: 15px; /* 上下图片之间的间距，要和 column-gap 保持一致 */
     
     /* ⚠️ 最关键的一句：防止一张图片被从中间劈开分到两列去 */
     break-inside: avoid; 
@@ -131,53 +136,51 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   
 </style>
 
-<!-- 5. 你的胶片照片墙 -->
 <div class="masonry-gallery">
-  <!-- ⚠️ 敲黑板：再次提醒，仔细看你的截图，后缀名大小写不一样哦！ -->
-  <img src="film1.jpg" alt="Film 1">
-  <img src="film2.JPG" alt="Film 2">
-  <img src="film3.jpg" alt="Film 3">
-  <img src="film4.JPG" alt="Film 4">
-  <img src="film5.JPG" alt="Film 5">
-  <img src="film6.JPG" alt="Film 6">
-  <img src="film7.JPG" alt="Film 7">
-  <img src="film8.JPG" alt="Film 8">
-  <img src="film9.JPG" alt="Film 9">
-  <img src="film10.JPG" alt="Film 10">
-  <img src="film11.JPG" alt="Film 11">
-  <img src="film12.JPG" alt="Film 12">
-  <img src="film13.jpg" alt="Film 13">
-  <img src="film14.JPG" alt="Film 14">
-  <img src="film15.JPG" alt="Film 15">
-  <img src="film16.JPG" alt="Film 16">
-  <img src="film17.jpg" alt="Film 17">
-  <img src="film18.JPG" alt="Film 18">
-<img src="film19.jpg" alt="Film 19">
-<img src="film20.jpg" alt="Film 20">
-<img src="film21.jpg" alt="Film 21">
-<img src="film22.jpg" alt="Film 22">
-<img src="film23.JPG" alt="Film 23">
-<img src="film24.JPG" alt="Film 24">
-<img src="film25.JPG" alt="Film 25">
-<img src="film26.jpg" alt="Film 26">
-<img src="film27.JPG" alt="Film 27">
-<img src="film28.JPG" alt="Film 28">
-<img src="film29.JPG" alt="Film 29">
-<img src="film30.jpg" alt="Film 30">
-<img src="film31.jpg" alt="Film 31">
-<img src="film32.jpg" alt="Film 32">
-<img src="film33.JPG" alt="Film 33">
-<img src="film34.jpg" alt="Film 34">
-<img src="film35.jpg" alt="Film 35">
-<img src="film36.jpg" alt="Film 36">
-<img src="film37.jpg" alt="Film 37">
-<img src="film38.jpg" alt="Film 38">
-<img src="film39.JPG" alt="Film 39">
-<img src="film40.JPG" alt="Film 40">
-<img src="film41.jpg" alt="Film 41">
-<img src="film42.jpg" alt="Film 42">
-<img src="film43.jpg" alt="Film 43">
-<img src="film44.jpg" alt="Film 44">
-<img src="film45.jpg" alt="Film 45">
-<img src="film46.JPG" alt="Film 46">
+  {{< paige/image src="film1.jpg" alt="Film 1" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film2.JPG" alt="Film 2" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film3.jpg" alt="Film 3" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film4.JPG" alt="Film 4" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film5.JPG" alt="Film 5" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film6.JPG" alt="Film 6" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film7.JPG" alt="Film 7" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film8.JPG" alt="Film 8" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film9.JPG" alt="Film 9" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film10.JPG" alt="Film 10" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film11.JPG" alt="Film 11" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film12.JPG" alt="Film 12" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film13.jpg" alt="Film 13" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film14.JPG" alt="Film 14" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film15.JPG" alt="Film 15" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film16.JPG" alt="Film 16" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film17.jpg" alt="Film 17" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film18.JPG" alt="Film 18" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film19.jpg" alt="Film 19" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film20.jpg" alt="Film 20" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film21.jpg" alt="Film 21" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film22.jpg" alt="Film 22" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film23.JPG" alt="Film 23" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film24.JPG" alt="Film 24" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film25.JPG" alt="Film 25" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film26.jpg" alt="Film 26" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film27.JPG" alt="Film 27" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film28.JPG" alt="Film 28" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film29.JPG" alt="Film 29" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film30.jpg" alt="Film 30" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film31.jpg" alt="Film 31" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film32.jpg" alt="Film 32" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film33.JPG" alt="Film 33" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film34.jpg" alt="Film 34" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film35.jpg" alt="Film 35" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film36.jpg" alt="Film 36" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film37.jpg" alt="Film 37" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film38.jpg" alt="Film 38" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film39.JPG" alt="Film 39" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film40.JPG" alt="Film 40" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film41.jpg" alt="Film 41" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film42.jpg" alt="Film 42" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film43.jpg" alt="Film 43" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film44.jpg" alt="Film 44" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film45.jpg" alt="Film 45" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="film46.JPG" alt="Film 46" loading="lazy" process="resize 800x webp" >}}
 </div>

@@ -93,32 +93,34 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
     padding: 0 20px;
   }
 
+  /* 适配 Paige 短代码生成的容器，防止瀑布流断裂 */
+  .masonry-gallery .paige-shortcode-image {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 15px;
+  }
+
   /* 3. 图片的自我修养：不裁剪、不断裂 */
   .masonry-gallery img {
     width: 100%;       /* 宽度占满当前列 */
-    height: auto;      /* ⭐️ 核心魔法：高度自适应！绝不裁剪任何一丝一毫！ */
+    height: auto;      /* ⭐️ 核心魔法：高度自适应！ */
     display: block;
-    margin-bottom: 15px; /* 上下照片的间距，和 column-gap 保持一致 */
-    border-radius: 4px;  /* 可选：加一点极微小的圆角，质感更温润 */
+    border-radius: 4px;  /* 可选：加一点极微小的圆角 */
     
-    /* ⭐️ 防坑指南：防止一张图片被从中间劈开，分到两列去 */
-    break-inside: avoid; 
-    -webkit-column-break-inside: avoid;
-    
-    /* 一点点极简的交互：鼠标放上去微微发光 */
+    /* 交互：鼠标放上去稍微变亮 */
     transition: filter 0.3s ease;
   }
   
   .masonry-gallery img:hover {
-    filter: brightness(1.05); /* 鼠标悬停稍微变亮一点，高级感拉满 */
+    filter: brightness(1.05); 
   }
 
-  /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
+  /* 4. 响应式布局 */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 4; } /* 平板变成 4 列 */
+    .masonry-gallery { column-count: 4; }
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 2 列大图 */
+    .masonry-gallery { column-count: 2; }
   }
   
   /* 1. 系统级别的夜间模式适配 */
@@ -133,35 +135,33 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 }
 </style>
 
-<!-- 网页内容区域：只管往里塞图片，瀑布流会自动接住它们！ -->
 <div class="masonry-gallery">
-  <!-- 我已经按照你的截图，仔细核对了每一张图的后缀名大小写 🤓 -->
-  <img src="yinuo1.jpeg" alt="Yinuo 1">
-  <img src="yinuo2.jpeg" alt="Yinuo 2">
-  <img src="yinuo3.jpg" alt="Yinuo 3">
-  <img src="yinuo4.JPG" alt="Yinuo 4">
-  <img src="yinuo5.JPG" alt="Yinuo 5">
-  <img src="yinuo6.JPG" alt="Yinuo 6">
-  <img src="yinuo7.JPG" alt="Yinuo 7">
+  {{< paige/image src="yinuo1.jpeg" alt="Yinuo 1" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo2.jpeg" alt="Yinuo 2" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo3.jpg" alt="Yinuo 3" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo4.JPG" alt="Yinuo 4" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo5.JPG" alt="Yinuo 5" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo6.JPG" alt="Yinuo 6" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo7.JPG" alt="Yinuo 7" loading="lazy" process="resize 800x webp" >}}
   
-  <img src="yinuo8.JPG" alt="Yinuo 8">
-  <img src="yinuo9.JPG" alt="Yinuo 9">
-  <img src="yinuo10.JPG" alt="Yinuo 10">
-  <img src="yinuo11.jpeg" alt="Yinuo 11">
-  <img src="yinuo12.jpg" alt="Yinuo 12">
-  <img src="yinuo13.jpg" alt="Yinuo 13">
-  <img src="yinuo14.jpg" alt="Yinuo 14">
+  {{< paige/image src="yinuo8.JPG" alt="Yinuo 8" >}}
+  {{< paige/image src="yinuo9.JPG" alt="Yinuo 9" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo10.JPG" alt="Yinuo 10" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo11.jpeg" alt="Yinuo 11" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo12.jpg" alt="Yinuo 12" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo13.jpg" alt="Yinuo 13" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo14.jpg" alt="Yinuo 14" loading="lazy" process="resize 800x webp" >}}
   
-  <img src="yinuo15.jpg" alt="Yinuo 15">
-  <img src="yinuo16.jpg" alt="Yinuo 16">
-  <img src="yinuo17.jpg" alt="Yinuo 17">
-  <img src="yinuo18.jpg" alt="Yinuo 18">
-  <img src="yinuo19.jpg" alt="Yinuo 19">
+  {{< paige/image src="yinuo15.jpg" alt="Yinuo 15" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo16.jpg" alt="Yinuo 16" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo17.jpg" alt="Yinuo 17" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo18.jpg" alt="Yinuo 18" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo19.jpg" alt="Yinuo 19" loading="lazy" process="resize 800x webp" >}}
   
-<img src="yinuo20.jpg" alt="Yinuo 20">
-  <img src="yinuo21.jpg" alt="Yinuo 21">
-  <img src="yinuo22.jpg" alt="Yinuo 22">
-  <img src="yinuo23.jpg" alt="Yinuo 23">
-<img src="yinuo24.jpeg" alt="Yinuo 24">
-  <img src="yinuo25.jpeg" alt="Yinuo 25">
+  {{< paige/image src="yinuo20.jpg" alt="Yinuo 20" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo21.jpg" alt="Yinuo 21" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo22.jpg" alt="Yinuo 22" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo23.jpg" alt="Yinuo 23" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo24.jpeg" alt="Yinuo 24" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo25.jpeg" alt="Yinuo 25" >}}
 </div>
