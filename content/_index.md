@@ -11,13 +11,9 @@ disable_pages = true
 disable_sections = true
 +++
 
-<!-- ==========================================
-1. 顶部宽屏风景横幅 (True Responsive Banner) 
-========================================== -->
 <div class="hero-banner full-bleed-banner position-relative mb-5 shadow-sm">
 {{< paige/image alt="Landscape of Xiangcheng" src="images/my_home.jpg" class="w-100" style="display: block; height: auto;" >}}
 
-<!-- 名字与副标题浮层 -->
 <div class="position-absolute bottom-0 start-0 p-4 w-100" 
      style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
     <h1 class="text-white mb-0 text-uppercase" 
@@ -31,40 +27,29 @@ disable_sections = true
 </div>
 </div>
 
-<!-- ==========================================
-2. 下方两栏内容区 (Two-column Bio Section)
-========================================== -->
 <div class="container-fluid px-0 mb-5">
 <div class="row align-items-center">
-    <!-- 左侧：个人照 -->
     <div class="col-md-5 mb-4 mb-md-0 text-center text-md-start">
         {{< paige/image alt="Yuxi Zhong" src="images/profile_pic.jpg" class="img-fluid shadow-sm rounded-1" >}}
     </div>
-    <!-- 右侧：文字介绍 (已更新欢迎语与字体) -->
     <div class="col-md-7 px-md-5">
-        <p class="text-start" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8; color: #222;">
+        <p class="text-start bio-text" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8;">
             <strong>Hi, I'm Yuxi Zhong, you can call me Sonam Dorji!</strong><br>
             I am a scholar exploring how faith and identity are carved into the material world. My research tracks the evolving material culture and ritual objects of my hometown, Xiangcheng (乡城). Outside of academia, you'll find me performing Peking Opera or advocating for animal welfare.
         </p>
         <div class="contact-info mt-4">
-            <p class="mb-2">Email: <a href="mailto:yuxi.zhonggg@gmail.com">yuxi.zhonggg@gmail.com</a></p>
-            <a href="/CV_Yuxi_Zhong.pdf" style="font-family: 'MyJost', sans-serif; font-weight: bold; text-decoration: underline !important; letter-spacing: 0.05em; text-transform: uppercase;">Download CV</a>
+            <p class="mb-2 info-text">Email: <a href="mailto:yuxi.zhonggg@gmail.com" class="email-link">yuxi.zhonggg@gmail.com</a></p>
+            <a href="/CV_Yuxi_Zhong.pdf" class="cv-link" style="font-family: 'MyJost', sans-serif; font-weight: bold; text-decoration: underline !important; letter-spacing: 0.05em; text-transform: uppercase;">Download CV</a>
         </div>
     </div>
 </div>
 </div>
 
-<!-- ==========================================
-3. 底部社交图标分割线
-========================================== -->
 <div class="column-gap-3 d-flex fs-4 justify-content-center mt-5 pt-4 border-top">
 {{< paige/icon class="bi bi-instagram" title="Instagram" url="https://www.instagram.com/sonam_dorji__/" >}}
 {{< paige/icon class="bi bi-twitter-x" title="X" url="https://x.com/dorji0704/" >}}
 </div>
 
-<!-- ==========================================
-4. 全局 CSS 样式
-========================================== -->
 <style>
 /* --- 字体声明区 --- */
 @font-face {
@@ -80,10 +65,9 @@ disable_sections = true
     font-weight: normal;
     font-style: normal;
 }
-/* 👇 新增：Open Sans 字体声明 */
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Regular.ttf') format('truetype'); /* 请确保你有这个字体文件 */
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -127,8 +111,42 @@ disable_sections = true
 
 .full-bleed-banner img { width: 100% !important; }
 
-/* 其他样式 */
+/* 其他样式及白天文字默认颜色 */
 #paige-page a { text-decoration: none !important; }
-.contact-info { font-family: 'MyJost', sans-serif !important; color: #222 !important; }
-.contact-info a { color: #008b8b !important; }
+
+/* 白天模式的文字与链接颜色 */
+.bio-text, .info-text { color: #222 !important; }
+.email-link, .cv-link { color: #008b8b !important; }
+
+/* ==========================================
+   5. 夜间模式 (Dark Mode) 魔法
+   ========================================== */
+
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 导航栏 */
+    #paige-site-menu a { color: #24F1FF !important; }
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+    
+    /* 正文文字与 Email 前缀 */
+    .bio-text, .info-text { color: #EDFAFF !important; }
+    
+    /* 邮箱链接与下载 CV 链接 */
+    .email-link, .cv-link { color: #FFFFFF !important; }
+}
+
+/* 2. 兼容通过网页按钮手动切换的夜间模式 (Bootstrap 5 机制) */
+[data-bs-theme="dark"] #paige-site-menu a { color: #24F1FF !important; }
+[data-bs-theme="dark"] #paige-site-menu a:hover { color: #B1F5FA !important; }
+[data-bs-theme="dark"] #paige-site-menu a.active,
+[data-bs-theme="dark"] #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+
+[data-bs-theme="dark"] .bio-text,
+[data-bs-theme="dark"] .info-text { color: #EDFAFF !important; }
+
+[data-bs-theme="dark"] .email-link,
+[data-bs-theme="dark"] .cv-link { color: #FFFFFF !important; }
+
 </style>

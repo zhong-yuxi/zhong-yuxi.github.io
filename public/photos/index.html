@@ -1527,6 +1527,17 @@ font-family: 'Sparose', serif;
     font-weight: 700 !important; 
 }
 
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 常驻颜色为 24F1FF */
+    #paige-site-menu a { color: #24F1FF !important; }
+    /* 鼠标指向的颜色为 B1F5FA */
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    /* 选中之后的颜色为 FFFFFF */
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+}
+
 </style>
 <!-- 网页的结构部分 -->
 <div class="gallery-container">

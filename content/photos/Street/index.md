@@ -5,6 +5,53 @@ draft: false
 ---
 
 <style>
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
+}
+
+#paige-site-header {
+    margin-top: 2rem !important; /* 这里的 4rem 就是往下移的距离，你可以随便改！ */
+}
+
+/* ==========================================
+   🌟 强制注入：导航栏字体与颜色魔法 (Brute Force Styles)
+   ========================================== */
+/* 1. 加载导航栏专属的 Jost 字体 (与相册标题的 Sparose 互不冲突) */
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. 强制覆盖导航栏的字体和初始颜色 */
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; 
+    color: #008b8b !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+/* 3. 鼠标悬停变浅（变白一点） */
+#paige-site-menu a:hover {
+    color: #66cdcd !important; 
+}
+
+/* 4. 鼠标点下去的瞬间变深 */
+#paige-site-menu a:active {
+    color: #004d4d !important; 
+}
+
+/* 5. 当前所在页面的高亮保持深色 (表示你正在 Photos 页面) */
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
+}
+
 /* 1. 字体定制 - 沿用你最爱的 Sparose */
 @font-face { 
 font-family: 'sparose'; 
@@ -141,6 +188,17 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 @keyframes popIn {
 0% { transform: scale(0.95); opacity: 0; }
 100% { transform: scale(1); opacity: 1; }
+}
+
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 常驻颜色为 24F1FF */
+    #paige-site-menu a { color: #24F1FF !important; }
+    /* 鼠标指向的颜色为 B1F5FA */
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    /* 选中之后的颜色为 FFFFFF */
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
 }
 </style>
 

@@ -10,7 +10,7 @@
         Designed and executed a nine-month ethnographic fieldwork study, employing participant observation, in-depth interviews (n=100+), and visual/material analysis (700+ photographs), supplemented by statistical survey analysis (SPSS, NVivo).
         Proposed a "Nehulay-to-Stove Cat" transformation model, arguing that the local cat-worship phenomenon is a "carnivalesque resistance" that deconstructs the orthodox power discourse of Tibetan Buddhism. Demonstrated how stove art functions as a crucial medium for reshaping social memory and constructing local ethnic identity in the face of cultural modernization.
       </p>
-      <a href="#" class="btn btn-sm btn-outline-info" style="font-family: 'MyJost', sans-serif;">Read More</a>
+      <a href="/projects/om-and-xiang/" class="btn btn-sm btn-outline-info" style="font-family: 'MyJost', sans-serif;">Read More</a>
     </div>
   </div>
 
@@ -33,7 +33,7 @@
     <div class="col-md-8">
       <h6 class="fw-bold" style="font-family: 'MyJost', sans-serif;">Ecologies of Heritage: Cultural Revitalization in Rural China</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        Conducted fieldwork on Bashao Island (蚆蛸岛), specifically studying the customs and intangible cultural heritage of the islanders. Explored the connection between the community and the cultural ecosystem. Suggested a culturally sensitive framework for conserving and rejuvenating rural Chinese culture and folk traditions, showcasing the island's significance as a model.
+        Conducted fieldwork on Bashao Island (蚆蛸岛), Dalian, Liaoning, specifically studying the customs and intangible cultural heritage of the islanders. Explored the connection between the community and the cultural ecosystem. Suggested a culturally sensitive framework for conserving and rejuvenating rural Chinese culture and folk traditions, showcasing the island's significance as a model.
       </p>
     </div>
   </div>
@@ -142,5 +142,21 @@
 #paige-site-menu a[aria-current="page"] {
     color: #004d4d !important; 
     font-weight: 700 !important; 
+}
+
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 常驻颜色为 24F1FF */
+    #paige-site-menu a { color: #24F1FF !important; }
+    /* 鼠标指向的颜色为 B1F5FA */
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    /* 选中之后的颜色为 FFFFFF */
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+    /* 👇 新增的魔法：专门针对项目简介的颜色覆盖 👇 */
+    /* 锁定所有在 container-fluid 里面的 text-secondary 段落，强行改变颜色 */
+    .container-fluid .text-secondary {
+        color: #B7E8E8 !important;
+    }
 }
 </style>
