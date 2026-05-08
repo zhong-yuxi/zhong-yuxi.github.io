@@ -214,49 +214,49 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 <div class="scroll-container">
 <div class="scroll-track" id="xiangcheng-track">
   
-<div class="photo-item" onclick="openSpotlight('xiangcheng10.JPG', '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')">
     {{< paige/image src="xiangcheng10.JPG" alt="Xiangcheng 10" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng11.jpeg', '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')">
     {{< paige/image src="xiangcheng11.jpeg" alt="Xiangcheng 11" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng15.JPG', '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')">
     {{< paige/image src="xiangcheng15.JPG" alt="Xiangcheng 15" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng13.JPG', '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')">
     {{< paige/image src="xiangcheng13.JPG" alt="Xiangcheng 13" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng14.JPG', '(05)', 'Xiangcheng, Sichuan<br>Texture of the abandoned White Tibetan House')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(05)', 'Xiangcheng, Sichuan<br>Texture of the abandoned White Tibetan House')">
     {{< paige/image src="xiangcheng14.JPG" alt="Xiangcheng 14" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng5.JPG', '(06)', 'Xiangcheng, Sichuan<br>A corner of the Sangpiling Temple')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(06)', 'Xiangcheng, Sichuan<br>A corner of the Sangpiling Temple')">
     {{< paige/image src="xiangcheng5.JPG" alt="Xiangcheng 5" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng6.JPG', '(07)', 'Xiangcheng, Sichuan<br>Winding mountain road')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(07)', 'Xiangcheng, Sichuan<br>Winding mountain road')">
     {{< paige/image src="xiangcheng6.JPG" alt="Xiangcheng 6" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng7.JPG', '(08)', 'Xiangcheng, Sichuan<br>Star trails over the valley')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(08)', 'Xiangcheng, Sichuan<br>Star trails over the valley')">
     {{< paige/image src="xiangcheng7.JPG" alt="Xiangcheng 7" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng12.JPG', '(09)', 'Xiangcheng, Sichuan<br>Highland pasture')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(09)', 'Xiangcheng, Sichuan<br>Highland pasture')">
     {{< paige/image src="xiangcheng12.JPG" alt="Xiangcheng 12" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng9.JPG', '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')">
     {{< paige/image src="xiangcheng9.JPG" alt="Xiangcheng 9" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng1.jpg', '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')">
     {{< paige/image src="xiangcheng1.jpg" alt="Xiangcheng 1" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng8.JPG', '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')">
     {{< paige/image src="xiangcheng8.JPG" alt="Xiangcheng 8" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng2.JPG', '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')">
     {{< paige/image src="xiangcheng2.JPG" alt="Xiangcheng 2" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng3.JPG', '(14)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(14)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')">
     {{< paige/image src="xiangcheng3.JPG" alt="Xiangcheng 3" loading="lazy" process="resize 800x webp" >}}
 </div>
-<div class="photo-item" onclick="openSpotlight('xiangcheng4.JPG', '(15)', 'Xiangcheng, Sichuan<br>Local gathering')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(15)', 'Xiangcheng, Sichuan<br>Local gathering')">
     {{< paige/image src="xiangcheng4.JPG" alt="Xiangcheng 4" >}}
 </div>
 

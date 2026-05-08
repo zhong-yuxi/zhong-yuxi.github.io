@@ -12,7 +12,7 @@ disable_sections = true
 +++
 
 <div class="hero-banner full-bleed-banner position-relative mb-5 shadow-sm">
-{{< paige/image alt="Landscape of Xiangcheng" src="images/my_home.jpg" class="w-100" style="display: block; height: auto;" >}}
+{{< paige/image alt="Landscape of Xiangcheng" src="images/my_home.webp" class="w-100" style="display: block; height: auto;" >}}
 
 <div class="position-absolute bottom-0 start-0 p-4 w-100" 
      style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">

@@ -218,7 +218,7 @@ font-family: 'Sparose', serif;
 <div class="gallery-container">
 
 <!-- 卡片 1: 乡城 -->
-  <a href="/photos/xiangcheng/" class="photo-card" style="background-image: url('/images/photoxiangcheng.jpg');">
+  <a href="/photos/xiangcheng/" class="photo-card" style="background-image: url('/images/photoxiangcheng.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>Xiangcheng</h3>
@@ -236,7 +236,7 @@ font-family: 'Sparose', serif;
   </a>
 
   <!-- 卡片 3: 街头 -->
-  <a href="/photos/street/" class="photo-card" style="background-image: url('/images/photostreet.jpg');">
+  <a href="/photos/street/" class="photo-card" style="background-image: url('/images/photostreet.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>Street</h3>
@@ -253,8 +253,8 @@ font-family: 'Sparose', serif;
     </div>
   </a>
   
-<!-- 卡片 8: 一诺 -->
-  <a href="/photos/yinuo/" class="photo-card" style="background-image: url('/images/photoyinuo.jpg');">
+<!-- 卡片 8: 顗糯 -->
+  <a href="/photos/yinuo/" class="photo-card" style="background-image: url('/images/photoyinuo.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>YiNuo</h3>
@@ -280,8 +280,8 @@ font-family: 'Sparose', serif;
     </div>
   </a>
   
-<!-- 卡片 4: 动物 -->
-  <a href="/photos/portraits/" class="photo-card" style="background-image: url('/images/photoanimal.jpg');">
+<!-- 卡片 4: 肖像 -->
+  <a href="/photos/portraits/" class="photo-card" style="background-image: url('/images/photoportrait.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>Portraits</h3>

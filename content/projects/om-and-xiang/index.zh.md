@@ -3,13 +3,13 @@
   
   <div class="row justify-content-center g-4">
     <div class="col-12 col-md-4">
-      <img src="/projects/om-and-xiang/stove1.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove1.jpg')" alt="Stove 1">
+      <img src="/projects/om-and-xiang/stove1.webp" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove1.webp')" alt="Stove 1">
     </div>
     <div class="col-12 col-md-4">
-      <img src="/projects/om-and-xiang/stove2.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove2.jpg')" alt="Stove 2">
+      <img src="/projects/om-and-xiang/stove2.webp" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove2.webp')" alt="Stove 2">
     </div>
     <div class="col-12 col-md-4">
-      <img src="/projects/om-and-xiang/stove3.jpg" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove3.jpg')" alt="Stove 3">
+      <img src="/projects/om-and-xiang/stove3.webp" class="img-fluid w-100 rounded-2 shadow stove-option" onclick="enterStage2('/projects/om-and-xiang/stove3.webp')" alt="Stove 3">
     </div>
   </div>
 </div>
@@ -115,25 +115,25 @@ cursor: pointer; box-shadow: 0 0 0 0 rgba(36, 241, 255, 0.7); animation: pulse 2
 </style>
 
 <script>
-// 魔法生效：所有图片全部加上绝对路径
+// 魔法生效：所有图片全部加上绝对路径并替换为 webp
 const detailData = {
-'cat': { title: "灶壁猫", images: ["/projects/om-and-xiang/cat1.jpg", "/projects/om-and-xiang/cat2.jpg", "/projects/om-and-xiang/cat3.jpg", "/projects/om-and-xiang/cat4.jpg"] },
-'kirtimukha': { title: "饕餮/塌鼻兽", images: ["/projects/om-and-xiang/kirtimukha1.jpg", "/projects/om-and-xiang/kirtimukha2.jpg", "/projects/om-and-xiang/kirtimukha3.jpg", "/projects/om-and-xiang/kirtimukha4.jpg"] },
-'stovegod': { title: "灶神", images: ["/projects/om-and-xiang/stovegod1.jpg", "/projects/om-and-xiang/stovegod2.jpg", "/projects/om-and-xiang/stovegod3.jpg", "/projects/om-and-xiang/stovegod4.jpg"] },
-'nehulay': { title: "吐宝鼠", images: ["/projects/om-and-xiang/nehulay1.jpg", "/projects/om-and-xiang/nehulay2.jpg", "/projects/om-and-xiang/nehulay3.jpg", "/projects/om-and-xiang/nehulay4.jpg"] },
-'snow-lion': { title: "雪狮", images: ["/projects/om-and-xiang/snow-lion1.jpg", "/projects/om-and-xiang/snow-lion2.jpg", "/projects/om-and-xiang/snow-lion3.jpg", "/projects/om-and-xiang/snow-lion4.jpg"] }
+'cat': { title: "灶壁猫", images: ["/projects/om-and-xiang/cat1.webp", "/projects/om-and-xiang/cat2.webp", "/projects/om-and-xiang/cat3.webp", "/projects/om-and-xiang/cat4.webp"] },
+'kirtimukha': { title: "饕餮/塌鼻兽", images: ["/projects/om-and-xiang/kirtimukha1.webp", "/projects/om-and-xiang/kirtimukha2.webp", "/projects/om-and-xiang/kirtimukha3.webp", "/projects/om-and-xiang/kirtimukha4.webp"] },
+'stovegod': { title: "灶神", images: ["/projects/om-and-xiang/stovegod1.webp", "/projects/om-and-xiang/stovegod2.webp", "/projects/om-and-xiang/stovegod3.webp", "/projects/om-and-xiang/stovegod4.webp"] },
+'nehulay': { title: "吐宝鼠", images: ["/projects/om-and-xiang/nehulay1.webp", "/projects/om-and-xiang/nehulay2.webp", "/projects/om-and-xiang/nehulay3.webp", "/projects/om-and-xiang/nehulay4.webp"] },
+'snow-lion': { title: "雪狮", images: ["/projects/om-and-xiang/snow-lion1.webp", "/projects/om-and-xiang/snow-lion2.webp", "/projects/om-and-xiang/snow-lion3.webp", "/projects/om-and-xiang/snow-lion4.webp"] }
 };
 
-// 魔法生效：这里的 key 也必须跟着换成绝对路径
+// 魔法生效：这里的 key 也必须跟着换成绝对路径和 webp
 const stoveHotspots = {
-'/projects/om-and-xiang/stove1.jpg': [
+'/projects/om-and-xiang/stove1.webp': [
 { id: 'cat', top: '49%', left: '30%' },
 { id: 'kirtimukha', top: '59%', left: '50.5%' }
 ],
-'/projects/om-and-xiang/stove2.jpg': [
+'/projects/om-and-xiang/stove2.webp': [
 { id: 'stovegod', top: '43%', left: '51%' }
 ],
-'/projects/om-and-xiang/stove3.jpg': [
+'/projects/om-and-xiang/stove3.webp': [
 { id: 'nehulay', top: '50%', left: '42%' },
 { id: 'snow-lion', top: '60%', left: '63%' }
 ]

@@ -2,7 +2,7 @@
 
   <div class="row align-items-center mb-5">
     <div class="col-md-4">
-      <img src="/images/project1.jpeg" class="img-fluid rounded-4 shadow" alt="Project 1">
+      <img src="/images/project1.webp" class="img-fluid rounded-4 shadow" alt="Project 1">
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
