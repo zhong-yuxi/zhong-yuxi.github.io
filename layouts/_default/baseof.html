@@ -4,93 +4,209 @@
 {{ $microdata := $page.Params.paige.pages.microdata }}
 
 {{ range $k, $v := $microdata }}
-    {{ $attrs = $attrs | append (printf `%s="%v"` $k $v) }}
+{{ $attrs = $attrs | append (printf `%s="%v"` $k $v) }}
 {{ end }}
 
 {{ $attrs = delimit (sort $attrs) " " }}
 
 <!doctype html>
 {{ partial "paige/html.html" $page }}
-    {{ partial "paige/head.html" $page }}
+{{ partial "paige/head.html" $page }}
 
-<style>
-    /* 1. 声明字体 */
-    @font-face {
-        font-family: 'MyGillSans';
-        src: url('/fonts/GillSans.ttc') format('collection'), 
-             url('/fonts/GillSans.ttc') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'MyJost';
-        src: url('/fonts/Jost-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
+<!-- 👇 魔法开始：这里其实就是 <body> 标签的起点 👇 -->
+{{ partial "paige/body.html" $page }}
+
+    <!-- ==========================================
+            🌟 1. 全新设计的加载幕布 (HTML)
+            ========================================== -->
+    <div id="my-preloader">
+        <div class="loader-container">
+            <!-- 转动的圆圈 -->
+            <div class="loader-spinner"></div>
+            <!-- 中间静止的Logo -->
+            <img class="loader-logo" src="/favicon.svg" alt="My Logo">
+        </div>
+    </div>
+
+    <!-- ==========================================
+            🌟 2. 日夜交替与动画样式 + 你的排版样式 (CSS)
+            ========================================== -->
+    <style>
+        /* --- 🎨 定义白天模式的颜色 (默认) --- */
+        :root {
+            --preloader-bg-color: #F7FDFF;
+            --preloader-ring-color: #82C7FA;
+        }
+
+        /* --- 🌙 探测到设备是黑夜模式时，自动切换颜色 --- */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --preloader-bg-color: #00233B;
+                --preloader-ring-color: #E8F6FF;
+            }
+        }
+
+        /* --- 幕布主体样式 --- */
+        #my-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--preloader-bg-color);
+            z-index: 99999; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.6s ease; 
+        }
+
+        /* --- 装圆圈和Logo的容器 --- */
+        .loader-container {
+            position: relative; 
+            width: 120px;  
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- 旋转的圆圈 --- */
+        .loader-spinner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent; 
+            border-top: 5px solid var(--preloader-ring-color);
+            border-right: 5px solid var(--preloader-ring-color);
+            border-radius: 50%; 
+            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; 
+        }
+
+        /* --- 中间的 Logo --- */
+        .loader-logo {
+            position: absolute;
+            width: 60px; 
+            height: 60px;
+            z-index: 2; 
+        }
+
+        /* 🌙 黑夜模式下，施展魔法：自动反转 Logo 颜色 */
+        @media (prefers-color-scheme: dark) {
+            .loader-logo {
+                /* 先变黑，再变白，保证输出绝对纯白！ */
+                filter: brightness(0) invert(1);
+        }
     }
 
-    /* 2. 全站标题和描述 */
-    #paige-site-title, #paige-site-title a {
-        font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
-        font-size: 3rem !important; 
-        font-weight: 700 !important;
-        letter-spacing: -0.03em !important;
-        color: #222 !important; 
-        text-decoration: none !important;
-    }
-    #paige-site-description {
-        font-family: 'MyJost', sans-serif !important;
-        font-size: 1.2rem !important;
-        letter-spacing: 0.05em !important;
-        color: #4a4a4a !important;
-    }
+        /* --- 旋转动画核心 --- */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-    /* 3. 全站导航菜单样式 (常驻深青色，悬停亮青色) */
-    #paige-site-menu a {
-        color: #008b8b !important; 
-        text-decoration: none !important; 
-        transition: color 0.2s ease-in-out !important; 
-    }
-    #paige-site-menu a:hover, #paige-site-menu a:active {
-        color: #00FFFF !important; 
-    }
+        /* ==========================================
+           👇 这里开始是你原本极具设计感的网站排版样式 👇 
+           ========================================== */
+        @font-face {
+            font-family: 'MyGillSans';
+            src: url('/fonts/GillSans.ttc') format('collection'), 
+                    url('/fonts/GillSans.ttc') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'MyJost';
+            src: url('/fonts/Jost-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-    /* 4. 全站超链接去下划线 */
-    #paige-page a {
-        text-decoration: none !important; 
-    }
+        #paige-site-title, #paige-site-title a {
+            font-family: 'MyGillSans', "Gill Sans", sans-serif !important;
+            font-size: 3rem !important; 
+            font-weight: 700 !important;
+            letter-spacing: -0.03em !important;
+            color: #222 !important; 
+            text-decoration: none !important;
+        }
+        #paige-site-description {
+            font-family: 'MyJost', sans-serif !important;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.05em !important;
+            color: #4a4a4a !important;
+        }
 
-    /* 5. 首页特有的联系信息 (Email & CV) */
-    .contact-info {
-        font-family: 'MyJost', sans-serif !important;
-        color: #222 !important; 
-    }
-    .contact-info a {
-        color: #00FFFF !important; 
-        text-decoration: none !important;
-    }
-    .contact-info a:hover {
-        color: #70FFFF !important;
-    }
+        #paige-site-menu a {
+            color: #008b8b !important; 
+            text-decoration: none !important; 
+            transition: color 0.2s ease-in-out !important; 
+        }
+        #paige-site-menu a:hover, #paige-site-menu a:active {
+            color: #00FFFF !important; 
+        }
+
+        #paige-page a {
+            text-decoration: none !important; 
+        }
+
+        .contact-info {
+            font-family: 'MyJost', sans-serif !important;
+            color: #222 !important; 
+        }
+        .contact-info a {
+            color: #00FFFF !important; 
+            text-decoration: none !important;
+        }
+        .contact-info a:hover {
+            color: #70FFFF !important;
+        }
     </style>
 
-    {{ partial "paige/body.html" $page }}
+    <!-- ==========================================
+            🌟 3. 控制幕布消失的魔法开关 (JavaScript 极速闪避版)
+            ========================================== -->
+    <script>
+        // 1. 记下网页刚开始请求的时间点（按下秒表 ⏱️）
+        const startTime = Date.now();
 
-        {{ partial "paige/func-include.html" (dict "name" "body-first%s.html" "page" $page) }}
+        window.addEventListener('load', function() {
+            // 2. 网页全部加载完毕，看看总共花了多少毫秒
+            const elapsedTime = Date.now() - startTime;
+            const preloader = document.getElementById('my-preloader');
+            
+            // 3. 定义一个“极速界限”（比如 400 毫秒，你也可以改成 300 或 500）
+            if (elapsedTime < 600) {
+                // ⚡ 【极速模式】：加载太快了！取消 CSS 里的淡出动画，瞬间消失！
+                preloader.style.transition = 'none'; 
+                preloader.style.opacity = '0';
+                preloader.style.display = 'none';
+            } else {
+                // 🎩 【优雅模式】：既然用户已经看清了 Logo，就优雅地拉开幕布
+                preloader.style.opacity = '0';
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 600); // 这个 600 对应你在 CSS 里设置的 transition 时间
+            }
+        });
+    </script>
 
-        <div class="container">
-            <div class="row">
-                <div class="col mt-3" id="paige-site" {{ with $attrs }} {{ $attrs | safeHTMLAttr }} {{ end }}>
-                    {{ partial "paige/func-include.html" (dict "name" "site-first%s.html" "page" $page) }}
-                    {{ partial "paige/site-header.html" $page }}
-                    {{ block "main" $page }}{{ end }}
-                    {{ partial "paige/site-footer.html" $page }}
-                    {{ partial "paige/func-include.html" (dict "name" "site-last%s.html" "page" $page) }}
-                </div>
+    <!-- 👇 下面是你原本的主题结构 👇 -->
+    {{ partial "paige/func-include.html" (dict "name" "body-first%s.html" "page" $page) }}
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3" id="paige-site" {{ with $attrs }} {{ $attrs | safeHTMLAttr }} {{ end }}>
+                {{ partial "paige/func-include.html" (dict "name" "site-first%s.html" "page" $page) }}
+                {{ partial "paige/site-header.html" $page }}
+                {{ block "main" $page }}{{ end }}
+                {{ partial "paige/site-footer.html" $page }}
+                {{ partial "paige/func-include.html" (dict "name" "site-last%s.html" "page" $page) }}
             </div>
         </div>
+    </div>
 
-        {{ partial "paige/scripts.html" $page }}
-        {{ partial "paige/func-include.html" (dict "name" "body-last%s.html" "page" $page) }}
-    </body>
+    {{ partial "paige/scripts.html" $page }}
+    {{ partial "paige/func-include.html" (dict "name" "body-last%s.html" "page" $page) }}
+</body>
 </html>
