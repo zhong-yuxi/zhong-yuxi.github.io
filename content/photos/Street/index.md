@@ -282,7 +282,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   <div class="photo-item" onclick="openSpotlight('street24.jpg', '(24)', 'weihai, shandong<br>')">
     {{< paige/image src="street24.jpg" alt="street24" loading="lazy" process="resize 800x webp" >}}
   </div>  
-  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'weihai, shandong<br>')">
+  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'ya\'an, sichuan<br>')">
     {{< paige/image src="street25.jpg" alt="street25" loading="lazy" process="resize 800x webp" >}}
   </div>
 

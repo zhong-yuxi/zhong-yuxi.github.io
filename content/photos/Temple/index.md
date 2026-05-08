@@ -270,7 +270,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     {{< paige/image src="temple15.jpeg" alt="temple15" loading="lazy" process="resize 800x webp" >}}
   </div>
 
-  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')">
+  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'ya\'an, sichuan<br>Yunfeng Temple')">
     {{< paige/image src="temple16.jpeg" alt="temple16" >}}
   </div>
 

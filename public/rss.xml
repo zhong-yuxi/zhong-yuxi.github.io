@@ -14888,7 +14888,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
   </div>
-  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')">
+  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'ya\'an, sichuan<br>Yunfeng Temple')">
     
     
     
@@ -24728,7 +24728,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
   </div>  
-  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'weihai, shandong<br>')">
+  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'ya\'an, sichuan<br>')">
     
     
     

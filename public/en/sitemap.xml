@@ -4,21 +4,81 @@
   <url>
     <loc>http://localhost:1313/photos/xiangcheng/</loc>
     <lastmod>2026-05-06T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/xiangcheng/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/xiangcheng/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/film/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/film/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/film/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/opera/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/opera/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/opera/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/portraits/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/portraits/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/portraits/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/temple/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/temple/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/temple/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/yinuo/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/yinuo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/yinuo/"
+                />
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-05-06T00:00:00+08:00</lastmod>
@@ -48,9 +108,29 @@
   </url><url>
     <loc>http://localhost:1313/photos/mountains/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/mountains/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/mountains/"
+                />
   </url><url>
     <loc>http://localhost:1313/photos/street/</loc>
     <lastmod>2026-05-04T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh/photos/street/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/photos/street/"
+                />
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <xhtml:link

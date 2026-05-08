@@ -3,7 +3,7 @@ keywords = [
 "Yuxi Zhong", "Tibet", "Material Culture", "Religion", "Cat", "Ganzi", 
 "Visual", "Ecology", "Multi-species Ethnography", "Xiangcheng", 
 "Stove Cat", "Nehulay", "Vernacular Religion", "Intangible Cultural Heritage", 
-"ICH", "Sonam Dorji"
+"ICH", "Sonam Dorji", "钟誉熙", "乡城", "灶壁猫",  "吐宝鼠", "物质文化"
 ]
 [paige.pages]
 disable_collections = true
@@ -67,7 +67,7 @@ disable_sections = true
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('/fonts/OpenSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -114,9 +114,16 @@ disable_sections = true
 /* 其他样式及白天文字默认颜色 */
 #paige-page a { text-decoration: none !important; }
 
-/* 白天模式的文字与链接颜色 */
+/* ==========================================
+   白天模式的文字与链接颜色 (增强权重版)
+   ========================================== */
 .bio-text, .info-text { color: #222 !important; }
-.email-link, .cv-link { color: #008b8b !important; }
+
+/* 得分：Class(10) + 标签(1) + Class(10) = 21分！秒杀敌方的11分 */
+.contact-info a.email-link, 
+.contact-info a.cv-link { 
+    color: #39A6C4 !important; 
+}
 
 /* ==========================================
    5. 夜间模式 (Dark Mode) 魔法

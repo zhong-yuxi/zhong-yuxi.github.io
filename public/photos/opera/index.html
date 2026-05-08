@@ -726,7 +726,9 @@ table {
     <div id="my-preloader">
         <div class="loader-container">
             
-            <div class="loader-spinner"></div>
+            <svg class="loader-spinner" viewBox="0 0 120 120">
+                <circle class="spinner-path" cx="60" cy="60" r="56"></circle>
+            </svg>
             
             <img class="loader-logo" src="/favicon.svg" alt="My Logo">
         </div>
@@ -760,7 +762,11 @@ table {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: opacity 0.6s ease; 
+            
+             
+            opacity: 1;  
+             
+            transition: opacity 0.7s ease-in-out !important; 
         }
 
          
@@ -778,11 +784,28 @@ table {
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 5px solid transparent; 
-            border-top: 5px solid var(--preloader-ring-color);
-            border-right: 5px solid var(--preloader-ring-color);
-            border-radius: 50%; 
-            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; 
+             
+            animation: spin 1.5s linear infinite; 
+        }
+
+         
+        .spinner-path {
+            fill: none;  
+            stroke: var(--preloader-ring-color);  
+            stroke-width: 6;  
+            stroke-linecap: round;  
+            
+             
+            stroke-dasharray: 352; 
+            stroke-dashoffset: 120;  
+            
+             
+            transition: stroke-dashoffset 0.5s ease-in-out; 
+        }
+
+         
+        .loader-spinner.closing .spinner-path {
+            stroke-dashoffset: 0; 
         }
 
          
@@ -884,13 +907,24 @@ table {
             setTimeout(function() {
                 const preloader = document.getElementById('my-preloader');
                 
+                const spinner = document.querySelector('.loader-spinner');
                 
-                preloader.style.opacity = '0';
+                
+                
+                spinner.classList.add('closing');
+                
                 
                 
                 setTimeout(function() {
-                    preloader.style.display = 'none';
-                }, 600); 
+                    preloader.style.opacity = '0';
+                    
+                    
+                    
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 700); 
+
+                }, 400); 
 
             }, delayTime);
         });
@@ -1175,6 +1209,15 @@ table {
                             </li>
                         
 
+                        
+                            <li class="nav-item ms-4 ms-md-auto d-flex align-items-center">
+                                
+                                    <a class="nav-link fw-bold text-body rounded" href="http://localhost:1313/zh/photos/opera/" title="切换到 中文"
+                                       style="font-size: 0.7rem; border: 1px solid currentColor; padding: 0.2rem 0.6rem !important; opacity: 0.85;">
+                                        🌐 中文
+                                    </a>
+                                
+                            </li>
                         
                         </ul>
                 </nav>

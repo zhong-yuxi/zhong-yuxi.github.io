@@ -1,0 +1,289 @@
+---
+title: "群山"
+date: 2026-05-04
+draft: false
+---
+
+<style>
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+    display: none !important;
+}
+
+#paige-site-header {
+    margin-top: 2rem !important; /* 这里的 4rem 就是往下移的距离，你可以随便改！ */
+}
+
+/* ==========================================
+   🌟 强制注入：导航栏字体与颜色魔法 (Brute Force Styles)
+   ========================================== */
+/* 1. 加载导航栏专属的 Jost 字体 (与相册标题的 Sparose 互不冲突) */
+@font-face {
+    font-family: 'MyJost';
+    src: url('/fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. 强制覆盖导航栏的字体和初始颜色 */
+#paige-site-menu a {
+    font-family: 'MyJost', sans-serif !important; 
+    color: #008b8b !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+}
+
+/* 3. 鼠标悬停变浅（变白一点） */
+#paige-site-menu a:hover {
+    color: #66cdcd !important; 
+}
+
+/* 4. 鼠标点下去的瞬间变深 */
+#paige-site-menu a:active {
+    color: #004d4d !important; 
+}
+
+/* 5. 当前所在页面的高亮保持深色 (表示你正在 Photos 页面) */
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+    color: #004d4d !important; 
+    font-weight: 700 !important; 
+}
+
+/* 1. 字体定制 - 给标题换上帅气的书法体 Slidexiaxing */
+@font-face { 
+    font-family: 'Slidexiaxing'; 
+    src: url('/fonts/Slidexiaxing.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Slidexiaxing', sans-serif; /* 👈 魔法生效点：更换为新字体 */
+    font-size: 2.2rem; /* 💡 小贴士：中文字体通常比英文字体显小，我帮你稍微放大了点，如果觉得大可以改回 1.5rem */
+    font-weight: normal; /* 书法字体建议用 normal 保持笔画原汁原味 */
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px; /* 如果觉得汉字太散，可以改成 0px */
+    color: #166D7A; /* 👈 白底时的专属颜色 */
+    transition: color 0.3s ease; /* 加个小魔法：切换黑白模式时，颜色会有0.3秒的渐变动画，极其丝滑 */
+}
+
+/* 2. 当用户系统是暗黑模式时（黑底 / Dark Mode），自动变成白色 */
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #ffffff !important; /* 加上 !important 就像给代码发了 VIP 通行证，强制生效 */
+  }
+}
+
+/* 3. 针对 Hugo Paige 主题的防弹装甲（防止手动点击主题按钮时颜色没变） */
+[data-bs-theme="dark"] h1, 
+[data-theme="dark"] h1 {
+  color: #ffffff !important;
+}
+
+/* 2. 画廊最外层包装 */
+.carousel-wrapper {
+position: relative;
+max-width: 1200px;
+margin: 60px auto;
+display: flex;
+align-items: center;
+}
+
+/* 3. 半透明滑动箭头 */
+.nav-arrow {
+position: absolute;
+z-index: 10;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(4px);
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+.nav-arrow:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.1); }
+.left-arrow { left: -20px; }
+.right-arrow { right: -20px; }
+
+/* 4. 滚动轨道与 Mask Image 边缘消隐 */
+.scroll-container {
+width: 100%;
+overflow: hidden;
+-webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.scroll-track {
+display: flex;
+align-items: center;
+gap: 50px;
+overflow-x: auto;
+scroll-behavior: smooth;
+padding: 20px 5%;
+scrollbar-width: none;
+}
+.scroll-track::-webkit-scrollbar { display: none; }
+
+/* 5. 单张图片设置 */
+.photo-item {
+flex: 0 0 400px;
+cursor: pointer;
+transition: filter 0.3s, transform 0.3s;
+}
+.photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+.photo-item img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 6. Spotlight 沉浸式放大层 */
+.spotlight-modal {
+position: fixed;
+top: 0; left: 0; width: 100vw; height: 100vh;
+background: #f8f8f8;
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.4s ease;
+}
+.spotlight-modal.active { opacity: 1; pointer-events: auto; }
+
+.spotlight-content {
+position: relative;
+max-width: 80%;
+max-height: 80vh;
+}
+
+.spotlight-info {
+position: absolute;
+top: -80px;
+left: -40px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 0.85rem;
+line-height: 1.4;
+color: #111;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.spotlight-img {
+width: 100%;
+max-height: 75vh;
+object-fit: contain;
+box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popIn {
+0% { transform: scale(0.95); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+
+/* 1. 系统级别的夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    /* 常驻颜色为 24F1FF */
+    #paige-site-menu a { color: #24F1FF !important; }
+    /* 鼠标指向的颜色为 B1F5FA */
+    #paige-site-menu a:hover { color: #B1F5FA !important; }
+    /* 选中之后的颜色为 FFFFFF */
+    #paige-site-menu a.active,
+    #paige-site-menu a[aria-current="page"] { color: #FFFFFF !important; }
+}
+</style>
+
+<div class="carousel-wrapper">
+<button class="nav-arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</button>
+
+<div class="scroll-container">
+<div class="scroll-track" id="mountain-track">
+  
+  <div class="photo-item" onclick="openSpotlight('mountain10.jpeg', '(01)', 'Mount Gongga<br>Kangding, Sichuan')">
+    {{< paige/image src="mountain10.jpeg" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain1.jpeg', '(02)', 'Qiangren Valley<br>Aba Prefecture, Sichuan')">
+    {{< paige/image src="mountain1.jpeg" alt="Qiangren Valley" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain9.JPG', '(03)', 'Dawa Gengzha<br>Ya\'an, Sichuan')">
+    {{< paige/image src="mountain9.JPG" alt="Dawa Gengzha" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain2.jpeg', '(04)', 'Snow Mountain and Halaha River<br>Arxan, Inner Mongolia')">
+    {{< paige/image src="mountain2.jpeg" alt="Arxan River" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain6.JPG', '(05)', 'Singing Sand Mountains<br>Dunhuang, Gansu')">
+    {{< paige/image src="mountain6.JPG" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain3.jpg', '(06)', 'Snow Mountain<br>Arxan, Inner Mongolia')">
+    {{< paige/image src="mountain3.jpg" alt="Arxan Mountain" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain4.jpeg', '(07)', 'Sundog over Arxan<br>Arxan, Inner Mongolia')">
+    {{< paige/image src="mountain4.jpeg" alt="Sundog" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain11.JPG', '(08)', 'Mount Genyen<br>Litang, Sichuan')">
+    {{< paige/image src="mountain11.JPG" alt="Mingshashan" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain5.JPG', '(09)', 'Qianshan Mountain<br>Anshan, Liaoning')">
+    {{< paige/image src="mountain5.JPG" alt="Qianshan" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+<div class="photo-item" onclick="openSpotlight('mountain8.jpeg', '(11)', 'Landscape of Ya\'an<br>Ya\'an, Sichuan')">
+    {{< paige/image src="mountain8.jpeg" alt="Ya'an" loading="lazy" process="resize 800x webp" >}}
+  </div>
+  
+  <div class="photo-item" onclick="openSpotlight('mountain7.jpeg', '(10)', 'Mount Gongga<br>Garze Prefecture, Sichuan')">
+    {{< paige/image src="mountain7.jpeg" alt="Gongga" loading="lazy" process="resize 800x webp" >}}
+  </div>
+
+</div>
+</div>
+
+<button class="nav-arrow right-arrow" onclick="scrollGallery(1)">&#10095;</button>
+</div>
+
+<div id="spotlight-modal" class="spotlight-modal" onclick="closeSpotlight()">
+<div class="spotlight-content" onclick="event.stopPropagation()">
+<div class="spotlight-info">
+  <div id="spotlight-id" style="margin-bottom: 8px;">(00)</div>
+  <div id="spotlight-desc">DESC TEXT</div>
+</div>
+<img id="spotlight-img" class="spotlight-img" src="" alt="Spotlight">
+</div>
+</div>
+
+<script>
+function scrollGallery(direction) {
+const track = document.getElementById('mountain-track');
+const scrollAmount = 400; 
+track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+function openSpotlight(imgSrc, idText, descText) {
+document.getElementById('spotlight-img').src = imgSrc;
+document.getElementById('spotlight-id').innerHTML = idText;
+document.getElementById('spotlight-desc').innerHTML = descText;
+document.getElementById('spotlight-modal').classList.add('active');
+}
+
+function closeSpotlight() {
+document.getElementById('spotlight-modal').classList.remove('active');
+}
+</script>

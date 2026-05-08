@@ -719,7 +719,9 @@ table {
     <div id="my-preloader">
         <div class="loader-container">
             
-            <div class="loader-spinner"></div>
+            <svg class="loader-spinner" viewBox="0 0 120 120">
+                <circle class="spinner-path" cx="60" cy="60" r="56"></circle>
+            </svg>
             
             <img class="loader-logo" src="/favicon.svg" alt="My Logo">
         </div>
@@ -753,7 +755,11 @@ table {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: opacity 0.6s ease; 
+            
+             
+            opacity: 1;  
+             
+            transition: opacity 0.7s ease-in-out !important; 
         }
 
          
@@ -771,11 +777,28 @@ table {
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 5px solid transparent; 
-            border-top: 5px solid var(--preloader-ring-color);
-            border-right: 5px solid var(--preloader-ring-color);
-            border-radius: 50%; 
-            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; 
+             
+            animation: spin 1.5s linear infinite; 
+        }
+
+         
+        .spinner-path {
+            fill: none;  
+            stroke: var(--preloader-ring-color);  
+            stroke-width: 6;  
+            stroke-linecap: round;  
+            
+             
+            stroke-dasharray: 352; 
+            stroke-dashoffset: 120;  
+            
+             
+            transition: stroke-dashoffset 0.5s ease-in-out; 
+        }
+
+         
+        .loader-spinner.closing .spinner-path {
+            stroke-dashoffset: 0; 
         }
 
          
@@ -877,13 +900,24 @@ table {
             setTimeout(function() {
                 const preloader = document.getElementById('my-preloader');
                 
+                const spinner = document.querySelector('.loader-spinner');
                 
-                preloader.style.opacity = '0';
+                
+                
+                spinner.classList.add('closing');
+                
                 
                 
                 setTimeout(function() {
-                    preloader.style.display = 'none';
-                }, 600); 
+                    preloader.style.opacity = '0';
+                    
+                    
+                    
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 700); 
+
+                }, 400); 
 
             }, delayTime);
         });
@@ -1439,11 +1473,29 @@ table {
   display: none !important;
 }
 
-/* 引入外部自定义字体 */
+/* ==========================================
+   🖋️ 字体声明区：把你喜欢的字体都挂载上来
+   ========================================== */
+/* 之前的 Sparose 保留，以防你其他地方还要用 */
 @font-face {
-  font-family: 'Sparose'; /* 给这个字体起个代号，随便叫什么都行，这里我们就叫 Sparose */
-  /* 注意这里的路径！在 Hugo 里，static 目录代表根目录 / ，所以不要写 static 进去 */
+  font-family: 'Sparose'; 
   src: url('/fonts/sparose.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🛠️ 新增：声明标题用的 Slidexiaxing 字体 */
+@font-face {
+  font-family: 'Slidexiaxing';
+  src: url('/fonts/Slidexiaxing.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🛠️ 新增：声明简介用的 LXGWWenKai 字体 */
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('/fonts/LXGWWenKai.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1512,7 +1564,7 @@ table {
   filter: brightness(1.05); 
 }
 
-/* --- 文字排版完全复刻图1 --- */
+/* --- 文字排版 --- */
 .card-top, .card-bottom {
   position: relative;
   z-index: 2; /* 保证文字浮在遮罩上面 */
@@ -1529,16 +1581,19 @@ table {
 
 /* 左下角标题与描述 */
 .card-bottom h3 {
-font-family: 'Sparose', serif;
-  font-size: 1.5rem;
-  font-weight: 200; /* 细体，还原图1优雅感 */
+  /* 🛠️ 修改点：将 Sparose 换成了 Slidexiaxing */
+  font-family: 'Slidexiaxing', serif;
+  font-size: 2rem;
+  font-weight: normal; /* 如果这个字体偏细，你可以试试把这里改成 bold 或者 900 */
   margin: 0 0 8px 0;
   padding: 0;
   border: none;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 .card-bottom p {
-  font-size: 0.85rem;
+  /* 🛠️ 修改点：新增了对简介文字的字体控制，使用 LXGWWenKai */
+  font-family: 'LXGWWenKai', sans-serif;
+  font-size: 0.91rem;
   line-height: 1.4;
   opacity: 0.9;
   margin: 0 0 20px 0;
@@ -1589,7 +1644,7 @@ font-family: 'Sparose', serif;
 /* ==========================================
    🌟 强制注入：导航栏字体与颜色魔法 (Brute Force Styles)
    ========================================== */
-/* 1. 加载导航栏专属的 Jost 字体 (与相册标题的 Sparose 互不冲突) */
+/* 1. 加载导航栏专属的 Jost 字体 */
 @font-face {
     font-family: 'MyJost';
     src: url('/fonts/Jost-Regular.ttf') format('truetype');
@@ -1862,6 +1917,519 @@ font-family: 'Sparose', serif;
 
 
 
+
+    <div id="paige-page-pages">
+        
+
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/xiangcheng/">乡城</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/film/">胶卷</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/portraits/">生命</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/temple/">寺庙</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/opera/">戏曲</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/yinuo/">顗糯</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/street/">街拍</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="paige-page paige-status-published w-100">
+    
+        <p class="paige-row-short paige-page-title text-center"><a href="/zh/photos/mountains/">群山</a></p>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</div>
+
+        
+
+        
+    
+
+    
+    
+
+    
+
+    </div>
 
 
 
@@ -2141,6 +2709,8 @@ font-family: 'Sparose', serif;
     
 
     
+        
+    
 
     
 
@@ -2172,7 +2742,7 @@ font-family: 'Sparose', serif;
         
     
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" - 乡城 吾乡所在","copyrightNotice":"© 2026 Yuxi Zhong","inLanguage":"zh","timeRequired":"PT1M","url":"http://localhost:1313/zh/photos/","wordCount":24}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","abstract":" - 乡城 吾乡所在","copyrightNotice":"© 2026 Yuxi Zhong","dateModified":"2026-05-06T00:00:00+08:00","inLanguage":"zh","timeRequired":"PT1M","url":"http://localhost:1313/zh/photos/","wordCount":24}</script>
 
 
 

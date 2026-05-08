@@ -17,11 +17,29 @@
   display: none !important;
 }
 
-/* 引入外部自定义字体 */
+/* ==========================================
+   🖋️ 字体声明区：把你喜欢的字体都挂载上来
+   ========================================== */
+/* 之前的 Sparose 保留，以防你其他地方还要用 */
 @font-face {
-  font-family: 'Sparose'; /* 给这个字体起个代号，随便叫什么都行，这里我们就叫 Sparose */
-  /* 注意这里的路径！在 Hugo 里，static 目录代表根目录 / ，所以不要写 static 进去 */
+  font-family: 'Sparose'; 
   src: url('/fonts/sparose.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🛠️ 新增：声明标题用的 Slidexiaxing 字体 */
+@font-face {
+  font-family: 'Slidexiaxing';
+  src: url('/fonts/Slidexiaxing.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🛠️ 新增：声明简介用的 LXGWWenKai 字体 */
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('/fonts/LXGWWenKai.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -90,7 +108,7 @@
   filter: brightness(1.05); 
 }
 
-/* --- 文字排版完全复刻图1 --- */
+/* --- 文字排版 --- */
 .card-top, .card-bottom {
   position: relative;
   z-index: 2; /* 保证文字浮在遮罩上面 */
@@ -107,16 +125,19 @@
 
 /* 左下角标题与描述 */
 .card-bottom h3 {
-font-family: 'Sparose', serif;
-  font-size: 1.5rem;
-  font-weight: 200; /* 细体，还原图1优雅感 */
+  /* 🛠️ 修改点：将 Sparose 换成了 Slidexiaxing */
+  font-family: 'Slidexiaxing', serif;
+  font-size: 2rem;
+  font-weight: normal; /* 如果这个字体偏细，你可以试试把这里改成 bold 或者 900 */
   margin: 0 0 8px 0;
   padding: 0;
   border: none;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 .card-bottom p {
-  font-size: 0.85rem;
+  /* 🛠️ 修改点：新增了对简介文字的字体控制，使用 LXGWWenKai */
+  font-family: 'LXGWWenKai', sans-serif;
+  font-size: 0.91rem;
   line-height: 1.4;
   opacity: 0.9;
   margin: 0 0 20px 0;
@@ -167,7 +188,7 @@ font-family: 'Sparose', serif;
 /* ==========================================
    🌟 强制注入：导航栏字体与颜色魔法 (Brute Force Styles)
    ========================================== */
-/* 1. 加载导航栏专属的 Jost 字体 (与相册标题的 Sparose 互不冲突) */
+/* 1. 加载导航栏专属的 Jost 字体 */
 @font-face {
     font-family: 'MyJost';
     src: url('/fonts/Jost-Regular.ttf') format('truetype');

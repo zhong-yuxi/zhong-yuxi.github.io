@@ -7587,6 +7587,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 
 
                 
+                    
+                        
+                    
+                
 
                 
                     <published>2026-05-04T00:00:00+08:00</published>
@@ -10688,6 +10692,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 
 
                 
+                    
+                        
+                    
+                
 
                 
                     <published>2026-05-04T00:00:00+08:00</published>
@@ -12484,6 +12492,10 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 
@@ -14947,7 +14959,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
   </div>
-  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'yaan, sichuan<br>Yunfeng Temple')">
+  <div class="photo-item" onclick="openSpotlight('temple16.jpeg', '(16)', 'ya\'an, sichuan<br>Yunfeng Temple')">
     
     
     
@@ -15115,6 +15127,10 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 
@@ -19261,6 +19277,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 
 
                 
+                    
+                        
+                    
+                
 
                 
                     <published>2026-05-04T00:00:00+08:00</published>
@@ -21114,6 +21134,10 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 
@@ -24820,7 +24844,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
   </div>  
-  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'weihai, shandong<br>')">
+  <div class="photo-item" onclick="openSpotlight('street25.jpg', '(25)', 'ya\'an, sichuan<br>')">
     
     
     
@@ -25018,6 +25042,10 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 
@@ -27412,6 +27440,10 @@ document.getElementById('spotlight-modal').classList.remove('active');
                     
                 
 
+                
+                    
+                        
+                    
                 
 
                 
