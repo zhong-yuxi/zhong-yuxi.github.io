@@ -100,8 +100,6 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/sections/</loc>
-  </url><url>
     <loc>http://localhost:1313/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -113,8 +111,6 @@
                 hreflang="en-us"
                 href="http://localhost:1313/series/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/series/series-demo/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link

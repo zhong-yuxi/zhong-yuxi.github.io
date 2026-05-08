@@ -103,16 +103,6 @@ tag = "tags"
     url = "/videos/"
     weight = 4
 
-[[languages.en.menu.main]]
-    name = "SERIES"
-    url = "/series/"
-    weight = 5
-
-
-[[languages.en.menu.main]]
-    name = "TAGS"
-    url = "/tags/"
-    weight = 6
 
 # ============================================================================
 # 中文平行宇宙 (Chinese Configuration)
@@ -152,13 +142,3 @@ description = "物质文化、西藏、猫、灶" # 把 Material, Tibet, Cat 翻
     name = "纪行"
     url = "/zh/videos/"
     weight = 4
-
-[[languages.zh.menu.main]]
-    name = "系列"
-    url = "/zh/series/"
-    weight = 5
-
-[[languages.zh.menu.main]]
-    name = "标签"
-    url = "/zh/tags/"
-    weight = 6

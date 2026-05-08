@@ -165,9 +165,17 @@
 <div id="stage-2" class="container-fluid px-0 d-none my-4">
 <button onclick="goBack()" class="btn btn-sm btn-outline-secondary mb-3" style="font-family: 'MyJost', sans-serif;">&larr; 返回</button>
 <div class="d-flex w-100" style="gap: 20px;">
-<div id="main-image-wrapper" class="position-relative transition-layout" style="width: 100%;">
-  <img id="main-enlarged-img" src="" class="img-fluid rounded-4 shadow w-100" alt="Enlarged Stove">
-  <div id="hotspots-container"></div>
+<div id="main-image-wrapper" class="transition-layout" style="width: 100%;">
+<!-- 1. 提示语放在最外面，它不再参与圆圈的定位计算 -->
+<div id="explore-hint" class="text-center mb-3 fw-bold" style="font-family: 'MyJost', sans-serif; color: #008b8b;">
+✨ 点击圆圈探索你更多你想了解的细节
+</div>
+<!-- 2. 新增一个专属的定位盒子 (position-relative)，紧紧包裹图片和圆圈 -->
+<div class="position-relative w-100">
+<img id="main-enlarged-img" src="" class="img-fluid rounded-4 shadow w-100" alt="Enlarged Stove">
+<!-- 圆圈容器留在这个专属盒子里 -->
+<div id="hotspots-container"></div>
+</div>
 </div>
 <div id="details-panel" class="transition-layout d-flex flex-column gap-3" style="width: 0%; opacity: 0; max-height: 80vh; overflow-y: auto; overflow-x: hidden; padding-right: 10px;">
   <h5 id="detail-title" class="fw-bold m-0 sticky-top bg-white py-2" style="font-family: 'MyJost', sans-serif; z-index: 10;"></h5>
@@ -257,11 +265,11 @@ const detailData = {
 // 魔法生效：这里的 key 也必须跟着换成绝对路径
 const stoveHotspots = {
 '/projects/om-and-xiang/stove1.jpg': [
-{ id: 'cat', top: '48%', left: '30%' },
-{ id: 'kirtimukha', top: '58%', left: '50.5%' }
+{ id: 'cat', top: '49%', left: '30%' },
+{ id: 'kirtimukha', top: '59%', left: '50.5%' }
 ],
 '/projects/om-and-xiang/stove2.jpg': [
-{ id: 'stovegod', top: '42%', left: '51%' }
+{ id: 'stovegod', top: '43%', left: '51%' }
 ],
 '/projects/om-and-xiang/stove3.jpg': [
 { id: 'nehulay', top: '50%', left: '42%' },
