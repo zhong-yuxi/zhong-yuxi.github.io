@@ -21,8 +21,10 @@
             ========================================== -->
     <div id="my-preloader">
         <div class="loader-container">
-            <!-- 转动的圆圈 -->
-            <div class="loader-spinner"></div>
+            <!-- 🌟 升级为 SVG 黑科技的转动圆圈 -->
+            <svg class="loader-spinner" viewBox="0 0 120 120">
+                <circle class="spinner-path" cx="60" cy="60" r="56"></circle>
+            </svg>
             <!-- 中间静止的Logo -->
             <img class="loader-logo" src="/favicon.svg" alt="My Logo">
         </div>
@@ -58,7 +60,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: opacity 0.6s ease; 
+            
+            /* 👇 关键修改点在这里 👇 */
+            opacity: 1; /* 1. 明确告诉浏览器起点：一开始是 100% 不透明的 */
+            /* 2. 加上 !important 防护罩，谁也别想覆盖我的动画！我稍微改成了 0.7s，淡出感觉会更优雅 */
+            transition: opacity 0.7s ease-in-out !important; 
         }
 
         /* --- 装圆圈和Logo的容器 --- */
@@ -71,16 +77,33 @@
             align-items: center;
         }
 
-        /* --- 旋转的圆圈 --- */
+        /* --- 1. 旋转的圆圈 (SVG 外部容器) --- */
         .loader-spinner {
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 5px solid transparent; 
-            border-top: 5px solid var(--preloader-ring-color);
-            border-right: 5px solid var(--preloader-ring-color);
-            border-radius: 50%; 
-            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; 
+            /* 整体持续匀速旋转 */
+            animation: spin 1.5s linear infinite; 
+        }
+
+        /* --- 2. SVG 内部的圆环线条 (画圆魔法) --- */
+        .spinner-path {
+            fill: none; /* 内部不填充颜色 */
+            stroke: var(--preloader-ring-color); /* 圆环颜色 */
+            stroke-width: 6; /* 圆环粗细 */
+            stroke-linecap: round; /* 🌟 线条两端变成圆角，看起来极其优雅舒适 */
+            
+            /* 📐 码农数学课：半径 56 的圆，周长约等于 2 * 3.14 * 56 ≈ 352 */
+            stroke-dasharray: 352; 
+            stroke-dashoffset: 120; /* 默认让线条偏移 120，这样就形成了一个缺口 */
+            
+            /* 当触发闭合时的过渡动画：0.5秒内，后半截加速追赶！ */
+            transition: stroke-dashoffset 0.5s ease-in-out; 
+        }
+
+        /* 🌟 3. JS 会触发这个“终极形态”，让缺口变成 0，圆就彻底闭合了！ */
+        .loader-spinner.closing .spinner-path {
+            stroke-dashoffset: 0; 
         }
 
         /* --- 中间的 Logo --- */
@@ -164,30 +187,48 @@
     </style>
 
     <!-- ==========================================
-            🌟 3. 控制幕布消失的魔法开关 (JavaScript 极速闪避版)
+            🌟 3. 控制幕布消失的魔法开关 (JavaScript 旗舰版)
             ========================================== -->
     <script>
-        // 1. 记下网页刚开始请求的时间点（按下秒表 ⏱️）
+        // 1. 记下网页开始加载的时间点（掏出秒表）
         const startTime = Date.now();
 
         window.addEventListener('load', function() {
-            // 2. 网页全部加载完毕，看看总共花了多少毫秒
+            // 2. 网页底层所有数据加载完毕时，看看过了多少毫秒
             const elapsedTime = Date.now() - startTime;
-            const preloader = document.getElementById('my-preloader');
             
-            // 3. 定义一个“极速界限”（比如 400 毫秒，你也可以改成 300 或 500）
-            if (elapsedTime < 600) {
-                // ⚡ 【极速模式】：加载太快了！取消 CSS 里的淡出动画，瞬间消失！
-                preloader.style.transition = 'none'; 
-                preloader.style.opacity = '0';
-                preloader.style.display = 'none';
-            } else {
-                // 🎩 【优雅模式】：既然用户已经看清了 Logo，就优雅地拉开幕布
-                preloader.style.opacity = '0';
+            // 3. 设定你希望加载页【最少】展示的时间！
+            // 这里我设定了 1200 毫秒 (即 1.2 秒)，足够看清你的 Logo 且不会觉得太久。你可以随时修改！
+            const minimumDisplayTime = 1200; 
+            
+            // 4. 计算我们还需要让幕布多停留多久？
+            // 如果加载只花了 200ms，那就再等 1000ms；如果加载花了 2000ms，那就等 0ms 直接消失。
+            const delayTime = Math.max(0, minimumDisplayTime - elapsedTime);
+
+            // 5. 按照计算好的时间，准时拉开幕布！
+            setTimeout(function() {
+                const preloader = document.getElementById('my-preloader');
+                // 抓取我们刚写的 SVG 元素
+                const spinner = document.querySelector('.loader-spinner');
+                
+                // 🎬 动作一：闭合圆环！
+                // 给 SVG 加上 closing 类，此时 CSS 里的 stroke-dashoffset 会变成 0，线条加速追赶闭合！
+                spinner.classList.add('closing');
+                
+                // 🎬 动作二：等待圆环闭合后，开始淡出
+                // 我们给它 0.4 秒（400毫秒）的时间去完成闭合动画，然后再让幕布变透明
                 setTimeout(function() {
-                    preloader.style.display = 'none';
-                }, 600); // 这个 600 对应你在 CSS 里设置的 transition 时间
-            }
+                    preloader.style.opacity = '0';
+                    
+                    // 🎬 动作三：彻底退场
+                    // 等 0.7 秒透明度动画结束后，彻底把加载页从网页结构里拿掉
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                    }, 700); 
+
+                }, 400); // 👈 这里的 400 就是留给圆环闭合的黄金时间！
+
+            }, delayTime);
         });
     </script>
 

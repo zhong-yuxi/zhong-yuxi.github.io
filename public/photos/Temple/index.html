@@ -871,21 +871,28 @@ table {
         window.addEventListener('load', function() {
             
             const elapsedTime = Date.now() - startTime;
-            const preloader = document.getElementById('my-preloader');
             
             
-            if (elapsedTime < 600) {
+            
+            const minimumDisplayTime = 1200; 
+            
+            
+            
+            const delayTime = Math.max(0, minimumDisplayTime - elapsedTime);
+
+            
+            setTimeout(function() {
+                const preloader = document.getElementById('my-preloader');
                 
-                preloader.style.transition = 'none'; 
-                preloader.style.opacity = '0';
-                preloader.style.display = 'none';
-            } else {
                 
                 preloader.style.opacity = '0';
+                
+                
                 setTimeout(function() {
                     preloader.style.display = 'none';
                 }, 600); 
-            }
+
+            }, delayTime);
         });
     </script>
 
