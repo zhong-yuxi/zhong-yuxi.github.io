@@ -167,6 +167,14 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   {{< paige/image src="yinuo26.jpg" alt="Yinuo 26" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo27.jpg" alt="Yinuo 27" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="yinuo28.jpg" alt="Yinuo 28" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo29.jpg" alt="Yinuo 29" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo30.jpg" alt="Yinuo 30" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo31.jpg" alt="Yinuo 31" loading="lazy" process="resize 800x webp" >}}  
+  {{< paige/image src="yinuo32.jpg" alt="Yinuo 32" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo33.jpg" alt="Yinuo 33" loading="lazy" process="resize 800x webp" >}}  
+  {{< paige/image src="yinuo34.jpg" alt="Yinuo 34" loading="lazy" process="resize 800x webp" >}}
+  {{< paige/image src="yinuo35.jpg" alt="Yinuo 35" loading="lazy" process="resize 800x webp" >}}  
+  {{< paige/image src="yinuo36.jpg" alt="Yinuo 36" loading="lazy" process="resize 800x webp" >}}
 </div>
 
 <script>
