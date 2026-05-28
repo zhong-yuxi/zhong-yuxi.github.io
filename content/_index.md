@@ -82,7 +82,7 @@ disable_sections = true
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 #paige-site-menu a:hover { color: #66cdcd !important; }

@@ -117,7 +117,7 @@ body.dark .vlog-title {
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 鼠标悬停变浅 */
