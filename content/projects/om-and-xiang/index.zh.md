@@ -23,7 +23,7 @@
 
 <!-- 1. 提示语放在最外面，它不再参与圆圈的定位计算 -->
 <div id="explore-hint" class="text-center mb-3 fw-bold" style="font-family: 'MyJost', sans-serif; color: #008b8b;">
-✨ 点击圆圈探索你更多你想了解的细节
+✨ 点击圆圈探索更多细节
 </div>
 
 <!-- 2. 新增一个专属的定位盒子 (position-relative)，紧紧包裹图片和圆圈 -->

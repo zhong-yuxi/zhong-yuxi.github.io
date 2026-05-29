@@ -3,7 +3,7 @@ keywords = [
 "Yuxi Zhong", "Tibet", "Material Culture", "Religion", "Cat", "Ganzi", 
 "Visual", "Ecology", "Multi-species Ethnography", "Xiangcheng", 
 "Stove Cat", "Nehulay", "Vernacular Religion", "Intangible Cultural Heritage", 
-"ICH", "Sonam Dorji", "钟誉熙", "乡城", "灶壁猫",  "吐宝鼠", "物质文化"
+"ICH", "Sonam Dorji", "钟誉熙", "乡城", "灶壁猫",  "吐宝鼠", "物质文化", "anthropology"
 ]
 [paige.pages]
 disable_collections = true
@@ -22,7 +22,7 @@ disable_sections = true
     </h1>
     <p class="text-white mt-1 mb-0" 
        style="font-family: 'MyJost', sans-serif; font-size: 1.2rem; letter-spacing: 0.05em; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-        Material, Tibet, Cat
+        Materiality, Ritual, Visuality, Vernacular, Tibet
     </p>
 </div>
 </div>
