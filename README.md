@@ -1,15 +1,38 @@
-# Paige example site
+# Yuxi Zhong | 钟誉熙
 
-If you move this directory out of its parent directory,
-you must remove this line from the file go.mod:
+This is the source repository for my personal website.
 
-```
-replace github.com/willfaught/paige => ../
-```
+Website: https://zhong-yuxi.github.io/
 
-and then run this command:
+## About
 
-```
-$ cd example
-$ hugo mod get github.com/willfaught/paige@latest
-```
+This website presents my academic interests, research projects, photography, videos, and personal archive.
+
+My work focuses on material culture, Tibetan cultural worlds, vernacular religion, visual culture, and the relationships between objects, memory, identity, and everyday life.
+
+## Sections
+
+- About
+- Projects
+- Photos
+- Videos
+
+## Built With
+
+- Hugo
+- Paige theme
+- GitHub Pages
+- GitHub Actions
+
+## Local Preview
+
+bash hugo server 
+
+## Deployment
+
+The website is automatically built and deployed through GitHub Actions when changes are pushed to the main branch.
+
+## Author
+
+Yuxi Zhong  
+钟誉熙
