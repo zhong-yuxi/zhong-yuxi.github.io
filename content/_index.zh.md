@@ -40,7 +40,7 @@ disable_sections = true
             <strong style="font-weight: 600; -webkit-text-stroke: 0.4px currentColor;">嗨，你可以叫我斯朗多吉，这是我的藏文名字！</strong><br><br>
             我关注信仰、记忆与身份如何在物质世界中留下形状。目前，我的研究从家乡乡城的灶墙图像、仪式物件与地方宗教实践出发，理解东部青藏高原日常生活中的物质文化与神圣。
             <br><br>
-            学术之外，我也喜欢京剧、摄影、动物保护和做饭。
+            另外，我也喜欢京剧、摄影、动物保护和做饭👨‍🍳。
         </p>
         <div class="contact-info mt-4">
             <p class="mb-2 info-text">Email: <a href="mailto:yuxi.zhonggg@gmail.com" class="email-link">yuxi.zhonggg@gmail.com</a></p>
