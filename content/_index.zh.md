@@ -37,8 +37,10 @@ disable_sections = true
     <div class="col-md-7 px-md-5">
         <!-- 这里把 'Open Sans' 换成了 'LXGWWenKai' -->
         <p class="text-start bio-text" style="font-family: 'LXGWWenKai', sans-serif; font-size: 1.15rem; line-height: 1.8;">
-            <strong style="font-weight: 600; -webkit-text-stroke: 0.4px currentColor;">嗨，你可以叫我斯朗多吉，这是我的藏文名字！</strong><br>
-            我是一名探索信仰和身份是如何刻入物质世界的学者。我的研究集中于我的家乡--乡城，我借助人类学、艺术学和哲学的学科方法来研究不断演变的物质文化和仪式物品。在学术研究之外，你也能在京剧舞台和流浪动物的救助站发现我。
+            <strong style="font-weight: 600; -webkit-text-stroke: 0.4px currentColor;">嗨，你可以叫我斯朗多吉，这是我的藏文名字！</strong><br><br>
+            我关注信仰、记忆与身份如何在物质世界中留下形状。目前，我的研究从家乡乡城的灶墙图像、仪式物件与地方宗教实践出发，理解东部青藏高原日常生活中的物质文化与神圣。
+            <br><br>
+            学术之外，我也喜欢京剧、摄影、动物保护和做饭。
         </p>
         <div class="contact-info mt-4">
             <p class="mb-2 info-text">Email: <a href="mailto:yuxi.zhonggg@gmail.com" class="email-link">yuxi.zhonggg@gmail.com</a></p>

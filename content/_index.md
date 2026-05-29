@@ -34,8 +34,10 @@ disable_sections = true
     </div>
     <div class="col-md-7 px-md-5">
         <p class="text-start bio-text" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8;">
-            <strong>Hi, I'm Yuxi Zhong, you can call me Sonam Dorji!</strong><br>
-            I am a scholar exploring how faith and identity are carved into the material world. My research tracks the evolving material culture and ritual objects of my hometown, Xiangcheng (乡城). Outside of academia, you'll find me performing Peking Opera or advocating for animal welfare.
+            <strong>Hi, I'm Yuxi Zhong. You can also call me Sonam Dorji!</strong><br><br>
+           I study how faith, memory, and identity take shape through material forms. My current research focuses on stove-wall images, ritual objects, and vernacular religious practices in my hometown, Xiangcheng (乡城), on the eastern edge of the Tibetan Plateau.
+            <br><br>
+            Beyond my academic work, I am also drawn to Peking Opera, photography, animal welfare, and cooking.
         </p>
         <div class="contact-info mt-4">
             <p class="mb-2 info-text">Email: <a href="mailto:yuxi.zhonggg@gmail.com" class="email-link">yuxi.zhonggg@gmail.com</a></p>

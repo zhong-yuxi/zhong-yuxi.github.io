@@ -153,7 +153,7 @@
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -7361,7 +7361,7 @@ document.addEventListener("DOMContentLoaded", function() {
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -9146,7 +9146,7 @@ h1 {
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -11769,7 +11769,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -14865,7 +14865,7 @@ document.addEventListener("DOMContentLoaded", function() {
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -19002,7 +19002,7 @@ document.addEventListener("DOMContentLoaded", function() {
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -22898,7 +22898,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -24744,7 +24744,7 @@ document.getElementById('spotlight-modal').classList.remove('active');
     color: #008b8b !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
-    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out !important; 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 /* 3. 鼠标悬停变浅（变白一点） */
@@ -26164,7 +26164,303 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(10)', 'Xiangcheng, Sichuan<br>Panoramic valley view')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(10)', 'Xiangcheng, Sichuan<br>Rapeseed flowers, mountains and rivers')">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="paige-shortcode-image">
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+        
+        
+        
+        
+        
+    
+        
+            
+                
+                    
+                
+            
+                
+                    
+                        
+                    
+                
+            
+                
+                    
+                        
+                    
+                
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+                
+            
+        
+    
+        
+        
+        
+        
+    
+        
+            
+    
+            
+    
+            
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <img  alt="Xiangcheng 16"   class="img-fluid "  crossorigin="anonymous"   height="600"   loading="lazy"  referrerpolicy="no-referrer"  src="http://localhost:1313/photos/xiangcheng/xiangcheng16_hu_dc7556de7d876254.c95748ae04ca6830a98f1306283cea59ec697810bc65d32efc8db75355738c1c.webp"     width="800" >
+    
+    
+    </div>
+
+</div>
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(11)', 'Xiangcheng, Sichuan<br>Sunlight on the Golden Mountain')">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="paige-shortcode-image">
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+        
+        
+        
+        
+        
+    
+        
+            
+                
+                    
+                
+            
+                
+                    
+                        
+                    
+                
+            
+                
+                    
+                        
+                    
+                
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+                
+            
+        
+    
+        
+        
+        
+        
+    
+        
+            
+    
+            
+    
+            
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <img  alt="Xiangcheng 17"   class="img-fluid "  crossorigin="anonymous"   height="600"   loading="lazy"  referrerpolicy="no-referrer"  src="http://localhost:1313/photos/xiangcheng/xiangcheng17_hu_ae9c60602c095713.8b3ca53396aa7c75368499adb1d690a0ab2582d9e7b945d50bc7af7005babecf.webp"     width="800" >
+    
+    
+    </div>
+
+</div>
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(12)', 'Xiangcheng, Sichuan<br>Panoramic valley view')">
     
     
     
@@ -26312,7 +26608,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(11)', 'Xiangcheng, Sichuan<br>Village in the mist')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(13)', 'Xiangcheng, Sichuan<br>Village in the mist')">
     
     
     
@@ -26460,7 +26756,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(12)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(14)', 'Xiangcheng, Sichuan<br>Monastery and mountain silhouette')">
     
     
     
@@ -26608,7 +26904,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(13)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(15)', 'Xiangcheng, Sichuan<br>Stupa and snow peaks')">
     
     
     
@@ -26756,7 +27052,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(14)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(16)', 'Xiangcheng, Sichuan<br>Traditional attire and culture')">
     
     
     
@@ -26904,7 +27200,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     </div>
 
 </div>
-<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(15)', 'Xiangcheng, Sichuan<br>Local gathering')">
+<div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(17)', 'Xiangcheng, Sichuan<br>Local gathering')">
     
     
     
