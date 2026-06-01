@@ -15,6 +15,11 @@ weight = 10
 [languages.en.params.paige.site]
 description = "Material, Tibet, Cat"
 
+# Google Analytics 4：把下面的 ID 换成你在 GA 后台拿到的测量 ID (G-XXXXXXXXXX)
+# 只在生产环境(部署)生效，本地 hugo server 预览不会统计，访客看不到任何界面
+[services.googleAnalytics]
+ID = "G-Q6M37B4J00"
+
 [markup.goldmark.renderer]
 unsafe = true
 
