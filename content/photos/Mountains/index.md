@@ -2,6 +2,9 @@
 title: "Mountains"
 date: 2026-05-04
 draft: false
+gallery_preview: true
+gallery_style: "cinematic"
+gallery_variant: "landscape"
 ---
 
 <style>
