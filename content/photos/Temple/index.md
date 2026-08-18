@@ -3,6 +3,10 @@ title: "Temple"
 date: 2026-05-04
 draft: false
 weight: 3
+gallery_preview: true
+gallery_style: "editorial"
+gallery_variant: "contemplative"
+gallery_feature: 1
 ---
 
 <style>

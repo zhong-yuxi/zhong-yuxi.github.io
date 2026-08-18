@@ -235,7 +235,7 @@
     <!-- 👇 下面是你原本的主题结构 👇 -->
     {{ partial "paige/func-include.html" (dict "name" "body-first%s.html" "page" $page) }}
 
-    <div class="container">
+    <div class="container{{ if $page.Params.gallery_preview }} gallery-preview-shell gallery-style-{{ $page.Params.gallery_style }} gallery-variant-{{ $page.Params.gallery_variant }}{{ with $page.Params.gallery_theme }} gallery-theme-{{ . }}{{ end }}{{ end }}">
         <div class="row">
             <div class="col mt-3" id="paige-site" {{ with $attrs }} {{ $attrs | safeHTMLAttr }} {{ end }}>
                 {{ partial "paige/func-include.html" (dict "name" "site-first%s.html" "page" $page) }}

@@ -3,6 +3,10 @@ title: "乡城"
 date: 2026-05-06
 draft: false
 weight: 3
+gallery_preview: true
+gallery_style: "editorial"
+gallery_variant: "field-notes"
+gallery_feature: 2
 ---
 
 <style>

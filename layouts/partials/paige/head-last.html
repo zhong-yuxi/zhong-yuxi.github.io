@@ -2,3 +2,16 @@
 {{ if hugo.IsProduction }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+
+{{ if and (not hugo.IsProduction) (eq .Section "photos") }}
+    <script src="{{ `js/gallery-local-assets.js?v=3` | relURL }}" defer></script>
+{{ end }}
+
+{{ if .Params.gallery_preview }}
+    <meta name="gallery-preview-style" content="{{ .Params.gallery_style }}">
+    <meta name="gallery-preview-variant" content="{{ .Params.gallery_variant }}">
+    <meta name="gallery-preview-theme" content="{{ .Params.gallery_theme | default `light` }}">
+    <meta name="gallery-preview-feature" content="{{ .Params.gallery_feature | default 1 }}">
+    <link rel="stylesheet" href="{{ `css/gallery-preview.css?v=3` | relURL }}">
+    <script src="{{ `js/gallery-preview.js?v=3` | relURL }}" defer></script>
+{{ end }}

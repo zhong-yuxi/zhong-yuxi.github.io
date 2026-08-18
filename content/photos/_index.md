@@ -150,17 +150,26 @@ font-family: 'Sparose', serif;
   }
 }
 
-/* --- 响应式：手机端 (1排1张) --- */
-@media (max-width: 768px) {
+/* --- 响应式：手机与窄屏端 (1排1张) --- */
+@media (max-width: 900px) {
   .gallery-container {
-    row-gap: 5px; /* 手机端上下加上一点点间隙，显得不那么压抑 */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    row-gap: 20px;
+    margin: 1.5rem auto 3rem;
+    padding: 0 18px;
+    overflow: visible;
   }
-  .photo-card {
-    width: 100% !important;
-    margin-left: 0 !important;
-    clip-path: none !important; /* 手机屏幕太窄，去掉斜切变回常规矩形更易阅读 */
-    height: 380px;
-    padding: 25px;
+  .gallery-container > .photo-card,
+  .gallery-container > .photo-card:nth-child(n) {
+    flex: 0 0 auto;
+    width: min(84vw, 340px) !important;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto !important;
+    clip-path: none !important;
+    padding: 24px;
   }
 }
 
