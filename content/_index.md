@@ -30,7 +30,7 @@ disable_sections = true
 <div class="container-fluid px-0 mb-5">
 <div class="row align-items-center">
     <div class="col-md-5 mb-4 mb-md-0 text-center text-md-start">
-        {{< paige/image alt="Yuxi Zhong" src="images/profile_pic.jpg" class="img-fluid shadow-sm rounded-1" >}}
+        {{< paige/image alt="Yuxi Zhong" src="images/profile_pic_new.jpeg" class="img-fluid shadow-sm rounded-1" >}}
     </div>
     <div class="col-md-7 px-md-5">
         <p class="text-start bio-text" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8;">
