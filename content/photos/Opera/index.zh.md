@@ -152,7 +152,7 @@ h1 {
 <div class="masonry-gallery">
   {{< paige/image src="opera1.jpeg" alt="Opera 1" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera2.jpeg" alt="Opera 2" loading="lazy" process="resize 800x webp" >}}
-  {{< paige/image src="opera3.jpeg" alt="Opera 3" >}}
+  {{< paige/image src="opera3.jpeg" alt="Opera 3" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera4.JPG" alt="Opera 4" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera5.JPG" alt="Opera 5" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera6.JPG" alt="Opera 6" loading="lazy" process="resize 800x webp" >}}

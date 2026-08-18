@@ -154,6 +154,29 @@
         });
     };
 
+    const prioritizeVisibleImages = (entries) => {
+        requestAnimationFrame(() => {
+            const nearby = entries
+                .filter(({ item }) => {
+                    const rect = item.getBoundingClientRect();
+                    return rect.bottom > 0 && rect.top < window.innerHeight * 1.5;
+                })
+                .sort((a, b) => {
+                    const aRect = a.item.getBoundingClientRect();
+                    const bRect = b.item.getBoundingClientRect();
+                    return aRect.top - bRect.top || aRect.left - bRect.left;
+                });
+
+            nearby.forEach(({ image }, index) => {
+                image.loading = "eager";
+                image.decoding = "async";
+                if ("fetchPriority" in image) {
+                    image.fetchPriority = index < 3 ? "high" : "auto";
+                }
+            });
+        });
+    };
+
     document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("gallery-preview-active", `gallery-style-${style}`, `gallery-variant-${variant}`);
         if (theme === "dark") document.body.classList.add("gallery-theme-dark");
@@ -187,6 +210,8 @@
             item.setAttribute("aria-label", `View photo ${index + 1}${caption.location ? `, ${caption.location}` : ""}`);
             return { item, image, caption };
         });
+
+        prioritizeVisibleImages(entries);
 
         const showLightbox = buildLightbox(entries);
         entries.forEach((entry, index) => {
