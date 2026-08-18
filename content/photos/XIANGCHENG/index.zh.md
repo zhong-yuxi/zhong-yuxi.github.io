@@ -219,13 +219,13 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 <div class="scroll-track" id="xiangcheng-track">
   
 <div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(01)', 'Xiangcheng, Sichuan<br>the Sangpiling Temple in the morning light')">
-    {{< paige/image src="xiangcheng10.JPG" alt="Xiangcheng 10" >}}
+    {{< paige/image src="xiangcheng10.JPG" alt="Xiangcheng 10" process="resize 800x webp" >}}
 </div>
 <div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(02)', 'Xiangcheng, Sichuan<br>A corner between the houses')">
-    {{< paige/image src="xiangcheng11.jpeg" alt="Xiangcheng 11" >}}
+    {{< paige/image src="xiangcheng11.jpeg" alt="Xiangcheng 11" process="resize 800x webp" >}}
 </div>
 <div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(03)', 'Xiangcheng, Sichuan<br>Blue sky and eaves')">
-    {{< paige/image src="xiangcheng15.JPG" alt="Xiangcheng 15" >}}
+    {{< paige/image src="xiangcheng15.JPG" alt="Xiangcheng 15" process="resize 800x webp" >}}
 </div>
 <div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(04)', 'Xiangcheng, Sichuan<br>Road to the snow mountains')">
     {{< paige/image src="xiangcheng13.JPG" alt="Xiangcheng 13" loading="lazy" process="resize 800x webp" >}}
@@ -267,7 +267,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     {{< paige/image src="xiangcheng3.JPG" alt="Xiangcheng 3" loading="lazy" process="resize 800x webp" >}}
 </div>
 <div class="photo-item" onclick="openSpotlight(this.querySelector('img').src, '(17)', 'Xiangcheng, Sichuan<br>Local gathering')">
-    {{< paige/image src="xiangcheng4.JPG" alt="Xiangcheng 4" >}}
+    {{< paige/image src="xiangcheng4.JPG" alt="Xiangcheng 4" loading="lazy" process="resize 800x webp" >}}
 </div>
 
 </div>
