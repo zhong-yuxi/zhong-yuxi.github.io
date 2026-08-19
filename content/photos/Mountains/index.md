@@ -214,7 +214,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain1.jpeg', '(02)', 'Qiangren Valley<br>Aba Prefecture, Sichuan')">
-    {{< paige/image src="mountain1.jpeg" alt="Qiangren Valley" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="mountain1.jpeg" alt="Qiangren Valley" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain9.JPG', '(03)', 'Dawa Gengzha<br>Ya\'an, Sichuan')">
@@ -238,7 +238,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain11.JPG', '(08)', 'Mount Genyen<br>Litang, Sichuan')">
-    {{< paige/image src="mountain11.JPG" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="mountain11.JPG" alt="Mingshashan" loading="lazy" process="resize 800x webp" >}}
   </div>
   
   <div class="photo-item" onclick="openSpotlight('mountain5.JPG', '(09)', 'Qianshan Mountain<br>Anshan, Liaoning')">
