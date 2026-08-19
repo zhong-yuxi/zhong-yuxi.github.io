@@ -1,0 +1,485 @@
+@font-face {
+  font-family: "Xiangcheng Jost";
+  src: url("/fonts/Jost-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Xiangcheng Script";
+  src: url("/fonts/sparose.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Xiangcheng Chinese Script";
+  src: url("/fonts/Slidexiaxing.ttf") format("truetype");
+  font-display: swap;
+}
+
+html,
+body {
+  min-width: 1100px;
+}
+
+body {
+  overflow-x: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.xiangcheng-viewer-open {
+  overflow: hidden;
+}
+
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description {
+  display: none !important;
+}
+
+#paige-site-header {
+  width: min(calc(100% - 96px), 1240px);
+  margin: 2rem auto 0 !important;
+}
+
+#paige-site-menu a {
+  color: #008b8b !important;
+  font-family: "Xiangcheng Jost", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.05em !important;
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+#paige-site-menu a:hover {
+  color: #66cdcd !important;
+}
+
+#paige-site-menu a:active,
+#paige-site-menu a.active,
+#paige-site-menu a[aria-current="page"] {
+  color: #004d4d !important;
+}
+
+#paige-page {
+  width: 100%;
+}
+
+#paige-page-header {
+  margin: 0 0 50px;
+}
+
+#paige-page-title {
+  margin: 0;
+  color: #166d7a;
+  font-family: "Xiangcheng Script", cursive;
+  font-size: 2rem;
+  font-weight: 400 !important;
+  letter-spacing: 0.035em;
+  line-height: 1;
+  text-align: center;
+}
+
+html[lang^="zh"] #paige-page-title {
+  font-family: "Xiangcheng Chinese Script", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400 !important;
+}
+
+#paige-page-content {
+  width: 100%;
+  max-width: none !important;
+}
+
+#paige-page-content > .xiangcheng-book-shell {
+  margin-bottom: 0;
+}
+
+.xiangcheng-book-shell,
+.xiangcheng-book-shell * {
+  box-sizing: border-box;
+}
+
+.xiangcheng-book-shell {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 30px;
+  color: #1d2727;
+  font-family: "Xiangcheng Jost", sans-serif;
+}
+
+.xiangcheng-book-navigation {
+  position: relative;
+  width: 1054px;
+  display: grid;
+  grid-template-columns: 54px 920px 54px;
+  align-items: center;
+  gap: 13px;
+}
+
+.xiangcheng-book-stage {
+  position: relative;
+  width: 920px;
+  height: 570px;
+  filter: drop-shadow(0 24px 28px rgba(38, 34, 26, 0.13));
+}
+
+.xiangcheng-book {
+  width: 920px;
+  height: 570px;
+}
+
+.xiangcheng-book-page {
+  width: 460px;
+  height: 570px;
+  overflow: hidden;
+  border: 1px solid rgba(84, 77, 62, 0.09);
+  background-color: #f8f3e8;
+  background-image: url("/images/xiangcheng-paper-texture.webp");
+  background-position: center;
+  background-size: 620px 620px;
+  box-shadow: inset 0 0 28px rgba(74, 65, 48, 0.035);
+}
+
+.xiangcheng-page-composition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 45px 38px;
+  user-select: none;
+}
+
+.xiangcheng-book-photo {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: 0 7px 16px rgba(41, 37, 30, 0.1);
+  cursor: zoom-in;
+  transition: opacity 180ms ease, box-shadow 180ms ease;
+}
+
+.xiangcheng-book-photo:hover {
+  opacity: 0.92;
+  box-shadow: 0 10px 24px rgba(41, 37, 30, 0.15);
+}
+
+.xiangcheng-book-photo:focus-visible,
+.xiangcheng-book-arrow:focus-visible,
+.xiangcheng-lightbox button:focus-visible {
+  outline: 2px solid #2b858e;
+  outline-offset: 4px;
+}
+
+.xiangcheng-book-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.xiangcheng-single--portrait-left .xiangcheng-book-photo {
+  width: 245px;
+  height: 410px;
+  left: 62px;
+  top: 78px;
+}
+
+.xiangcheng-single--portrait-right .xiangcheng-book-photo {
+  width: 242px;
+  height: 404px;
+  right: 62px;
+  top: 82px;
+}
+
+.xiangcheng-single--landscape-low .xiangcheng-book-photo {
+  width: 348px;
+  height: 232px;
+  right: 43px;
+  top: 214px;
+}
+
+.xiangcheng-single--landscape-center .xiangcheng-book-photo {
+  width: 354px;
+  height: 236px;
+  left: 53px;
+  top: 165px;
+}
+
+.xiangcheng-single--square-small .xiangcheng-book-photo {
+  width: 296px;
+  height: 296px;
+  left: 82px;
+  top: 132px;
+}
+
+.xiangcheng-duo--portraits .xiangcheng-book-photo {
+  width: 164px;
+  height: 270px;
+}
+
+.xiangcheng-duo--portraits .xiangcheng-book-photo:first-child {
+  left: 52px;
+  top: 76px;
+}
+
+.xiangcheng-duo--portraits .xiangcheng-book-photo:last-child {
+  right: 48px;
+  bottom: 72px;
+}
+
+.xiangcheng-duo--landscape-stack .xiangcheng-book-photo {
+  width: 284px;
+  height: 190px;
+}
+
+.xiangcheng-duo--landscape-stack .xiangcheng-book-photo:first-child {
+  left: 44px;
+  top: 64px;
+}
+
+.xiangcheng-duo--landscape-stack .xiangcheng-book-photo:last-child {
+  right: 42px;
+  bottom: 62px;
+}
+
+.xiangcheng-duo--square-offset .xiangcheng-book-photo {
+  width: 218px;
+  height: 218px;
+}
+
+.xiangcheng-duo--square-offset .xiangcheng-book-photo:first-child {
+  left: 42px;
+  top: 70px;
+}
+
+.xiangcheng-duo--square-offset .xiangcheng-book-photo:last-child {
+  right: 40px;
+  bottom: 58px;
+}
+
+.xiangcheng-duo--landscape-offset .xiangcheng-book-photo {
+  width: 278px;
+  height: 185px;
+}
+
+.xiangcheng-duo--landscape-offset .xiangcheng-book-photo:first-child {
+  right: 46px;
+  top: 72px;
+}
+
+.xiangcheng-duo--landscape-offset .xiangcheng-book-photo:last-child {
+  left: 42px;
+  bottom: 70px;
+}
+
+.xiangcheng-book-arrow {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(23, 82, 86, 0.34);
+  border-radius: 50%;
+  background: rgba(255, 255, 252, 0.84);
+  color: #145d65;
+  box-shadow: 0 8px 18px rgba(25, 56, 58, 0.08);
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease, opacity 160ms ease;
+}
+
+.xiangcheng-book-arrow:hover {
+  color: #0b7d86;
+  border-color: rgba(20, 119, 127, 0.58);
+  box-shadow: 0 10px 22px rgba(25, 56, 58, 0.14);
+  transform: translateY(-1px);
+}
+
+.xiangcheng-book-arrow.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.xiangcheng-spread-indicator {
+  min-height: 14px;
+  display: flex;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.xiangcheng-spread-indicator span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(27, 79, 82, 0.2);
+  transition: width 200ms ease, background 200ms ease;
+}
+
+.xiangcheng-spread-indicator span.is-active {
+  width: 14px;
+  border-radius: 999px;
+  background: rgba(25, 101, 106, 0.65);
+}
+
+.xiangcheng-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1055;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  background: rgba(244, 242, 236, 0.98);
+  color: #1d2827;
+}
+
+.xiangcheng-lightbox[open] {
+  display: grid;
+  place-items: center;
+  animation: xiangcheng-viewer-fade 260ms ease both;
+}
+
+.xiangcheng-lightbox::backdrop {
+  background: rgba(244, 242, 236, 0.98);
+}
+
+.xiangcheng-lightbox__close,
+.xiangcheng-lightbox__nav {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(30, 52, 51, 0.38);
+  border-radius: 50%;
+  background: rgba(255, 255, 252, 0.94);
+  color: #203533;
+  box-shadow: 0 7px 18px rgba(32, 47, 45, 0.08);
+  cursor: pointer;
+}
+
+.xiangcheng-lightbox__close {
+  position: fixed;
+  top: 28px;
+  right: 34px;
+  z-index: 2;
+}
+
+.xiangcheng-lightbox__nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.xiangcheng-lightbox__nav--previous {
+  left: 34px;
+}
+
+.xiangcheng-lightbox__nav--next {
+  right: 34px;
+}
+
+.xiangcheng-lightbox__nav.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.xiangcheng-lightbox__figure {
+  width: min(1120px, calc(100vw - 180px));
+  height: min(780px, calc(100vh - 110px));
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.xiangcheng-lightbox__image {
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+  max-height: min(780px, calc(100vh - 110px));
+  object-fit: contain;
+  animation: xiangcheng-viewer-image-in 460ms cubic-bezier(0.2, 0.75, 0.2, 1) both;
+}
+
+.xiangcheng-lightbox__caption {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  color: #1d2827;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.xiangcheng-lightbox__index {
+  margin-bottom: 24px;
+  color: #60706e;
+  font-size: 0.74rem;
+}
+
+.xiangcheng-lightbox__location {
+  margin-bottom: 7px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.xiangcheng-lightbox__description {
+  color: #3e4a48;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.79rem;
+  letter-spacing: 0.04em;
+  line-height: 1.55;
+  text-transform: none;
+}
+
+@keyframes xiangcheng-viewer-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes xiangcheng-viewer-image-in {
+  from { opacity: 0; transform: scale(0.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-color-scheme: dark) {
+  #paige-site-menu a {
+    color: #24f1ff !important;
+  }
+
+  #paige-site-menu a:hover {
+    color: #b1f5fa !important;
+  }
+
+  #paige-site-menu a.active,
+  #paige-site-menu a[aria-current="page"] {
+    color: #fff !important;
+  }
+
+  #paige-page-title {
+    color: #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xiangcheng-book-shell *,
+  .xiangcheng-lightbox * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
