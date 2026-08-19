@@ -1,0 +1,25 @@
+{{- $alt := .Get "alt" -}}
+{{- $loading := .Get "loading" -}}
+{{- $priority := .Get "fetchpriority" -}}
+{{- $process := .Get "process" | default "resize 800x webp" -}}
+{{- $src := .Get 0 | default (.Get "src") -}}
+{{- $resource := partial "paige/func-resource.html" (dict "page" .Page "url" $src) -}}
+
+{{- if not $resource -}}
+  {{- errorf "oriented-image shortcode: unable to find %q on %s" $src .Page.File.Path -}}
+{{- end -}}
+
+{{- $resource = $resource.Filter (slice images.AutoOrient (images.Process $process)) -}}
+{{- $resource = fingerprint $resource -}}
+
+<div class="paige-shortcode-image">
+  {{- partial "paige/tag-img.html" (dict
+    "alt" $alt
+    "class" "img-fluid"
+    "fetchpriority" $priority
+    "height" $resource.Height
+    "loading" $loading
+    "src" $resource.Permalink
+    "width" $resource.Width
+  ) -}}
+</div>

@@ -223,7 +223,7 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     {{< paige/image src="street3.jpg" alt="street3" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street8.JPG', '(05)', 'shenyang, liaoning<br>Storefront')">
-    {{< paige/image src="street8.JPG" alt="street8" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="street8.JPG" alt="street8" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street4.jpg', '(06)', 'Arxan City, Inner Mongolia<br>malamute, 2025')">
     {{< paige/image src="street4.jpg" alt="street4" loading="lazy" process="resize 800x webp" >}}
@@ -238,19 +238,19 @@ animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     {{< paige/image src="street11.jpeg" alt="street11" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street7.JPG', '(10)', 'shenyang, liaoning<br>snow and window')">
-    {{< paige/image src="street7.JPG" alt="street7" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="street7.JPG" alt="street7" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street9.jpeg', '(11)', 'quanzhou, fujian<br>Night market')">
     {{< paige/image src="street9.jpeg" alt="street9" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street10.jpeg', '(12)', 'quanzhou, fujian<br>Bookstore and Pretty Boy')">
-    {{< paige/image src="street10.jpeg" alt="street10" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="street10.jpeg" alt="street10" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street13.JPG', '(13)', 'yaan, sichuan<br>Fruit stand')">
     {{< paige/image src="street13.JPG" alt="street13" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street14.JPG', '(14)', 'lanzhou, gansu<br>High vantage point')">
-    {{< paige/image src="street14.JPG" alt="street14" loading="lazy" process="resize 800x webp" >}}
+    {{< oriented-image src="street14.JPG" alt="street14" loading="lazy" process="resize 800x webp" >}}
   </div>
   <div class="photo-item" onclick="openSpotlight('street15.jpeg', '(15)', 'yaan, sichuan<br>Geometric lines')">
     {{< paige/image src="street15.jpeg" alt="street15" loading="lazy" process="resize 800x webp" >}}
