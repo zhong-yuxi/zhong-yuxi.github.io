@@ -1,0 +1,35 @@
+{{- $src := .Get "src" -}}
+{{- $id := .Get "id" -}}
+{{- $location := .Get "location" | default "Xiangcheng, Sichuan" -}}
+{{- $description := .Get "description" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $priority := .Get "fetchpriority" -}}
+{{- $process := .Get "process" | default "resize 1200x webp" -}}
+{{- $resource := partial "paige/func-resource.html" (dict "page" .Page "url" $src) -}}
+
+{{- if not $resource -}}
+  {{- errorf "xiangcheng-book-photo shortcode: unable to find %q on %s" $src .Page.File.Path -}}
+{{- end -}}
+
+{{- $resource = $resource.Filter (slice images.AutoOrient (images.Process $process)) -}}
+{{- $resource = fingerprint $resource -}}
+
+<button
+  class="xiangcheng-book-photo"
+  type="button"
+  data-id="{{ $id }}"
+  data-location="{{ $location }}"
+  data-description="{{ $description }}"
+  aria-label="{{ $description }}"
+>
+  <img
+    src="{{ $resource.Permalink }}"
+    alt="{{ $description }}"
+    width="{{ $resource.Width }}"
+    height="{{ $resource.Height }}"
+    loading="{{ $loading }}"
+    decoding="async"
+    draggable="false"
+    {{- with $priority }} fetchpriority="{{ . }}"{{ end -}}
+  >
+</button>
