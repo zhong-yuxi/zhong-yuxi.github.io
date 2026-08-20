@@ -80,6 +80,7 @@
     const lightboxIndex = dialog.querySelector(".xiangcheng-lightbox__index");
     const lightboxLocation = dialog.querySelector(".xiangcheng-lightbox__location");
     const lightboxDescription = dialog.querySelector(".xiangcheng-lightbox__description");
+    const lightboxCaption = dialog.querySelector(".xiangcheng-lightbox__caption");
     const lightboxClose = dialog.querySelector(".xiangcheng-lightbox__close");
     const lightboxPrevious = dialog.querySelector(".xiangcheng-lightbox__nav--previous");
     const lightboxNext = dialog.querySelector(".xiangcheng-lightbox__nav--next");
@@ -89,11 +90,14 @@
     const renderLightbox = () => {
       const button = photoButtons[activePhoto];
       const image = button.querySelector("img");
+      const showCaption = button.dataset.showCaption !== "false";
       lightboxImage.src = image.currentSrc || image.src;
       lightboxImage.alt = image.alt;
       lightboxIndex.textContent = button.dataset.id || "";
       lightboxLocation.textContent = button.dataset.location || "";
       lightboxDescription.textContent = button.dataset.description || image.alt;
+      lightboxCaption.hidden = !showCaption;
+      dialog.classList.toggle("is-captionless", !showCaption);
 
       const first = activePhoto === 0;
       const last = activePhoto === photoButtons.length - 1;

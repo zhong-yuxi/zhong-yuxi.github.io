@@ -4,6 +4,7 @@
 {{- $description := .Get "description" -}}
 {{- $loading := .Get "loading" | default "lazy" -}}
 {{- $priority := .Get "fetchpriority" -}}
+{{- $showCaption := .Get "showcaption" | default "true" -}}
 {{- $process := .Get "process" | default "resize 1200x webp" -}}
 {{- $resource := partial "paige/func-resource.html" (dict "page" .Page "url" $src) -}}
 
@@ -20,6 +21,7 @@
   data-id="{{ $id }}"
   data-location="{{ $location }}"
   data-description="{{ $description }}"
+  data-show-caption="{{ $showCaption }}"
   aria-label="{{ $description }}"
 >
   <img
