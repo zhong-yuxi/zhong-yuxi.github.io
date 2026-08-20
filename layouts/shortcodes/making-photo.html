@@ -1,0 +1,21 @@
+{{- $src := .Get "src" -}}
+{{- $description := .Get "description" -}}
+{{- $hang := .Get "hang" | default "132" -}}
+{{- $tilt := .Get "tilt" | default "0" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $resource := partial "paige/func-resource.html" (dict "page" .Page "url" $src) -}}
+
+{{- if not $resource -}}
+  {{- errorf "making-photo shortcode: unable to find %q on %s" $src .Page.File.Path -}}
+{{- end -}}
+
+{{- $thumb := $resource.Filter (slice images.AutoOrient (images.Process "resize 720x webp q82")) -}}
+{{- $full := $resource.Filter (slice images.AutoOrient (images.Process "fit 2000x2000 webp q90")) -}}
+{{- $thumb = fingerprint $thumb -}}
+{{- $full = fingerprint $full -}}
+
+<button class="making-photo" type="button" style="--hang: {{ $hang }}px; --tilt: {{ $tilt }}deg;" data-full="{{ $full.RelPermalink }}" data-description="{{ $description }}" aria-label="{{ $description }}">
+  <span class="making-print">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ $description }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="{{ $loading }}" decoding="async" draggable="false">
+  </span>
+</button>

@@ -310,12 +310,12 @@
     </div>
   </a>
   
-<!-- 卡片 4: 生命 -->
-  <a href="/photos/portraits/" class="photo-card" style="background-image: url('/images/photoportrait.webp');">
+<!-- 卡片 4: 塑造 -->
+  <a href="/photos/making/" class="photo-card" style="background-image: url('/images/photomaking.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
-      <h3>生命</h3>
-      <p>流浪动物基地的可爱们</p>
+      <h3>塑造</h3>
+      <p>手起，形生</p>
     </div>
   </a>
 
