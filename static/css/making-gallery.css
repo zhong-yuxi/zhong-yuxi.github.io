@@ -1,0 +1,244 @@
+:root {
+  --making-ink: #3d3028;
+  --making-paper: #f5eee5;
+  --making-accent: #9c6540;
+}
+
+@font-face {
+  font-family: 'MySparoseFont';
+  src: url('/fonts/sparose.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Slidexiaxing';
+  src: url('/fonts/Slidexiaxing.ttf') format('truetype');
+  font-display: swap;
+}
+
+#paige-site-title,
+#paige-site-title a,
+#paige-site-description,
+#paige-page-title { display: none !important; }
+
+#paige-site-header { margin-top: 2rem !important; }
+
+.making-wall {
+  width: min(1360px, calc(100vw - 24px));
+  margin: 1.5rem 50% 4rem;
+  transform: translateX(-50%);
+  overflow-x: clip;
+  color: var(--making-ink);
+  background: transparent;
+}
+
+.making-heading {
+  position: relative;
+  z-index: 2;
+  padding: 1.25rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.making-heading h1 {
+  margin: 20px 0 0;
+  color: #166D7A;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.making-heading-en h1 { font-family: 'MySparoseFont', serif; }
+
+.making-heading-zh h1 {
+  font-family: 'Slidexiaxing', sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.making-installation {
+  position: relative;
+  min-height: 60vh;
+  padding: 0 clamp(1rem, 5vw, 5rem) clamp(3rem, 6vw, 6rem);
+}
+
+.making-branch {
+  position: relative;
+  z-index: 7;
+  display: block;
+  width: min(1120px, 94%);
+  height: auto;
+  margin: 0 auto -12px;
+  filter: drop-shadow(0 10px 8px rgba(66, 43, 25, 0.2));
+}
+
+.making-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: clamp(1rem, 3vw, 2.8rem);
+  row-gap: clamp(0.8rem, 1.8vw, 1.8rem);
+  align-items: start;
+  padding-bottom: 2rem;
+}
+
+.making-string-layer {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+}
+
+.making-string {
+  position: absolute;
+  top: -30px;
+  display: none;
+  width: 12px;
+  min-height: 80px;
+  background-image: url('/images/making/rope.png');
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 12px auto;
+  filter: drop-shadow(2px 4px 3px rgba(65, 42, 24, 0.2));
+  transform: translateX(-50%);
+}
+
+.making-photo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--hang) 0 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: zoom-in;
+}
+
+.making-print {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 13px 22px rgba(57, 40, 26, 0.18);
+  transform: rotate(var(--tilt));
+  transform-origin: center;
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.making-print img { display: block; width: 100%; height: auto; }
+
+.making-photo:hover .making-print {
+  transform: rotate(var(--tilt)) translateY(-3px) scale(1.012);
+  box-shadow: 0 18px 30px rgba(57, 40, 26, 0.24);
+  filter: brightness(1.025);
+}
+
+.making-photo:focus-visible { outline: 2px solid var(--making-accent); outline-offset: 6px; }
+
+.making-lightbox {
+  width: min(94vw, 900px);
+  max-width: none;
+  max-height: 96vh;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+.making-lightbox::backdrop { background: rgba(25, 20, 17, 0.84); backdrop-filter: blur(7px); }
+
+.making-polaroid {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+  padding: 15px 15px 0;
+  border-radius: 5px;
+  background: var(--making-paper);
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.42);
+  transform: rotate(-0.35deg);
+}
+
+.making-polaroid img {
+  display: block;
+  max-width: min(82vw, 820px);
+  max-height: 72vh;
+  width: auto;
+  height: auto;
+  margin: auto;
+  background: #d9d2ca;
+  object-fit: contain;
+}
+
+.making-caption {
+  display: grid;
+  min-height: 88px;
+  max-width: min(82vw, 820px);
+  padding: 1rem 1rem 1.25rem;
+  place-items: center;
+  color: #312a25;
+  font-family: 'MyJost', sans-serif;
+  font-size: clamp(0.88rem, 1.5vw, 1.05rem);
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.making-close,
+.making-lightbox-arrow {
+  position: fixed;
+  z-index: 3;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(28, 23, 19, 0.44);
+  font: 300 1.55rem/1 Georgia, serif;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.making-close { top: 22px; right: 24px; }
+.making-lightbox-arrow { top: 50%; transform: translateY(-50%); }
+.making-lightbox-arrow[data-direction='previous'] { left: 22px; }
+.making-lightbox-arrow[data-direction='next'] { right: 22px; }
+.making-close:hover { background: rgba(28, 23, 19, 0.76); transform: rotate(4deg); }
+.making-lightbox-arrow:hover { background: rgba(28, 23, 19, 0.76); transform: translateY(-50%) scale(1.06); }
+.making-lightbox-arrow[hidden] { display: none; }
+
+@media (max-width: 768px) {
+  .making-wall { width: 100vw; margin-top: 0.8rem; margin-bottom: 2rem; }
+  .making-heading { padding-top: 1rem; }
+  .making-installation { padding-inline: 1rem; }
+  .making-branch { width: 110%; max-width: none; margin-left: -5%; }
+  .making-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+  .making-string { width: 9px; background-size: 9px auto; }
+  .making-photo { padding-top: calc(var(--hang) * 0.72); }
+  .making-polaroid { padding: 10px 10px 0; }
+  .making-polaroid img { max-width: calc(94vw - 20px); max-height: 66vh; }
+  .making-caption { min-height: 76px; max-width: calc(94vw - 20px); padding: 0.8rem 0.75rem 1rem; }
+  .making-close { top: 12px; right: 12px; }
+  .making-lightbox-arrow { top: auto; bottom: 12px; }
+  .making-lightbox-arrow[data-direction='previous'] { left: 12px; }
+  .making-lightbox-arrow[data-direction='next'] { right: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .making-print, .making-close, .making-lightbox-arrow { transition: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .making-heading h1 { color: #ffffff !important; }
+}
+
+[data-bs-theme='dark'] .making-heading h1,
+[data-theme='dark'] .making-heading h1 { color: #ffffff !important; }

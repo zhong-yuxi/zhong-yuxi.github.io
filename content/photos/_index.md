@@ -289,12 +289,12 @@ font-family: 'Sparose', serif;
     </div>
   </a>
   
-<!-- 卡片 4: 肖像 -->
-  <a href="/photos/portraits/" class="photo-card" style="background-image: url('/images/photoportrait.webp');">
+<!-- 卡片 4: 塑造 -->
+  <a href="/photos/making/" class="photo-card" style="background-image: url('/images/photomaking.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
-      <h3>Portraits</h3>
-      <p>Faces encountered at the sanctuary.</p>
+      <h3>Making</h3>
+      <p>Where earth takes form by hand.</p>
     </div>
   </a>
 
