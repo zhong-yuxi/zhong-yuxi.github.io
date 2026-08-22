@@ -25,7 +25,7 @@ gallery_variant: "making"
         <span class="making-string"></span>
       </div>
       {{< making-photo src="making01.jpeg" description="筛红泥" hang="110" tilt="-1.2" loading="eager" >}}
-      {{< making-photo src="making02.jpeg" description="打红泥（red clay）" hang="158" tilt="0.8" loading="eager" >}}
+      {{< making-photo src="making02.jpeg" description="打红泥" hang="158" tilt="0.8" loading="eager" >}}
       {{< making-photo src="making03.jpeg" description="烤泥塑" hang="128" tilt="-0.4" loading="eager" >}}
       {{< making-photo src="making04.jpeg" description="未完全上色的泥塑" hang="178" tilt="1.1" loading="eager" >}}
       {{< making-photo src="making05.jpeg" description="泥塑蛇" hang="142" tilt="0.7" >}}
@@ -36,16 +36,16 @@ gallery_variant: "making"
       {{< making-photo src="making10.jpeg" description="光照白底" hang="154" tilt="-0.3" >}}
       {{< making-photo src="making11.jpeg" description="喷绘背景色" hang="120" tilt="1" >}}
       {{< making-photo src="making12.jpeg" description="上色" hang="176" tilt="-0.8" >}}
-      {{< making-photo src="making13.jpeg" description="上色2" hang="146" tilt="0.3" >}}
+      {{< making-photo src="making13.jpeg" description="上色（二）" hang="146" tilt="0.3" >}}
       {{< making-photo src="making14.jpeg" description="涂银色" hang="108" tilt="-1.1" >}}
       {{< making-photo src="making15.jpeg" description="颜料" hang="166" tilt="0.8" >}}
       {{< making-photo src="making16.jpeg" description="啤酒罐与颜料" hang="132" tilt="-0.5" >}}
-      {{< making-photo src="making17.jpeg" description="画金翅鸟（Garuda）的眼睛" hang="114" tilt="0.9" >}}
-      {{< making-photo src="making18.jpg" description="画雪狮（snow lion）眼睛" hang="160" tilt="-0.4" >}}
+      {{< making-photo src="making17.jpeg" description="画金翅鸟的眼睛" hang="114" tilt="0.9" >}}
+      {{< making-photo src="making18.jpg" description="画雪狮的眼睛" hang="160" tilt="-0.4" >}}
       {{< making-photo src="making19.jpeg" description="师父在窗前雕刻" hang="128" tilt="0.6" >}}
       {{< making-photo src="making20.jpeg" description="师父、菩萨像与光" hang="174" tilt="-0.9" >}}
-      {{< making-photo src="making21.jpeg" description="我做的大象与金翅鸟（Garuda）" hang="140" tilt="0.4" >}}
-      {{< making-photo src="making22.jpeg" description="我与金翅鸟（Garuda）" hang="104" tilt="-0.6" >}}
+      {{< making-photo src="making21.jpeg" description="我做的大象与金翅鸟" hang="140" tilt="0.4" >}}
+      {{< making-photo src="making22.jpeg" description="我与金翅鸟" hang="104" tilt="-0.6" >}}
       {{< making-photo src="making23.jpeg" description="我与师父" hang="156" tilt="0.8" >}}
     </div>
   </div>
