@@ -248,7 +248,7 @@
 <div class="gallery-container">
 
 <!-- 卡片 1: 乡城 -->
-  <a href="/photos/xiangcheng/" class="photo-card" style="background-image: url('/images/photoxiangcheng.webp');">
+  <a href="/zh/photos/xiangcheng/" class="photo-card" style="background-image: url('/images/photoxiangcheng.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>乡城</h3>
@@ -257,7 +257,7 @@
   </a>
 
   <!-- 卡片 2: 寺庙 -->
-  <a href="/photos/temple/" class="photo-card" style="background-image: url('/images/phototemple.jpg');">
+  <a href="/zh/photos/temple/" class="photo-card" style="background-image: url('/images/phototemple.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>寺庙</h3>
@@ -266,7 +266,7 @@
   </a>
 
   <!-- 卡片 3: 街头 -->
-  <a href="/photos/street/" class="photo-card" style="background-image: url('/images/photostreet.webp');">
+  <a href="/zh/photos/street/" class="photo-card" style="background-image: url('/images/photostreet.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>街拍</h3>
@@ -275,7 +275,7 @@
   </a>
   
 <!-- 卡片 6: 胶片 -->
-  <a href="/photos/film/" class="photo-card" style="background-image: url('/images/photofilm.jpg');">
+  <a href="/zh/photos/film/" class="photo-card" style="background-image: url('/images/photofilm.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>胶片</h3>
@@ -284,7 +284,7 @@
   </a>
   
 <!-- 卡片 8: 顗糯 -->
-  <a href="/photos/yinuo/" class="photo-card" style="background-image: url('/images/photoyinuo.webp');">
+  <a href="/zh/photos/yinuo/" class="photo-card" style="background-image: url('/images/photoyinuo.webp');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>顗糯</h3>
@@ -293,7 +293,7 @@
   </a>
 
   <!-- 卡片 5: 山脉 -->
-  <a href="/photos/mountains/" class="photo-card" style="background-image: url('/images/photomountain.jpg');">
+  <a href="/zh/photos/mountains/" class="photo-card" style="background-image: url('/images/photomountain.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>群山</h3>
@@ -302,7 +302,7 @@
   </a>
 
   <!-- 卡片 7: 戏曲/戏剧 -->
-  <a href="/photos/opera/" class="photo-card" style="background-image: url('/images/photoopera.jpg');">
+  <a href="/zh/photos/opera/" class="photo-card" style="background-image: url('/images/photoopera.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>戏曲</h3>
@@ -311,7 +311,7 @@
   </a>
   
 <!-- 卡片 4: 塑造 -->
-  <a href="/photos/making/" class="photo-card" style="background-image: url('/images/photomaking.jpg');">
+  <a href="/zh/photos/making/" class="photo-card" style="background-image: url('/images/photomaking.jpg');">
     <div class="card-top">-</div>
     <div class="card-bottom">
       <h3>塑造</h3>
