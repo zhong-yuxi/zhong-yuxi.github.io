@@ -90,14 +90,37 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
   color: #ffffff !important;
 }
   
+  /* 固定置顶的 Opera 4 大图 */
+  .opera-hero {
+    max-width: 1200px;
+    margin: 40px auto 15px;
+    padding: 0 20px;
+  }
+
+  .opera-hero .paige-shortcode-image {
+    margin: 0;
+  }
+
+  .opera-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+  }
+
+  .opera-hero img:hover {
+    filter: brightness(1.08);
+  }
+
  /* 2. 核心：瀑布流外层容器 (Masonry Container) */
   .masonry-gallery {
-    /* 电脑端默认分 4 列 */
-    column-count: 4;
+    /* 电脑端固定为 3 列 */
+    column-count: 3;
     /* 列与列之间的呼吸感间距 */
     column-gap: 15px; 
     max-width: 1200px; 
-    margin: 40px auto; /* 居中显示 */
+    margin: 0 auto 40px; /* 与顶部大图衔接并保持底部留白 */
     padding: 0 20px;
   }
 
@@ -125,10 +148,10 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 
   /* 4. 响应式布局：照顾手机和平板用户 (Mobile Friendly) */
   @media (max-width: 800px) {
-    .masonry-gallery { column-count: 4; } /* 平板保持 4 列 */
+    .masonry-gallery { column-count: 2; }
   }
   @media (max-width: 500px) {
-    .masonry-gallery { column-count: 2; } /* 手机乖乖变成 2 列大图 */
+    .masonry-gallery { column-count: 2; }
   }
   
   /* 1. 系统级别的夜间模式适配 */
@@ -143,11 +166,14 @@ color: #166D7A; /* 👈 白底时的专属颜色 */
 }
 </style>
 
+<div class="opera-hero">
+  {{< paige/image src="opera4.JPG" alt="Opera 4" loading="eager" fetchpriority="high" process="resize 1600x webp" >}}
+</div>
+
 <div class="masonry-gallery">
   {{< paige/image src="opera1.jpeg" alt="Opera 1" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera2.jpeg" alt="Opera 2" loading="lazy" process="resize 800x webp" >}}
   {{< oriented-image src="opera3.jpeg" alt="Opera 3" loading="lazy" process="resize 800x webp" >}}
-  {{< paige/image src="opera4.JPG" alt="Opera 4" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera5.JPG" alt="Opera 5" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera6.JPG" alt="Opera 6" loading="lazy" process="resize 800x webp" >}}
   {{< paige/image src="opera7.jpg" alt="Opera 7" loading="lazy" process="resize 800x webp" >}}
