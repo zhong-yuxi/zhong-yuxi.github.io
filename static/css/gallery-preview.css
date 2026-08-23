@@ -261,18 +261,6 @@ body.gallery-preview-active {
     column-gap: clamp(18px, 2vw, 28px) !important;
 }
 
-.gallery-variant-opera .masonry-gallery .paige-shortcode-image:first-child {
-    column-span: all;
-    display: block;
-    max-width: 1120px;
-    margin: 0 auto clamp(56px, 7vw, 96px) !important;
-}
-
-.gallery-variant-opera .masonry-gallery .paige-shortcode-image:first-child img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover !important;
-}
-
 .gallery-variant-field-notes .gallery-support-b img {
     object-position: center bottom;
 }
