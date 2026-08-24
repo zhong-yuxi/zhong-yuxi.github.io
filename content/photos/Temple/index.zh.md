@@ -2,11 +2,6 @@
 title: "寺庙"
 date: 2026-05-04
 draft: false
-weight: 3
-gallery_preview: true
-gallery_style: "editorial"
-gallery_variant: "contemplative"
-gallery_feature: 1
 ---
 
 <style>
@@ -139,11 +134,13 @@ scrollbar-width: none; /* Firefox 隐藏原生的丑陋滚动条 */
 
 /* 5. 单张图片设置 */
 .photo-item {
-flex: 0 0 350px; /* 控制每张图片的固定宽度，高度会按比例自适应 */
+flex: 0 0 280px; /* 与 Street 栏目保持相同的单张图片宽度 */
 cursor: pointer;
 transition: filter 0.3s, transform 0.3s;
 }
 .photo-item:hover { filter: brightness(0.8); transform: translateY(-5px); }
+
+/* 适配 Paige 短代码生成的图片容器 */
 .photo-item img {
 width: 100%;
 height: auto;
