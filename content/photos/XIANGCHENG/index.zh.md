@@ -18,133 +18,133 @@ gallery_preview: false
 <div class="xiangcheng-book">
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--portrait-left">
-{{< xiangcheng-book-photo src="xiangcheng10.JPG" id="(01)" location="Xiangcheng, Sichuan" description="the Sangpiling Temple in the morning light" loading="eager" fetchpriority="high" >}}
+{{< xiangcheng-book-photo src="xiangcheng10.JPG" id="(01)" location="四川乡城" description="晨光中的桑披岭寺" loading="eager" fetchpriority="high" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-low">
-{{< xiangcheng-book-photo src="xiangcheng12.JPG" id="(09)" location="Xiangcheng, Sichuan" description="Highland pasture" loading="eager" fetchpriority="high" >}}
+{{< xiangcheng-book-photo src="xiangcheng12.JPG" id="(09)" location="四川乡城" description="高原牧场" loading="eager" fetchpriority="high" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng11.jpeg" id="(02)" location="Xiangcheng, Sichuan" description="A corner between the houses" >}}
-{{< xiangcheng-book-photo src="xiangcheng15.JPG" id="(03)" location="Xiangcheng, Sichuan" description="Blue sky and eaves" >}}
+{{< xiangcheng-book-photo src="xiangcheng11.jpeg" id="(02)" location="四川乡城" description="屋舍之间的一隅" >}}
+{{< xiangcheng-book-photo src="xiangcheng15.JPG" id="(03)" location="四川乡城" description="蓝天下的屋檐" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-center">
-{{< xiangcheng-book-photo src="xiangcheng14.JPG" id="(05)" location="Xiangcheng, Sichuan" description="Texture of the abandoned White Tibetan House" >}}
+{{< xiangcheng-book-photo src="xiangcheng14.JPG" id="(05)" location="四川乡城" description="废弃白藏房的墙面肌理" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--portrait-left">
-{{< xiangcheng-book-photo src="xiangcheng18.png" id="(18)" location="Xiangcheng, Sichuan" description="热宫村的星空" >}}
+{{< xiangcheng-book-photo src="xiangcheng18.png" id="(18)" location="四川乡城" description="热宫村的星空" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng19.jpeg" id="(19)" location="Xiangcheng, Sichuan" description="转经筒" >}}
-{{< xiangcheng-book-photo src="xiangcheng20.jpeg" id="(20)" location="Xiangcheng, Sichuan" description="The Precious Parasol与光" >}}
+{{< xiangcheng-book-photo src="xiangcheng19.jpeg" id="(19)" location="四川乡城" description="转经筒" >}}
+{{< xiangcheng-book-photo src="xiangcheng20.jpeg" id="(20)" location="四川乡城" description="宝伞与光" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--portrait-right">
-{{< xiangcheng-book-photo src="xiangcheng21.jpeg" id="(21)" location="Xiangcheng, Sichuan" description="stove cat与光" >}}
+{{< xiangcheng-book-photo src="xiangcheng21.jpeg" id="(21)" location="四川乡城" description="灶壁猫与光" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng22.jpeg" id="(22)" location="Xiangcheng, Sichuan" description="热宫村" >}}
-{{< xiangcheng-book-photo src="xiangcheng23.jpeg" id="(23)" location="Xiangcheng, Sichuan" description="麦与树" >}}
+{{< xiangcheng-book-photo src="xiangcheng22.jpeg" id="(22)" location="四川乡城" description="热宫村" >}}
+{{< xiangcheng-book-photo src="xiangcheng23.jpeg" id="(23)" location="四川乡城" description="麦与树" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--portrait-left">
-{{< xiangcheng-book-photo src="xiangcheng24.jpeg" id="(24)" location="Xiangcheng, Sichuan" description="收麦子" >}}
+{{< xiangcheng-book-photo src="xiangcheng24.jpeg" id="(24)" location="四川乡城" description="收麦子" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--landscape-stack">
-{{< xiangcheng-book-photo src="xiangcheng25.jpeg" id="(25)" location="Xiangcheng, Sichuan" description="收麦子" >}}
-{{< xiangcheng-book-photo src="xiangcheng26.jpeg" id="(26)" location="Xiangcheng, Sichuan" description="筛麦子" >}}
+{{< xiangcheng-book-photo src="xiangcheng25.jpeg" id="(25)" location="四川乡城" description="收麦子" >}}
+{{< xiangcheng-book-photo src="xiangcheng26.jpeg" id="(26)" location="四川乡城" description="筛麦子" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng33.jpeg" id="(33)" location="Xiangcheng, Sichuan" description="然达乡" >}}
-{{< xiangcheng-book-photo src="xiangcheng34.jpeg" id="(34)" location="Xiangcheng, Sichuan" description="木差村" >}}
+{{< xiangcheng-book-photo src="xiangcheng33.jpeg" id="(33)" location="四川乡城" description="然达乡" >}}
+{{< xiangcheng-book-photo src="xiangcheng34.jpeg" id="(34)" location="四川乡城" description="木差村" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-center">
-{{< xiangcheng-book-photo src="xiangcheng35.jpeg" id="(35)" location="Xiangcheng, Sichuan" description="zong-za-yei 山" >}}
+{{< xiangcheng-book-photo src="xiangcheng35.jpeg" id="(35)" location="四川乡城" description="宗扎耶山" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--portrait-right">
-{{< xiangcheng-book-photo src="xiangcheng13.JPG" id="(04)" location="Xiangcheng, Sichuan" description="Road to the snow mountains" >}}
+{{< xiangcheng-book-photo src="xiangcheng13.JPG" id="(04)" location="四川乡城" description="通往雪山的路" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--landscape-stack">
-{{< xiangcheng-book-photo src="xiangcheng16.jpg" id="(10)" location="Xiangcheng, Sichuan" description="Rapeseed flowers, mountains and rivers" >}}
-{{< xiangcheng-book-photo src="xiangcheng17.jpg" id="(11)" location="Xiangcheng, Sichuan" description="Sunlight on the Golden Mountain" >}}
+{{< xiangcheng-book-photo src="xiangcheng16.jpg" id="(10)" location="四川乡城" description="油菜花、山与河" >}}
+{{< xiangcheng-book-photo src="xiangcheng17.jpg" id="(11)" location="四川乡城" description="日照金山" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--square-offset">
-{{< xiangcheng-book-photo src="xiangcheng1.jpg" id="(13)" location="Xiangcheng, Sichuan" description="Village in the mist" >}}
-{{< xiangcheng-book-photo src="xiangcheng2.JPG" id="(15)" location="Xiangcheng, Sichuan" description="Stupa and snow peaks" >}}
+{{< xiangcheng-book-photo src="xiangcheng1.jpg" id="(13)" location="四川乡城" description="雾中村落" >}}
+{{< xiangcheng-book-photo src="xiangcheng2.JPG" id="(15)" location="四川乡城" description="佛塔与雪峰" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--landscape-offset">
-{{< xiangcheng-book-photo src="xiangcheng5.JPG" id="(06)" location="Xiangcheng, Sichuan" description="A corner of the Sangpiling Temple" >}}
-{{< xiangcheng-book-photo src="xiangcheng6.JPG" id="(07)" location="Xiangcheng, Sichuan" description="Winding mountain road" >}}
+{{< xiangcheng-book-photo src="xiangcheng5.JPG" id="(06)" location="四川乡城" description="桑披岭寺一隅" >}}
+{{< xiangcheng-book-photo src="xiangcheng6.JPG" id="(07)" location="四川乡城" description="盘山路" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-low">
-{{< xiangcheng-book-photo src="xiangcheng7.JPG" id="(08)" location="Xiangcheng, Sichuan" description="Star trails over the valley" >}}
+{{< xiangcheng-book-photo src="xiangcheng7.JPG" id="(08)" location="四川乡城" description="山谷上空的星轨" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng3.JPG" id="(16)" location="Xiangcheng, Sichuan" description="Traditional attire and culture" >}}
-{{< xiangcheng-book-photo src="xiangcheng4.JPG" id="(17)" location="Xiangcheng, Sichuan" description="Local gathering" >}}
+{{< xiangcheng-book-photo src="xiangcheng3.JPG" id="(16)" location="四川乡城" description="传统服饰" >}}
+{{< xiangcheng-book-photo src="xiangcheng4.JPG" id="(17)" location="四川乡城" description="乡间聚会" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--square-small">
-{{< xiangcheng-book-photo src="xiangcheng8.JPG" id="(14)" location="Xiangcheng, Sichuan" description="Monastery and mountain silhouette" >}}
+{{< xiangcheng-book-photo src="xiangcheng8.JPG" id="(14)" location="四川乡城" description="寺院与山峦剪影" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-center">
-{{< xiangcheng-book-photo src="xiangcheng9.JPG" id="(12)" location="Xiangcheng, Sichuan" description="Panoramic valley view" >}}
+{{< xiangcheng-book-photo src="xiangcheng9.JPG" id="(12)" location="四川乡城" description="山谷全景" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-center">
-{{< xiangcheng-book-photo src="xiangcheng27.jpeg" id="(27)" location="Xiangcheng, Sichuan" description="麦与雨" >}}
+{{< xiangcheng-book-photo src="xiangcheng27.jpeg" id="(27)" location="四川乡城" description="麦与雨" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--portraits">
-{{< xiangcheng-book-photo src="xiangcheng28.jpeg" id="(28)" location="Xiangcheng, Sichuan" description="手与麦穗" >}}
-{{< xiangcheng-book-photo src="xiangcheng30.jpeg" id="(30)" location="Xiangcheng, Sichuan" description="“黑达小”村" >}}
+{{< xiangcheng-book-photo src="xiangcheng28.jpeg" id="(28)" location="四川乡城" description="手与麦穗" >}}
+{{< xiangcheng-book-photo src="xiangcheng30.jpeg" id="(30)" location="四川乡城" description="“黑达小”村" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-duo xiangcheng-duo--landscape-offset">
-{{< xiangcheng-book-photo src="xiangcheng29.jpeg" id="(29)" location="Xiangcheng, Sichuan" description="zong-za-yei 山" >}}
-{{< xiangcheng-book-photo src="xiangcheng31.jpeg" id="(31)" location="Xiangcheng, Sichuan" description="zong-za-yei 山" >}}
+{{< xiangcheng-book-photo src="xiangcheng29.jpeg" id="(29)" location="四川乡城" description="宗扎耶山" >}}
+{{< xiangcheng-book-photo src="xiangcheng31.jpeg" id="(31)" location="四川乡城" description="宗扎耶山" >}}
 </div>
 </div>
 <div class="xiangcheng-book-page" data-density="soft">
 <div class="xiangcheng-page-composition xiangcheng-single xiangcheng-single--landscape-low">
-{{< xiangcheng-book-photo src="xiangcheng32.jpeg" id="(32)" location="Xiangcheng, Sichuan" description="然达乡" >}}
+{{< xiangcheng-book-photo src="xiangcheng32.jpeg" id="(32)" location="四川乡城" description="然达乡" >}}
 </div>
 </div>
 </div>
