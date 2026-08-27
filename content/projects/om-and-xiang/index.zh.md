@@ -36,7 +36,7 @@
 
 </div>
 
-<div id="details-panel" class="transition-layout d-flex flex-column gap-3" style="width: 0%; opacity: 0; max-height: 80vh; overflow-y: auto; overflow-x: hidden; padding-right: 10px;">
+<div id="details-panel" class="transition-layout d-flex flex-column gap-3" style="width: 0%; opacity: 0; align-self: flex-start; min-width: 0;">
   <h5 id="detail-title" class="fw-bold m-0 sticky-top bg-white py-2" style="font-family: 'MyJost', sans-serif; z-index: 10;"></h5>
   <div id="detail-images-container" class="d-flex flex-column gap-3">
     </div>
@@ -98,8 +98,15 @@ cursor: pointer; box-shadow: 0 0 0 0 rgba(36, 241, 255, 0.7); animation: pulse 2
 #stage-1 h3, #detail-title { color: #24F1FF !important; }
 #detail-title { background-color: #121212 !important; } 
 }
-#details-panel::-webkit-scrollbar { width: 6px; }
-#details-panel::-webkit-scrollbar-thumb { background-color: #008b8b; border-radius: 10px; }
+#details-panel {
+max-height: none;
+overflow: visible;
+}
+#detail-images-container img {
+display: block;
+width: 100%;
+height: auto;
+}
 
 .breakout-width {
   width: 90vw !important; 
