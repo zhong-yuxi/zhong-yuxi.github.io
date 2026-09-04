@@ -9,7 +9,7 @@ gallery_style: "installation"
 gallery_variant: "making"
 ---
 
-<link rel="stylesheet" href="/css/making-gallery.css?v=3">
+<link rel="stylesheet" href="/css/making-gallery.css?v=4">
 
 <section class="making-wall" data-making-gallery>
   <header class="making-heading making-heading-zh">
@@ -49,6 +49,7 @@ gallery_variant: "making"
       {{< making-photo src="making23.jpeg" description="我与师父" hang="156" tilt="0.8" >}}
     </div>
   </div>
+  <p class="making-disclosure making-disclosure-zh">这里只呈现部分适宜公开的照片。</p>
   <dialog class="making-lightbox" aria-label="照片浏览器">
     <button class="making-close" type="button" data-making-close aria-label="关闭">×</button>
     <button class="making-lightbox-arrow" type="button" data-direction="previous" aria-label="上一张">‹</button>

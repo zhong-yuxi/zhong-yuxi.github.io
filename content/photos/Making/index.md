@@ -9,7 +9,7 @@ gallery_style: "installation"
 gallery_variant: "making"
 ---
 
-<link rel="stylesheet" href="/css/making-gallery.css?v=3">
+<link rel="stylesheet" href="/css/making-gallery.css?v=4">
 
 <section class="making-wall" data-making-gallery>
   <header class="making-heading making-heading-en">
@@ -49,6 +49,7 @@ gallery_variant: "making"
       {{< making-photo src="making23.jpeg" description="My master and me" hang="156" tilt="0.8" >}}
     </div>
   </div>
+  <p class="making-disclosure making-disclosure-en">Only a selection of photographs suitable for public viewing is shown here.</p>
   <dialog class="making-lightbox" aria-label="Photograph viewer">
     <button class="making-close" type="button" data-making-close aria-label="Close">×</button>
     <button class="making-lightbox-arrow" type="button" data-direction="previous" aria-label="Previous photograph">‹</button>

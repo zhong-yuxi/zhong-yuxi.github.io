@@ -140,6 +140,21 @@
 
 .making-photo:focus-visible { outline: 2px solid var(--making-accent); outline-offset: 6px; }
 
+.making-disclosure {
+  max-width: 48rem;
+  margin: -2rem auto 0;
+  padding: 0 clamp(1rem, 5vw, 5rem);
+  color: rgba(61, 48, 40, 0.58);
+  font-family: 'MyJost', sans-serif;
+  font-size: clamp(0.78rem, 0.9vw, 0.88rem);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.making-disclosure-zh { letter-spacing: 0.08em; }
+
 .making-lightbox {
   width: min(94vw, 900px);
   max-width: none;
@@ -223,6 +238,7 @@
   .making-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
   .making-string { width: 9px; background-size: 9px auto; }
   .making-photo { padding-top: calc(var(--hang) * 0.72); }
+  .making-disclosure { margin-top: -1rem; }
   .making-polaroid { padding: 10px 10px 0; }
   .making-polaroid img { max-width: calc(94vw - 20px); max-height: 66vh; }
   .making-caption { min-height: 76px; max-width: calc(94vw - 20px); padding: 0.8rem 0.75rem 1rem; }
@@ -238,7 +254,11 @@
 
 @media (prefers-color-scheme: dark) {
   .making-heading h1 { color: #ffffff !important; }
+  .making-disclosure { color: rgba(255, 255, 255, 0.62); }
 }
 
 [data-bs-theme='dark'] .making-heading h1,
 [data-theme='dark'] .making-heading h1 { color: #ffffff !important; }
+
+[data-bs-theme='dark'] .making-disclosure,
+[data-theme='dark'] .making-disclosure { color: rgba(255, 255, 255, 0.62); }
