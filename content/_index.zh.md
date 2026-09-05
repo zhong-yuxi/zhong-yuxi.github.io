@@ -38,7 +38,7 @@ disable_sections = true
         <!-- 这里把 'Open Sans' 换成了 'LXGWWenKai' -->
         <p class="text-start bio-text" style="font-family: 'LXGWWenKai', sans-serif; font-size: 1.15rem; line-height: 1.8;">
             <strong style="font-weight: 600; -webkit-text-stroke: 0.4px currentColor;">嗨，你可以叫我斯朗多吉，这是我的藏文名字！</strong><br><br>
-            我关注信仰、记忆与身份如何在物质世界中留下形状。目前，我的研究从家乡乡城的灶墙图像、仪式物件与地方宗教实践出发，理解东部青藏高原日常生活中的物质文化与神圣。
+            我关注物件、材料、图像与制作行为如何塑造宗教生活、社会记忆，以及人们与地方的关系。我的研究以家乡“乡城”的长期田野为基础，主要涉及视觉与物质文化、地方宗教实践、工艺知识和人与动物的关系。
             <br><br>
             另外，我也喜欢京剧、摄影、动物保护和做饭👨‍🍳。
         </p>

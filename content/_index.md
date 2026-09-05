@@ -35,7 +35,7 @@ disable_sections = true
     <div class="col-md-7 px-md-5">
         <p class="text-start bio-text" style="font-family: 'Open Sans', sans-serif; font-size: 1.15rem; line-height: 1.8;">
             <strong>Hi, I'm Yuxi Zhong. You can also call me Sonam Dorji!</strong><br><br>
-           I study how faith, memory, and identity take shape through material forms. My current research focuses on stove-wall images, ritual objects, and vernacular religious practices in my hometown, Xiangcheng (乡城), on the eastern edge of the Tibetan Plateau.
+           I study how objects, materials, images, and acts of making shape religious life, social memory, and people’s relationships with place. Grounded in long-term fieldwork in Xiangcheng (乡城), my hometown on the eastern edge of the Tibetan Plateau, my research explores visual and material culture, vernacular religion, craft knowledge, and human-animal relations.
             <br><br>
             Beyond my academic work, I am also drawn to Peking Opera, photography, animal welfare, and cooking.
         </p>
