@@ -21,7 +21,19 @@
             ========================================== -->
     <div id="my-preloader">
         <div class="loader-container">
-            <!-- 🌟 升级为 SVG 黑科技的转动圆圈 -->
+            <!-- 九色鹿在圆环外围环绕跳跃，中心圆环与 Logo 保持静止 -->
+            <div class="deer-orbit" aria-hidden="true">
+                <div class="deer-rotor">
+                    <div class="deer-radius">
+                        <div class="deer-upright">
+                            <span class="loader-deer">
+                                <img class="deer-sprite" src="/images/nine-colored-deer.webp" alt="" fetchpriority="high">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 静止的 SVG 圆环 -->
             <svg class="loader-spinner" viewBox="0 0 120 120">
                 <circle class="spinner-path" cx="60" cy="60" r="56"></circle>
             </svg>
@@ -75,35 +87,90 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            perspective: 520px;
+            transform-style: preserve-3d;
         }
 
-        /* --- 1. 旋转的圆圈 (SVG 外部容器) --- */
+        /* --- 1. 九色鹿的三维环绕轨道 --- */
+        .deer-orbit {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            transform-style: preserve-3d;
+        }
+
+        /* 转子绕 Y 轴运动，X 轴倾斜把前后深度转换成上下位移 */
+        .deer-rotor {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+            z-index: 4;
+            transform: rotateX(-18deg) rotateY(0deg);
+            transform-style: preserve-3d;
+            will-change: transform;
+            animation: deer-orbit-3d 2.4s linear infinite;
+        }
+
+        .deer-radius {
+            position: absolute;
+            width: 0;
+            height: 0;
+            transform: translateZ(108px);
+            transform-style: preserve-3d;
+        }
+
+        /* 抵消转子角度，让鹿在三维轨道上始终正对观众 */
+        .deer-upright {
+            position: absolute;
+            left: -36px;
+            top: -48px;
+            width: 72px;
+            transform: rotateY(0deg) rotateX(18deg);
+            transform-origin: 50% 50%;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform;
+            animation: deer-billboard 2.4s linear infinite;
+        }
+
+        .loader-deer {
+            display: block;
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            transform-origin: 50% 82%;
+            filter: drop-shadow(0 1px 1px rgba(76, 42, 30, 0.34));
+            will-change: transform;
+            animation: deer-leap 0.8s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+        }
+
+        .deer-sprite {
+            display: block;
+            width: 800%;
+            height: 100%;
+            max-width: none;
+            will-change: transform;
+            animation: deer-stride 0.8s linear infinite;
+        }
+
+        /* --- 2. 静止的圆圈 (SVG 外部容器) --- */
         .loader-spinner {
             position: absolute;
             width: 100%;
             height: 100%;
-            /* 整体持续匀速旋转 */
-            animation: spin 1.5s linear infinite; 
+            z-index: 2;
         }
 
-        /* --- 2. SVG 内部的圆环线条 (画圆魔法) --- */
+        /* --- 3. SVG 内部的圆环线条 --- */
         .spinner-path {
             fill: none; /* 内部不填充颜色 */
             stroke: var(--preloader-ring-color); /* 圆环颜色 */
             stroke-width: 6; /* 圆环粗细 */
-            stroke-linecap: round; /* 🌟 线条两端变成圆角，看起来极其优雅舒适 */
-            
-            /* 📐 码农数学课：半径 56 的圆，周长约等于 2 * 3.14 * 56 ≈ 352 */
-            stroke-dasharray: 352; 
-            stroke-dashoffset: 120; /* 默认让线条偏移 120，这样就形成了一个缺口 */
-            
-            /* 当触发闭合时的过渡动画：0.5秒内，后半截加速追赶！ */
-            transition: stroke-dashoffset 0.5s ease-in-out; 
-        }
-
-        /* 🌟 3. JS 会触发这个“终极形态”，让缺口变成 0，圆就彻底闭合了！ */
-        .loader-spinner.closing .spinner-path {
-            stroke-dashoffset: 0; 
+            stroke-linecap: round;
+            stroke-dasharray: none;
+            stroke-dashoffset: 0;
         }
 
         /* --- 中间的 Logo --- */
@@ -111,7 +178,7 @@
             position: absolute;
             width: 60px; 
             height: 60px;
-            z-index: 2; 
+            z-index: 3;
         }
 
         /* 🌙 黑夜模式下，施展魔法：自动反转 Logo 颜色 */
@@ -119,13 +186,85 @@
             .loader-logo {
                 /* 先变黑，再变白，保证输出绝对纯白！ */
                 filter: brightness(0) invert(1);
-        }
-    }
+            }
 
-        /* --- 旋转动画核心 --- */
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            .loader-deer {
+                filter: drop-shadow(0 1px 2px rgba(232, 246, 255, 0.28));
+            }
+        }
+
+        /* --- 九色鹿三维环绕与跳跃动画 --- */
+        @keyframes deer-orbit-3d {
+            0% {
+                z-index: 4;
+                transform: rotateX(-18deg) rotateY(0deg);
+            }
+            24.9% {
+                z-index: 4;
+            }
+            25%, 74.9% {
+                z-index: 1;
+            }
+            75% {
+                z-index: 4;
+            }
+            100% {
+                z-index: 4;
+                transform: rotateX(-18deg) rotateY(360deg);
+            }
+        }
+
+        @keyframes deer-billboard {
+            0% { transform: rotateY(0deg) rotateX(18deg); }
+            100% { transform: rotateY(-360deg) rotateX(18deg); }
+        }
+
+        @keyframes deer-leap {
+            0%, 100% {
+                transform: translateY(5px) rotate(-2deg) scaleX(1.01) scaleY(0.99);
+            }
+            38% {
+                transform: translateY(-8px) rotate(2deg) scaleX(0.99) scaleY(1.01);
+            }
+            55% {
+                transform: translateY(-10px) rotate(1deg) scale(1);
+            }
+            78% {
+                transform: translateY(-3px) rotate(0deg) scale(1);
+            }
+        }
+
+        @keyframes deer-stride {
+            0%, 12.499% { transform: translateX(0); }
+            12.5%, 24.999% { transform: translateX(-12.5%); }
+            25%, 37.499% { transform: translateX(-25%); }
+            37.5%, 49.999% { transform: translateX(-37.5%); }
+            50%, 62.499% { transform: translateX(-50%); }
+            62.5%, 74.999% { transform: translateX(-62.5%); }
+            75%, 87.499% { transform: translateX(-75%); }
+            87.5%, 100% { transform: translateX(-87.5%); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .deer-rotor,
+            .deer-upright,
+            .loader-deer,
+            .deer-sprite {
+                animation: none;
+            }
+
+            .deer-rotor {
+                z-index: 1;
+                transform: rotateX(-18deg) rotateY(180deg);
+            }
+
+            .deer-upright {
+                transform: rotateY(-180deg) rotateX(18deg);
+            }
+
+            #my-preloader {
+                transition-duration: 0.01ms;
+            }
         }
 
         /* ==========================================
@@ -198,35 +337,22 @@
             const elapsedTime = Date.now() - startTime;
             
             // 3. 设定你希望加载页【最少】展示的时间！
-            // 这里我设定了 1200 毫秒 (即 1.2 秒)，足够看清你的 Logo 且不会觉得太久。你可以随时修改！
-            const minimumDisplayTime = 1200; 
+            // 这里设定为 2400 毫秒，正好完整展示一圈三维环绕。
+            const minimumDisplayTime = 2400;
             
             // 4. 计算我们还需要让幕布多停留多久？
-            // 如果加载只花了 200ms，那就再等 1000ms；如果加载花了 2000ms，那就等 0ms 直接消失。
+            // 如果页面本身加载得更久，则不再额外延长等待时间。
             const delayTime = Math.max(0, minimumDisplayTime - elapsedTime);
 
             // 5. 按照计算好的时间，准时拉开幕布！
             setTimeout(function() {
                 const preloader = document.getElementById('my-preloader');
-                // 抓取我们刚写的 SVG 元素
-                const spinner = document.querySelector('.loader-spinner');
-                
-                // 🎬 动作一：闭合圆环！
-                // 给 SVG 加上 closing 类，此时 CSS 里的 stroke-dashoffset 会变成 0，线条加速追赶闭合！
-                spinner.classList.add('closing');
-                
-                // 🎬 动作二：等待圆环闭合后，开始淡出
-                // 我们给它 0.4 秒（400毫秒）的时间去完成闭合动画，然后再让幕布变透明
-                setTimeout(function() {
-                    preloader.style.opacity = '0';
-                    
-                    // 🎬 动作三：彻底退场
-                    // 等 0.7 秒透明度动画结束后，彻底把加载页从网页结构里拿掉
-                    setTimeout(function() {
-                        preloader.style.display = 'none';
-                    }, 700); 
+                preloader.style.opacity = '0';
 
-                }, 400); // 👈 这里的 400 就是留给圆环闭合的黄金时间！
+                // 等 0.7 秒透明度动画结束后，彻底把加载页从网页结构里拿掉
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 700);
 
             }, delayTime);
         });
