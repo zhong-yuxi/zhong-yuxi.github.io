@@ -19,9 +19,13 @@
     <!-- ==========================================
             🌟 1. 全新设计的加载幕布 (HTML)
             ========================================== -->
+    <script>
+        // 每次打开或刷新页面时，以相同概率随机选择一套加载动画。
+        document.documentElement.dataset.loaderVariant = Math.random() < 0.5 ? 'deer' : 'mouse';
+    </script>
     <div id="my-preloader">
-        <div class="loader-container">
-            <!-- 九色鹿在圆环外围环绕跳跃，中心圆环与 Logo 保持静止 -->
+        <div class="loader-container loader-container--deer">
+            <!-- 九色鹿在圆环外围三维环绕跳跃，中心圆环与 Logo 保持静止 -->
             <div class="deer-orbit" aria-hidden="true">
                 <div class="deer-rotor">
                     <div class="deer-radius">
@@ -33,12 +37,31 @@
                     </div>
                 </div>
             </div>
-            <!-- 静止的 SVG 圆环 -->
-            <svg class="loader-spinner" viewBox="0 0 120 120">
+            <svg class="loader-spinner" viewBox="0 0 120 120" aria-hidden="true">
                 <circle class="spinner-path" cx="60" cy="60" r="56"></circle>
             </svg>
-            <!-- 中间静止的Logo -->
             <img class="loader-logo" src="/favicon.svg" alt="My Logo">
+        </div>
+        <div class="loader-container loader-container--mouse">
+            <div class="treasure-loader" aria-hidden="true">
+                <span class="treasure-aura"></span>
+                <span class="treasure-ground"></span>
+                <span class="logo-particle" style="--delay: 0.1s; --pile-left: 15%; --pile-top: 78%; --pile-rotate: -18deg;">
+                    <img src="/favicon.svg" alt="">
+                </span>
+                <span class="logo-particle" style="--delay: 0.75s; --pile-left: 23%; --pile-top: 79%; --pile-rotate: 14deg;">
+                    <img src="/favicon.svg" alt="">
+                </span>
+                <span class="logo-particle" style="--delay: 1.4s; --pile-left: 29%; --pile-top: 75%; --pile-rotate: -7deg;">
+                    <img src="/favicon.svg" alt="">
+                </span>
+                <span class="logo-particle" style="--delay: 2.05s; --pile-left: 20%; --pile-top: 70%; --pile-rotate: 21deg;">
+                    <img src="/favicon.svg" alt="">
+                </span>
+                <span class="treasure-mouse">
+                    <img class="mouse-sprite" src="/images/treasure-mouse-sprite.webp" alt="" fetchpriority="high">
+                </span>
+            </div>
         </div>
     </div>
 
@@ -79,10 +102,20 @@
             transition: opacity 0.7s ease-in-out;
         }
 
-        /* --- 装圆圈和Logo的容器 --- */
+        /* 未被选中的加载动画不参与布局或播放。 */
         .loader-container {
-            position: relative; 
-            width: 120px;  
+            position: relative;
+        }
+
+        html:not([data-loader-variant]) .loader-container,
+        html[data-loader-variant="deer"] .loader-container--mouse,
+        html[data-loader-variant="mouse"] .loader-container--deer {
+            display: none;
+        }
+
+        /* --- 九色鹿加载动画 --- */
+        .loader-container--deer {
+            width: 120px;
             height: 120px;
             display: flex;
             justify-content: center;
@@ -91,7 +124,6 @@
             transform-style: preserve-3d;
         }
 
-        /* --- 1. 九色鹿的三维环绕轨道 --- */
         .deer-orbit {
             position: absolute;
             inset: 0;
@@ -99,7 +131,6 @@
             transform-style: preserve-3d;
         }
 
-        /* 转子绕 Y 轴运动，X 轴倾斜把前后深度转换成上下位移 */
         .deer-rotor {
             position: absolute;
             left: 50%;
@@ -121,7 +152,6 @@
             transform-style: preserve-3d;
         }
 
-        /* 抵消转子角度，让鹿在三维轨道上始终正对观众 */
         .deer-upright {
             position: absolute;
             left: -36px;
@@ -155,7 +185,6 @@
             animation: deer-stride 0.8s linear infinite;
         }
 
-        /* --- 2. 静止的圆圈 (SVG 外部容器) --- */
         .loader-spinner {
             position: absolute;
             width: 100%;
@@ -163,37 +192,118 @@
             z-index: 2;
         }
 
-        /* --- 3. SVG 内部的圆环线条 --- */
         .spinner-path {
-            fill: none; /* 内部不填充颜色 */
-            stroke: var(--preloader-ring-color); /* 圆环颜色 */
-            stroke-width: 6; /* 圆环粗细 */
+            fill: none;
+            stroke: var(--preloader-ring-color);
+            stroke-width: 6;
             stroke-linecap: round;
             stroke-dasharray: none;
             stroke-dashoffset: 0;
         }
 
-        /* --- 中间的 Logo --- */
         .loader-logo {
             position: absolute;
-            width: 60px; 
+            width: 60px;
             height: 60px;
             z-index: 3;
         }
 
-        /* 🌙 黑夜模式下，施展魔法：自动反转 Logo 颜色 */
+        /* --- 吐宝鼠加载动画 --- */
+        .loader-container--mouse {
+            width: min(340px, 90vw);
+            aspect-ratio: 17 / 12;
+        }
+
+        .treasure-loader {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .treasure-mouse {
+            position: absolute;
+            left: 42%;
+            top: 11%;
+            width: 64.7%;
+            aspect-ratio: 1;
+            z-index: 2;
+            overflow: hidden;
+            transform-origin: 46% 58%;
+            filter: drop-shadow(0 2px 2px rgba(18, 22, 28, 0.22));
+            will-change: transform;
+            animation: mouse-breathe 2.4s ease-in-out infinite;
+        }
+
+        .mouse-sprite {
+            display: block;
+            width: 600%;
+            height: 100%;
+            max-width: none;
+            will-change: transform;
+            animation: mouse-frames 2.4s linear infinite;
+        }
+
+        .treasure-aura {
+            position: absolute;
+            left: 48.5%;
+            top: 43%;
+            width: clamp(42px, 13vw, 52px);
+            aspect-ratio: 1;
+            z-index: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 205, 105, 0.42) 0%, rgba(255, 174, 62, 0.13) 52%, rgba(255, 174, 62, 0) 74%);
+            transform: translate(-50%, -50%);
+            animation: treasure-pulse 1.2s ease-in-out infinite;
+        }
+
+        .logo-particle {
+            position: absolute;
+            left: 48.5%;
+            top: 43%;
+            width: clamp(27px, 8vw, 34px);
+            aspect-ratio: 1;
+            z-index: 3;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(130, 199, 250, 0.56);
+            border-radius: 50%;
+            background: rgba(247, 253, 255, 0.96);
+            box-shadow: 0 2px 8px rgba(44, 112, 154, 0.18), 0 0 11px rgba(255, 183, 70, 0.17);
+            opacity: 0;
+            will-change: left, top, opacity, transform;
+            animation: release-logo 1.2s cubic-bezier(0.32, 0, 0.2, 1) var(--delay) both;
+        }
+
+        .treasure-ground {
+            position: absolute;
+            left: 7%;
+            top: 84%;
+            width: 31%;
+            height: 8px;
+            z-index: 1;
+            border-radius: 50%;
+            background: radial-gradient(ellipse, rgba(44, 112, 154, 0.2) 0%, rgba(44, 112, 154, 0.07) 48%, rgba(44, 112, 154, 0) 76%);
+        }
+
+        .logo-particle img {
+            width: 68%;
+            height: 68%;
+        }
+
         @media (prefers-color-scheme: dark) {
             .loader-logo {
-                /* 先变黑，再变白，保证输出绝对纯白！ */
                 filter: brightness(0) invert(1);
             }
 
             .loader-deer {
                 filter: drop-shadow(0 1px 2px rgba(232, 246, 255, 0.28));
             }
+
+            .treasure-mouse {
+                filter: drop-shadow(0 1px 1px rgba(232, 246, 255, 0.24)) drop-shadow(0 0 6px rgba(255, 176, 63, 0.08));
+            }
         }
 
-        /* --- 九色鹿三维环绕与跳跃动画 --- */
         @keyframes deer-orbit-3d {
             0% {
                 z-index: 4;
@@ -245,11 +355,79 @@
             87.5%, 100% { transform: translateX(-87.5%); }
         }
 
+        @keyframes mouse-frames {
+            0%, 16.665% { transform: translateX(0); }
+            16.666%, 33.332% { transform: translateX(-16.6667%); }
+            33.333%, 49.999% { transform: translateX(-33.3333%); }
+            50%, 66.665% { transform: translateX(-50%); }
+            66.666%, 83.332% { transform: translateX(-66.6667%); }
+            83.333%, 100% { transform: translateX(-83.3333%); }
+        }
+
+        @keyframes mouse-breathe {
+            0%, 100% { transform: translateY(1px) scale(1); }
+            32% { transform: translateY(0) scaleX(1.008) scaleY(1.012); }
+            62% { transform: translate(-1px, 1px) scaleX(1.004) scaleY(0.997); }
+        }
+
+        @keyframes treasure-pulse {
+            0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(0.88); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.16); }
+        }
+
+        @keyframes release-logo {
+            0% {
+                left: 48.5%;
+                top: 43%;
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.14) rotate(0deg);
+            }
+            12% {
+                left: 47%;
+                top: 44%;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0.46) rotate(18deg);
+            }
+            48% {
+                left: 37%;
+                top: 54%;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0.92) rotate(156deg);
+            }
+            68% {
+                left: 28%;
+                top: 79%;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1) rotate(252deg);
+            }
+            79% {
+                left: 25%;
+                top: 71%;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(0.97) rotate(310deg);
+            }
+            90% {
+                left: 22%;
+                top: 80%;
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1) rotate(350deg);
+            }
+            100% {
+                left: var(--pile-left);
+                top: var(--pile-top);
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1) rotate(calc(360deg + var(--pile-rotate)));
+            }
+        }
+
         @media (prefers-reduced-motion: reduce) {
             .deer-rotor,
             .deer-upright,
             .loader-deer,
-            .deer-sprite {
+            .deer-sprite,
+            .treasure-mouse,
+            .mouse-sprite,
+            .treasure-aura {
                 animation: none;
             }
 
@@ -260,6 +438,10 @@
 
             .deer-upright {
                 transform: rotateY(-180deg) rotateX(18deg);
+            }
+
+            .logo-particle {
+                display: none;
             }
 
             #my-preloader {
@@ -336,9 +518,9 @@
             // 2. 网页底层所有数据加载完毕时，看看过了多少毫秒
             const elapsedTime = Date.now() - startTime;
             
-            // 3. 设定你希望加载页【最少】展示的时间！
-            // 这里设定为 2400 毫秒，正好完整展示一圈三维环绕。
-            const minimumDisplayTime = 2400;
+            // 3. 两套动画沿用各自的完整展示时长。
+            const loaderVariant = document.documentElement.dataset.loaderVariant;
+            const minimumDisplayTime = loaderVariant === 'deer' ? 2400 : 3400;
             
             // 4. 计算我们还需要让幕布多停留多久？
             // 如果页面本身加载得更久，则不再额外延长等待时间。
