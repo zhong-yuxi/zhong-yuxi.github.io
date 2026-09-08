@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('/fonts/LXGWWenKai.ttf') format('truetype');
+  font-display: swap;
+}
+
+.photo-search {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(300px, 1fr);
+  width: min(720px, calc(100% - 36px));
+  margin: clamp(3rem, 5vw, 4.5rem) auto 1rem;
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: center;
+  border-top: 1px solid rgba(0, 139, 139, 0.24);
+  color: #3e4648;
+}
+
+.photo-search__figure { margin: 0; }
+
+.photo-search__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 14px 34px rgba(24, 36, 38, 0.14);
+}
+
+.photo-search__caption {
+  margin-top: 0.55rem;
+  color: rgba(62, 70, 72, 0.66);
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+.photo-search__eyebrow {
+  margin: 0 0 0.65rem;
+  color: #008b8b;
+  font-family: 'MyJost', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.photo-search__text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.photo-search--en .photo-search__text,
+.photo-search--en .photo-search__caption {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.photo-search--zh .photo-search__text,
+.photo-search--zh .photo-search__caption {
+  font-family: 'LXGWWenKai', sans-serif;
+}
+
+.photo-search__link {
+  color: #007f82;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.photo-search__link:hover { color: #004d4d; }
+
+@media (max-width: 800px) {
+  .photo-search {
+    grid-template-columns: 1fr;
+    width: min(100% - 36px, 640px);
+    margin-top: 3rem;
+    gap: 1.25rem;
+  }
+
+  .photo-search__content { max-width: 36rem; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .photo-search {
+    border-top-color: rgba(36, 241, 255, 0.24);
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .photo-search__eyebrow,
+  .photo-search__link { color: #24f1ff; }
+
+  .photo-search__caption { color: rgba(255, 255, 255, 0.58); }
+  .photo-search__link:hover { color: #b1f5fa; }
+}
