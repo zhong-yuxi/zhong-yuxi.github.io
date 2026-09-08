@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/photo-search.css?v=3">
+
 <style>
 #paige-site-title,
 #paige-site-title a,
@@ -299,3 +301,14 @@ font-family: 'Sparose', serif;
   </a>
 
 </div>
+
+<section class="photo-search photo-search--en" aria-label="Photo search">
+  <figure class="photo-search__figure">
+    <img class="photo-search__image" src="/images/childhood-shop.webp" alt="Yuxi Zhong at three or four years old inside his grandmother's small shop in Xiangcheng" width="1600" height="1071" loading="lazy" decoding="async">
+    <figcaption class="photo-search__caption">At the age of three or four, inside my grandmother’s small shop. This is not one of the photographs I am looking for; it is included only as a reference.</figcaption>
+  </figure>
+  <div class="photo-search__content">
+    <p class="photo-search__eyebrow">PHOTO SEARCH</p>
+    <p class="photo-search__text">According to my mother, around 2000, a visitor—possibly from Europe—photographed me at the age of two or three in Xiangcheng. My mother met the visitor at the time, but they did not exchange contact details, and our family has never seen the photographs. If you know who the photographer might have been, please <a class="photo-search__link" href="mailto:yuxi.zhonggg@gmail.com">get in touch</a>.</p>
+  </div>
+</section>
