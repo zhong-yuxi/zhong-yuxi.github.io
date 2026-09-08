@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/photo-search.css?v=3">
+
 <style>
 #paige-site-title,
 #paige-site-title a,
@@ -320,3 +322,14 @@
   </a>
 
 </div>
+
+<section class="photo-search photo-search--zh" aria-label="照片寻访">
+  <figure class="photo-search__figure">
+    <img class="photo-search__image" src="/images/childhood-shop.webp" alt="三四岁时在乡城外婆小卖部里的钟誉熙" width="1600" height="1071" loading="lazy" decoding="async">
+    <figcaption class="photo-search__caption">三四岁时的我，在外婆的小卖部里。此图并非所寻找的照片，仅作人物与场景参考。</figcaption>
+  </figure>
+  <div class="photo-search__content">
+    <p class="photo-search__eyebrow">照片寻访</p>
+    <p class="photo-search__text">据母亲回忆，2000年左右，一位可能来自欧洲的访客曾在乡城为两三岁的我拍照。母亲当时见过这位访客，但双方没有留下联系方式，我们也未曾见过那些照片。如果你知道拍摄者是谁，欢迎<a class="photo-search__link" href="mailto:yuxi.zhonggg@gmail.com">与我联系</a>。</p>
+  </div>
+</section>
