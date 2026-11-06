@@ -9,7 +9,7 @@
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
         In my hometown of Xiangcheng, household stoves have a distinctive local style. People paint or sculpt images connected with Tibetan Buddhism on the stove walls, and the decorated stove is honoured as the Stove God. Most stoves share a similar form, but one image in particular drew my attention: cats found in almost every household. Cats are uncommon in Tibetan Buddhist iconography, so why do they appear here and receive such respect? And why do they resemble the jewel-spitting mongoose in both form and function? I began with these questions and followed them into the ways families understand and care for the images around their stoves. The stove became a way for me to explore how familiar images carry social memory and help shape local and ethnic identities. This work eventually became my master’s thesis.
       </p>
-      <a href="/projects/om-and-xiang/" class="btn btn-sm btn-outline-info" style="font-family: 'MyJost', sans-serif;">Read More</a>
+      <a href="/projects/om-and-xiang/" class="btn btn-sm btn-outline-info" style="font-family: 'MyJost', sans-serif;">Explore More</a>
     </div>
   </div>
 
