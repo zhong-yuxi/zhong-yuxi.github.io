@@ -6,9 +6,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif; font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">“唵”与“象”的对话</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif; font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">“唵”与“象”的对话 (10/2023 – 06/2025)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        在我的家乡乡城，灶台具有鲜明的地方审美。人们在灶墙上绘制或塑造多种与藏传佛教有关的图像，并以灶神之名加以供奉。各家灶台的形制大体相近，其中最引人注意的是几乎家家可见的猫。猫并非常见的藏传佛教母题，为何会出现在灶台上并受到敬奉？它又为何在形态和功能上与吐宝鼠鼬如此相似？以这些问题为起点，我把灶台作为观察乡城社会的媒介，考察图像与物质形式如何承载社会记忆，并参与地方与族群认同的形成。这项研究后来成为我的硕士学位论文。
+        在我的故乡乡城，家家户户的火塘带有鲜明的当地特色。人们在灶壁上绘制或雕刻与藏传佛教相关的图像，被装饰过的灶被尊称为“灶神”。多数灶墙形态相近，但有一幅图像格外引人注目：几乎每家每户都会出现一猫。猫在藏传佛教的图像中并不常见，那么它们为何会出现在这里，并受到如此礼遇？又为何在形态与功能上都与吐宝鼠鼬相似？我带着这些问题出发，循着它们走进了各个家庭对灶台周围图像的理解与照料方式。灶台成为我探索熟悉图像如何承载社会记忆、如何参与塑造地方与族群认同的一条路径。这也是我硕士论文所研究的内容。
       </p>
       <a href="/zh/projects/om-and-xiang/" class="btn btn-sm btn-outline-info" style="font-family: 'MyJost', sans-serif;">探索更多</a>
     </div>
@@ -20,9 +20,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">辽西木偶戏的具身实践与文化传承</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">辽西木偶戏的具身实践与文化传承 (06/2023 – 09/2023)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        在三个月的学习和田野中，我们接触了戏剧理论、木偶制作和杖头木偶表演，并以当地剧团成员的身份参与训练与演出。亲手制作和操纵木偶的经历让我看到，许多技艺通过动作示范、身体练习和舞台配合得以传授，学习者也在反复实践中逐渐掌握其中的知识。我由此开始理解具身知识如何在表演中延续，并关注木偶戏在保存地方记忆、形成群体认同和维系社区联系中的作用。
+        在暑期三个月的时间里，我跟随教授以及木偶戏专家学习了戏剧理论，学会了制作木偶，并与当地剧团一起练习杖头木偶表演。参加排练和演出让我对学习一门手艺的意义有了不同的感受。当几个人必须在一个狭小的舞台上一起移动甚至舞蹈时，知识与信息都是通过示范、重复和身体的小幅调整来传递的。我开始思考，一场表演承载的不仅仅是故事：它还承载着让表演持续下去的人们的知识、记忆和关系。
       </p>
     </div>
   </div>
@@ -33,9 +33,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">遗产生态：中国农村的文化振兴</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">遗产生态：中国农村的文化振兴 (11/2022 – 10/2023)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        在辽宁大连的蚆蛸岛，我通过实地考察了解岛民的风俗与非物质文化遗产，并关注这些实践与海岛生态、社区生活之间的联系。结合导师团队积累的其他案例，我们尝试总结其中具有共通性的问题，并提出更重视地方环境与社区参与的保护思路。蚆蛸岛的经验也为理解其他乡村地区的文化保护提供了参照。这是我第一次将民俗与非物质文化遗产放回具体的生活环境中考察，也让我认识到，文化的延续与地方生态、日常生活和居民自身的选择紧密相连。
+        在辽宁大连的蚆蛸岛，我开展了关于当地风俗与非物质文化遗产的田野调查，主要关注非遗与该岛生态及社区生活的联系。结合硕导团队所研究的其他案例，我们比较了中国不同乡村地区的经验，并思考文化保护应如何在更大程度上关注当地环境和社区参与。这是我第一次尝试在人们持续践行其文化的环境中研究文化遗产。这段经历使我更加贴近人们用以维系传统日常选择的现场，也让我看到文化延续与他们所居之地之间紧密的关联。
       </p>
     </div>
   </div>
@@ -46,9 +46,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">从仪式治理到审美超越：“乐”的符号学谱系</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">从仪式治理到审美超越：“乐”的符号学谱系 (11/2022 – 03/2023)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        “乐”在汉语历史中形成了多种读音和含义：yuè主要指音乐，lè表示欢喜、快活，yào则有喜爱、欣赏之意。这个项目由此追问：同一个字为何能在漫长的历史中连接如此不同的经验？通过对历史文本和审美观念的梳理，我考察了“乐”如何进入礼乐秩序、日常情感与审美追求，并用三维轨迹图呈现这些意义之间的历史联系。这是我第一次从一个具体符号出发，尝试理解语言、历史与生活经验之间的关系。
+        汉字“乐”随着时间发展出了多种读音和含义，比如yuè 表示音乐，lè 表示欢乐和幸福，yào 表示喜爱或欣赏。我被这些含义之间的距离和联系所吸引。一个汉字怎么会承载如此不同的观念？通过历史文献，我追溯了它的含义如何在与仪式和政治秩序、个人情感以及审美思想的关系中发展。跟随一个汉字跨越不同时期，引出了关于语言、历史以及人们理解自身经验的方式的问题。
       </p>
     </div>
   </div>
@@ -59,9 +59,12 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">动物母题在藏毯中的转变</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">动物母题在藏毯中的转变 (06/2020 – 08/2020)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        当时，我带领学校的动物保护组织获得了一次开展项目的机会。因为我来自藏区，所以我们从共同关注的动物出发，将目光转向藏毯上的动物形象，开始思考动物如何被人们想象、描绘并长期保留在这些物件之中。随着研究深入，我们发现，藏毯的纹样、色彩和生产方式会受到市场以及经济和政策环境的影响，其中一些动物形象则保持了相对稳定。我们也考察了藏毯从生产、加工到销售的过程，理解图像与物质形式如何在手工劳动、地方经验和市场需求之间形成。这是我第一次把动物图像、物质材料和经济过程联系起来，也由此开始关注视觉与物质文化如何进入人们的日常生活。
+        在担任本科动物保护协会会长期间，我获得了一次开展研究项目的机会。我们对动物的共同兴趣，加上我在藏区的背景，吸引我们关注西藏地毯上的动物母题。我们想了解动物是如何被想象和描绘的，以及为什么某些母题能长期延续。
+      </p>
+      <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
+        随着研究的推进，我们发现地毯的图案、颜色和生产方法随着市场需求以及更广泛的经济和政策环境而变化。然而，一些动物母题保持相对稳定。我们还研究了地毯是如何生产、加工和销售的。最初对动物形象的兴趣，逐渐将我的注意力引向那些使这些形象得以延续或变化的人、材料和环境。
       </p>
     </div>
   </div>
@@ -73,9 +76,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">基层群众参与社区治理的现状研究</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">基层群众参与社区治理的现状研究 (11/2019 – 02/2021)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        本科阶段的学习让我认识到，基层治理并不只是地方政府和基层党组织自上而下的管理过程，社区居民同样是重要的参与者。成都不同城区的社区在居民参与的方式和实际成效上存在明显差异：一些曾获表彰的社区形成了较为有效的参与机制，而另一些社区虽然居民参与积极，实际成效却并不理想。为了理解有效的居民参与是如何形成的，我们以若干治理成效较好的社区为主要案例，通过社区访谈和问卷调查总结其实践经验，并在此基础上提出因地制宜的治理建议。这项研究也让我意识到，居民的日常生活与基层政治并不是两个彼此分离的领域；社区治理正是在具体的生活需求、邻里关系和公共事务中发生的。这项研究后来也成为我本科毕业论文的基础。
+        本科的课程和实践让我对“为什么居民参与在成都各城市社区中的运作方式有很大不同”产生了兴趣。一些获奖的社区已经形成了有效的居民参与方式，而另一些社区虽然参与活跃，但成效有限。于是我们决定更深入地考察几个基层治理成效良好的社区。通过访谈和问卷调查，我们探究了他们在社区参与方面的做法，借鉴了他们的经验，并提出了适合不同地方条件的建议。这项研究也改变了我对基层政治的看法。我的课程主要让我了解到地方政府和基层党组织的角色重要性，但通过这个项目我开始意识到，很多事情还取决于居民的日常需求、邻里关系，以及人们围绕共同事务所作出的决定。这个项目后来也是我学士学位论文的基础。
       </p>
     </div>
   </div>
@@ -86,9 +89,9 @@
     </div>
     <div class="col-md-8">
       <!-- 🛠️ 修改点：将 MyJost 换成了 LXGWWenKai -->
-      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">红色革命遗址的视觉文化与物质记忆研究</h6>
+      <h6 class="fw-bold" style="font-family: 'LXGWWenKai', sans-serif;font-weight: 400; -webkit-text-stroke: 0.5px currentColor;">红色革命遗址的视觉文化与物质记忆研究 (11/2018 – 06/2019)</h6>
       <p class="text-secondary" style="font-family: 'Times New Roman', sans-serif; font-size: 1rem;">
-        我们注意到，与井冈山等知名红色文化地区相比，四川一些革命老区受到的关注较少，尽管这些地区同样具有重要的历史意义和政治地位，相关文化资源的呈现与发展却相对有限。带着这一问题，我们前往广元、泸州等地开展调查，通过比较分析和广泛访谈，了解当地政府与居民如何保存、讲述并延续本地的红色历史与文化，并在此基础上提出相应的发展建议。这项研究也让我第一次真切地意识到，物质文化并非只是历史的被动载体，它也会持续影响人们理解过去和体验地方生活的方式。由此，我开始将目光转向视觉文化与物质文化。
+        与井冈山等知名革命遗址相比，四川的一些革命老区尽管具有深刻的历史和政治意义，却受到关注的程度要低得多。这促使我们在广元、泸州等地开展田野调查。我们探讨了当地政府和居民如何保存、展示并传承他们自己的革命历史。通过访谈、问卷调查和跨遗址比较，我们这些地区的未来发展提出了切实可行的建议。令我印象深刻的是，我对历史场所和物品的看法发生了转变。它们不仅仅是已然过去的事件的提醒物。它们的物质存在也塑造了人们理解历史以及体验周围环境的方式。这是我对视觉与物质文化产生兴趣的早期转折点。
       </p>
     </div>
   </div>
