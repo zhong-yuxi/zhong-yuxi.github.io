@@ -29,20 +29,20 @@
             <div class="treasure-loader" aria-hidden="true">
                 <span class="treasure-aura"></span>
                 <span class="treasure-ground"></span>
-                <span class="logo-particle" style="--delay: 0.1s; --pile-left: 15%; --pile-top: 78%; --pile-rotate: -18deg;">
-                    <img src="/favicon.svg" alt="">
+                <span class="logo-particle" style="--delay: 0s; --pile-left: 15%; --pile-top: 78%; --pile-rotate: -18deg;">
+                    <img src="/images/loader-logo-96.png" alt="">
                 </span>
-                <span class="logo-particle" style="--delay: 0.75s; --pile-left: 23%; --pile-top: 79%; --pile-rotate: 14deg;">
-                    <img src="/favicon.svg" alt="">
+                <span class="logo-particle" style="--delay: 0.4s; --pile-left: 23%; --pile-top: 79%; --pile-rotate: 14deg;">
+                    <img src="/images/loader-logo-96.png" alt="">
                 </span>
-                <span class="logo-particle" style="--delay: 1.4s; --pile-left: 29%; --pile-top: 75%; --pile-rotate: -7deg;">
-                    <img src="/favicon.svg" alt="">
+                <span class="logo-particle" style="--delay: 1.2s; --pile-left: 29%; --pile-top: 75%; --pile-rotate: -7deg;">
+                    <img src="/images/loader-logo-96.png" alt="">
                 </span>
-                <span class="logo-particle" style="--delay: 2.05s; --pile-left: 20%; --pile-top: 70%; --pile-rotate: 21deg;">
-                    <img src="/favicon.svg" alt="">
+                <span class="logo-particle" style="--delay: 2s; --pile-left: 20%; --pile-top: 70%; --pile-rotate: 21deg;">
+                    <img src="/images/loader-logo-96.png" alt="">
                 </span>
                 <span class="treasure-mouse">
-                    <img class="mouse-sprite" src="/images/treasure-mouse-sprite.webp" alt="" fetchpriority="high">
+                    <img class="mouse-sprite" data-src="/images/treasure-mouse-sprite.webp" alt="" fetchpriority="high">
                 </span>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="snow-lion-loader">
                 <img class="snow-lion-image" data-src="/images/snow-lion-still.webp" width="640" height="576" alt="" fetchpriority="high">
                 <canvas class="snow-lion-canvas" width="640" height="576" aria-hidden="true"></canvas>
-                <span class="snow-lion-logo" aria-hidden="true"><img data-src="/favicon.svg" alt=""></span>
+                <span class="snow-lion-logo" aria-hidden="true"><img data-src="/images/loader-logo-96.png" alt=""></span>
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@
 
         .mouse-sprite {
             display: block;
-            width: 600%;
+            width: 1200%;
             height: 100%;
             max-width: none;
             will-change: transform;
@@ -257,12 +257,18 @@
         }
 
         @keyframes mouse-frames {
-            0%, 16.665% { transform: translateX(0); }
-            16.666%, 33.332% { transform: translateX(-16.6667%); }
-            33.333%, 49.999% { transform: translateX(-33.3333%); }
-            50%, 66.665% { transform: translateX(-50%); }
-            66.666%, 83.332% { transform: translateX(-66.6667%); }
-            83.333%, 100% { transform: translateX(-83.3333%); }
+            0%, 8.332% { transform: translateX(0); }
+            8.333%, 16.665% { transform: translateX(-8.3333%); }
+            16.666%, 24.999% { transform: translateX(-16.6667%); }
+            25%, 33.332% { transform: translateX(-25%); }
+            33.333%, 41.665% { transform: translateX(-33.3333%); }
+            41.666%, 49.999% { transform: translateX(-41.6667%); }
+            50%, 58.332% { transform: translateX(-50%); }
+            58.333%, 66.665% { transform: translateX(-58.3333%); }
+            66.666%, 74.999% { transform: translateX(-66.6667%); }
+            75%, 83.332% { transform: translateX(-75%); }
+            83.333%, 91.665% { transform: translateX(-83.3333%); }
+            91.666%, 100% { transform: translateX(-91.6667%); }
         }
 
         @keyframes mouse-breathe {
@@ -400,7 +406,10 @@
             ========================================== -->
     <script>
         const loaderVariant = document.documentElement.dataset.loaderVariant;
-        if (loaderVariant === 'snow-lion') {
+        if (loaderVariant === 'mouse') {
+            const mouseSprite = document.querySelector('.mouse-sprite');
+            mouseSprite.src = mouseSprite.dataset.src;
+        } else if (loaderVariant === 'snow-lion') {
             const snowLionLoader = document.querySelector('.snow-lion-loader');
             const snowLionImage = snowLionLoader.querySelector('.snow-lion-image');
             snowLionImage.src = snowLionImage.dataset.src;
