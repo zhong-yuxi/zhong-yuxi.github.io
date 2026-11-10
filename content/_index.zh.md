@@ -24,7 +24,7 @@ disable_sections = true
     <!-- 这里把 'MyJost' 换成了 'LXGWWenKai' -->
     <p class="text-white mt-1 mb-0" 
        style="font-family: 'LXGWWenKai', sans-serif; font-size: 1.2rem; letter-spacing: 0.05em; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-        物质文化，仪式，图像，地方性，藏地，乡城
+        物质性 · 民间文化 · 视觉性 · 跨物种关系 · 藏地
     </p>
 </div>
 </div>

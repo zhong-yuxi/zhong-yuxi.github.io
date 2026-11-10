@@ -22,7 +22,7 @@ disable_sections = true
     </h1>
     <p class="text-white mt-1 mb-0" 
        style="font-family: 'MyJost', sans-serif; font-size: 1.2rem; letter-spacing: 0.05em; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-        Materiality, Ritual, Visuality, Vernacular, Tibet
+        Materiality · Vernacular Culture · Visuality · Human–Animal Relations · Tibet
     </p>
 </div>
 </div>
